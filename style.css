@@ -90,3 +90,12 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 margin-top:0;
 color:#0f172a;
 }
+.profile-box{
+
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+margin-bottom:30px;
+
+}
