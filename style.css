@@ -1,11 +1,24 @@
-body{
-font-family: "Segoe UI", Arial, sans-serif;
+html, body{
+height:100%;
 margin:0;
+font-family:"Segoe UI", Arial, sans-serif;
 background:#f4f6f9;
 color:#1f2937;
 line-height:1.6;
 }
 
+/* Page layout */
+body{
+display:flex;
+flex-direction:column;
+}
+
+/* Main content pushes footer down */
+main{
+flex:1;
+}
+
+/* Header */
 header{
 background:#0f172a;
 color:white;
@@ -24,6 +37,7 @@ font-size:18px;
 opacity:.9;
 }
 
+/* Navigation */
 nav{
 margin-top:25px;
 }
@@ -39,30 +53,22 @@ nav a:hover{
 text-decoration:underline;
 }
 
+/* Content container */
 .container{
 max-width:1000px;
 margin:auto;
 padding:60px 20px;
 }
 
-h2{
-color:#0f172a;
-margin-top:20px;
-}
-
-ul{
-padding-left:20px;
-line-height:1.8;
-}
-
+/* Footer */
 footer{
 background:#0f172a;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:40px;
 }
 
+/* Links */
 a{
 color:#2563eb;
 }
