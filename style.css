@@ -99,3 +99,29 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 margin-bottom:30px;
 
 }
+.metrics{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:25px;
+}
+
+.metric-card{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.metric-card h3{
+font-size:36px;
+margin:0;
+color:#0f172a;
+}
+
+.metric-card p{
+margin-top:10px;
+font-size:16px;
+color:#374151;
+}
