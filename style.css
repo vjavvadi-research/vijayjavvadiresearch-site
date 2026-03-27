@@ -306,7 +306,7 @@ p, li{
 font-size:17px;
 }
 }
-/* Dropdown menu */
+/* Dropdown */
 
 .dropdown{
 position:relative;
@@ -316,19 +316,20 @@ display:inline-block;
 .dropdown-content{
 display:none;
 position:absolute;
-background:white;
+top:28px;
+left:0;
+background:#ffffff;
 min-width:200px;
-box-shadow:0 8px 16px rgba(0,0,0,0.15);
 border-radius:6px;
-z-index:1;
-margin-top:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+z-index:1000;
 }
 
 .dropdown-content a{
-color:#1f2937;
-padding:10px 14px;
-text-decoration:none;
 display:block;
+padding:10px 14px;
+color:#111827;
+text-decoration:none;
 font-size:14px;
 }
 
