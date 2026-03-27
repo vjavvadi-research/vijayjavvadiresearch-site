@@ -24,7 +24,7 @@ header{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:50px 20px 40px;
+padding:70px 20px;
 }
 
 header h1{
@@ -35,9 +35,10 @@ line-height:1.1;
 }
 
 .subtitle{
-margin-top:14px;
+margin-top:12px;
 font-size:18px;
-opacity:.92;
+color:#cbd5e1;
+letter-spacing:0.3px;
 }
 
 /* Navigation */
