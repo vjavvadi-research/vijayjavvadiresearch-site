@@ -1,7 +1,7 @@
 body{
-font-family: "Segoe UI", Arial, sans-serif;
+font-family:"Segoe UI",Arial,sans-serif;
 margin:0;
-background:#f4f6f8;
+background:#f5f7fa;
 color:#1f2937;
 line-height:1.6;
 }
@@ -10,22 +10,22 @@ header{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:40px 20px;
+padding:60px 20px;
 }
 
 header h1{
 margin:0;
-font-size:36px;
+font-size:40px;
 }
 
 .subtitle{
+font-size:20px;
 margin-top:10px;
-font-size:18px;
 opacity:0.9;
 }
 
 nav{
-margin-top:20px;
+margin-top:25px;
 }
 
 nav a{
@@ -40,20 +40,45 @@ text-decoration:underline;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
 
-h2{
-color:#0f172a;
-border-bottom:2px solid #e5e7eb;
-padding-bottom:10px;
+.hero{
+text-align:center;
+padding:60px 20px;
+background:white;
+border-bottom:1px solid #e5e7eb;
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+color:#475569;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 margin-top:40px;
 }
 
-ul{
-line-height:1.8;
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
+color:#0f172a;
 }
 
 footer{
@@ -62,8 +87,4 @@ color:white;
 text-align:center;
 padding:20px;
 margin-top:40px;
-}
-
-a{
-color:#2563eb;
 }
