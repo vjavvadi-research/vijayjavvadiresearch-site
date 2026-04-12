@@ -96,3 +96,14 @@ background:#0f172a;
 color:white;
 font-size:14px;
 }
+
+.tile-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+
+.tile-link:hover .tile{
+transform:translateY(-4px);
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
