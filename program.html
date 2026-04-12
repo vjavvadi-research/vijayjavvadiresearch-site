@@ -1,37 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Program | Vijay P. Javvadi</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research Program | Vijay Prasad Javvadi</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
+<nav>
+
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="program.html">Research Program</a>
+<a href="vision.html">Research Vision</a>
+<a href="timeline.html">Research Timeline</a>
+<a href="projects.html">Projects</a>
+<a href="publications.html">Publications</a>
+<a href="impact.html">Impact</a>
+<a href="recognition.html">Recognition</a>
+<a href="speaking.html">Speaking</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
 <header>
-  <h1>Research Program</h1>
-  <p class="subtitle">AI-Driven Quality Engineering Research Agenda</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <a href="research.html">Research</a>
-      <div class="dropdown-content">
-        <a href="program.html">Research Program</a>
-        <a href="vision.html">Research Vision</a>
-        <a href="timeline.html">Research Timeline</a>
-      </div>
-    </div>
-    <a href="projects.html">Projects</a>
-    <a href="publications.html">Publications</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="impact.html">Impact</a>
-    <a href="recognition.html">Recognition</a>
-    <a href="speaking.html">Speaking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+<h1>Research Program</h1>
+
+<div class="subtitle">
+AI-Driven Software Quality Engineering Research Agenda
+</div>
+
+<div class="description">
+
+This research program investigates how artificial intelligence,
+machine learning, and repository analytics can transform
+modern software testing and quality engineering.
+
+The program is structured as a sequence of research papers
+exploring predictive defect detection, intelligent automation,
+and autonomous testing systems.
+
+</div>
+
 </header>
 
-<main>
-  <div class="container">
-    <section>
+
+<section class="accordion">
+
+
+<!-- PAPER 1 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Paper 1 — Repository Analytics & Defect Prediction</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+This research investigates how software repository analytics
+and machine learning techniques can identify defect-prone
+modules in large-scale software systems. Development metrics
+such as commit frequency, code churn, developer activity,
+and file evolution are used to train predictive models that
+support risk-based testing strategies.
+</p>
+
+<p><strong>Status:</strong> Completed — Manuscript Prepared (Not Submitted)</p>
+
+<div class="paper-links">
+
+<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank">
+GitHub Repository
+</a>
+
+<a href="papers/defect_prediction_paper.pdf">
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 2 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Paper 2 — AI-Driven Self-Healing Test Automation</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+This research proposes an AI-driven test automation framework
+capable of detecting and repairing failing automated test scripts
+caused by changes in user interface elements. Machine learning
+and DOM similarity analysis are used to dynamically recover
+broken locators and maintain test stability.
+</p>
+
+<p><strong>Status:</strong> In Progress</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 3 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Paper 3 — Autonomous Regression Testing Systems</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+This research explores autonomous regression testing systems
+that automatically generate, prioritize, and execute test cases
+based on repository analytics and predictive defect models.
+The goal is to improve testing efficiency in continuous
+integration environments.
+</p>
+
+<p><strong>Status:</strong> Planned</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 4 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Paper 4 — LLM-Based Test Case Generation</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+This research investigates how large language models can
+automatically generate software test cases from requirements,
+user stories, and functional specifications, enabling faster
+and more comprehensive testing processes.
+</p>
+
+<p><strong>Status:</strong> Planned</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 5 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Paper 5 — Intelligent API Contract Testing</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+This research proposes an intelligent API contract testing
+framework capable of detecting compatibility issues between
+microservices by analyzing API specifications and runtime
+service interactions in distributed systems.
+</p>
+
+<p><strong>Status:</strong> Planned</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+© 2026 Vijay Prasad Javvadi  
+AI-Driven Software Quality Research
+
+</footer>
+
+
+<script>
+
+const papers = document.querySelectorAll(".paper-title");
+
+papers.forEach(title => {
+
+title.addEventListener("click", () => {
+
+const paper = title.parentElement;
+paper.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+
+</body>
 </html>
