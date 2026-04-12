@@ -1,109 +1,59 @@
+/* =========================
+RESEARCH PROGRAM ACCORDION
+========================= */
 
-body{
-margin:0;
-font-family:"Segoe UI", Arial, sans-serif;
-background:#f4f6f9;
-color:#1f2937;
-text-align:center;
-}
-
-/* NAVIGATION */
-
-nav{
-background:#0f172a;
-padding:18px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 18px;
-font-size:15px;
-font-weight:500;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-
-/* HEADER */
-
-header{
-padding:80px 20px;
-background:white;
-}
-
-.profile-pic{
-width:150px;
-height:150px;
-border-radius:50%;
-background:#d1d5db;
-margin:auto;
-margin-bottom:25px;
-}
-
-header h1{
-font-size:34px;
-margin-bottom:8px;
-font-weight:600;
-}
-
-.subtitle{
-font-size:20px;
-color:#475569;
-margin-bottom:30px;
-}
-
-.description{
+.accordion{
 max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.6;
+margin:40px auto;
 }
 
-
-/* TILE GRID */
-
-.tiles{
-margin-top:60px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1100px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.tile{
+.paper{
 background:white;
-padding:30px;
+margin-bottom:14px;
 border-radius:8px;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
+overflow:hidden;
 }
 
-.tile h3{
-margin-bottom:10px;
+.paper-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 22px;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
 }
 
-
-/* FOOTER */
-
-footer{
-margin-top:80px;
-padding:30px;
-background:#0f172a;
-color:white;
-font-size:14px;
+.paper-title:hover{
+background:#f1f5f9;
 }
 
-.tile-link{
-text-decoration:none;
-color:inherit;
-display:block;
+.arrow{
+transition:transform 0.3s ease;
 }
 
-.tile-link:hover .tile{
-transform:translateY(-4px);
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+.paper.active .arrow{
+transform:rotate(90deg);
+}
+
+.paper-content{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.35s ease;
+padding:0 22px;
+}
+
+.paper.active .paper-content{
+padding:20px 22px;
+max-height:500px;
+}
+
+.paper-content p{
+margin-bottom:12px;
+}
+
+.paper-links a{
+margin-right:16px;
+font-weight:500;
 }
