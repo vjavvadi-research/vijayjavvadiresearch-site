@@ -206,7 +206,38 @@ color:#2563eb;
 .paper-links a:hover{
 text-decoration:underline;
 }
+.paper-content{
+text-align:left;
+max-width:820px;
+margin:auto;
+}
 
+.paper-content p{
+font-size:16px;
+line-height:1.75;
+margin-bottom:16px;
+text-align:justify;
+}
+
+.paper-content strong{
+font-size:17px;
+}
+
+.paper-links{
+margin-top:15px;
+}
+
+.paper-links a{
+display:inline-block;
+margin-right:18px;
+color:#2563eb;
+font-weight:500;
+text-decoration:none;
+}
+
+.paper-links a:hover{
+text-decoration:underline;
+}
 
 
 /* ===============================
@@ -219,4 +250,10 @@ padding:30px;
 background:#0f172a;
 color:white;
 font-size:14px;
+}
+.paper-content p{
+margin-bottom:16px;
+font-size:15px;
+line-height:1.7;
+text-align:left;
 }
