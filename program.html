@@ -40,14 +40,13 @@ AI-Driven Software Quality Engineering Research Agenda
 </div>
 
 <div class="description">
+Software systems are continuously evolving and increasing in complexity, making defect detection a major challenge in modern software engineering. Traditional testing strategies often allocate testing resources uniformly across software modules, which can lead to inefficient testing and missed defects.
 
-This research program investigates how artificial intelligence,
-machine learning, and repository analytics can transform
-modern software testing and quality engineering.
+This research proposes an AI-driven defect prediction framework that uses software repository analytics to identify defect-prone modules early in the development lifecycle. Development activity metrics—such as commit frequency, number of developers, code churn, and file age—are extracted from version control repositories and used as input features for machine learning models.
 
-The program is structured as a sequence of research papers
-exploring predictive defect detection, intelligent automation,
-and autonomous testing systems.
+The framework was evaluated using a dataset of 237,250 software files collected from five large open-source repositories, of which 49,903 files were identified as defect-prone through commit history analysis. Three machine learning models—Logistic Regression, Decision Tree, and Random Forest—were trained and evaluated using repository-derived features.
+
+Experimental results show that machine learning models can effectively identify defect-prone components. The Random Forest model achieved the best performance with an accuracy of 0.872 and ROC-AUC of 0.905. The findings demonstrate that repository analytics combined with machine learning can support risk-based testing strategies, enabling development teams to prioritize high-risk modules and improve software reliability.
 
 </div>
 
