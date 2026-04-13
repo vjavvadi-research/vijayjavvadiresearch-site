@@ -336,3 +336,18 @@ font-weight:500;
 .paper-content a:hover{
 text-decoration:underline;
 }
+.paper-links{
+margin-top:15px;
+}
+
+.paper-links a{
+display:inline-block;
+margin-right:18px;
+color:#2563eb;
+font-weight:500;
+text-decoration:none;
+}
+
+.paper-links a:hover{
+text-decoration:underline;
+}
