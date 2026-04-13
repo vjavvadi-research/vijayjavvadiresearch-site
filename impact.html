@@ -1,37 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impact | Vijay P. Javvadi</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Impact | Vijay Prasad Javvadi</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
+<nav>
+
+<a href="index.html">Home</a>
+<a href="program.html">Research Program</a>
+<a href="publications.html">Publications</a>
+<a href="projects.html">Projects</a>
+<a href="impact.html">Impact</a>
+<a href="recognition.html">Recognition</a>
+<a href="speaking.html">Speaking</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
 <header>
-  <h1>Impact</h1>
-  <p class="subtitle">Research Contributions and Practical Relevance</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <a href="research.html">Research</a>
-      <div class="dropdown-content">
-        <a href="program.html">Research Program</a>
-        <a href="vision.html">Research Vision</a>
-        <a href="timeline.html">Research Timeline</a>
-      </div>
-    </div>
-    <a href="projects.html">Projects</a>
-    <a href="publications.html">Publications</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="impact.html">Impact</a>
-    <a href="recognition.html">Recognition</a>
-    <a href="speaking.html">Speaking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+<h1>Research Impact</h1>
+
+<div class="subtitle">
+Influence of AI-Driven Software Quality Engineering Research
+</div>
+
+<div class="description">
+
+This page highlights the broader impact of research contributions in
+artificial intelligence, intelligent software testing, and quality
+engineering. The work focuses on advancing predictive analytics,
+automation frameworks, and intelligent testing platforms that
+improve reliability in large-scale software systems.
+
+</div>
+
 </header>
 
-<main>
-  <div class="container">
-    <section>
+
+<section class="accordion">
+
+
+<!-- IMPACT 1 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Research Contributions</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p>
+
+The research program contributes to the advancement of
+AI-driven software testing and intelligent quality engineering.
+Key contributions focus on integrating machine learning,
+repository analytics, and intelligent automation to improve
+software reliability and testing efficiency.
+
+</p>
+
+<ul>
+
+<li>AI-driven defect prediction models for large software repositories</li>
+<li>Machine learning techniques for intelligent test prioritization</li>
+<li>Self-healing automation frameworks for resilient testing systems</li>
+<li>Autonomous regression testing systems</li>
+<li>Large language model applications in automated test generation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- IMPACT 2 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Open Source Contributions</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p>
+
+Several research projects are implemented as open-source
+repositories to support transparency, reproducibility,
+and collaboration in software engineering research.
+
+</p>
+
+<p>
+
+<strong>AI Defect Prediction Repository</strong>
+
+</p>
+
+<p>
+
+GitHub:<br>
+
+<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank">
+github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics
+</a>
+
+</p>
+
+<p>
+
+This repository includes machine learning models,
+repository mining scripts, and datasets used to
+analyze defect-prone software components.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- IMPACT 3 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Industry Applications</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p>
+
+The research outcomes are closely aligned with real-world
+software engineering challenges and can be applied to
+large enterprise development environments.
+
+</p>
+
+<ul>
+
+<li>Risk-based testing using predictive defect analytics</li>
+<li>Self-healing automation frameworks for evolving applications</li>
+<li>AI-assisted root cause analysis for software failures</li>
+<li>Machine learning models for test prioritization in CI/CD pipelines</li>
+<li>Automated test generation using large language models</li>
+
+</ul>
+
+<p>
+
+These techniques help organizations improve testing
+efficiency, reduce maintenance costs, and detect defects
+earlier in the software development lifecycle.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- IMPACT 4 -->
+
+<div class="paper">
+
+<div class="paper-title">
+<span>Future Research Impact</span>
+<span class="arrow">▶</span>
+</div>
+
+<div class="paper-content">
+
+<p>
+
+The long-term vision of this research program is to
+enable autonomous software testing ecosystems powered
+by artificial intelligence.
+
+</p>
+
+<p>
+
+Future research directions include:
+
+</p>
+
+<ul>
+
+<li>Autonomous testing systems capable of adapting to evolving software</li>
+<li>AI-driven continuous testing platforms</li>
+<li>Predictive quality engineering frameworks</li>
+<li>Self-optimizing regression testing systems</li>
+<li>Intelligent testing platforms integrated with DevOps pipelines</li>
+
+</ul>
+
+<p>
+
+These research directions aim to transform traditional
+software testing practices into intelligent,
+self-adaptive quality engineering systems.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+
+<footer>
+
+© 2026 Vijay Prasad Javvadi  
+AI-Driven Software Quality Engineering Research
+
+</footer>
+
+
+
+<script>
+
+const papers = document.querySelectorAll(".paper-title");
+
+papers.forEach(title => {
+
+title.addEventListener("click", () => {
+
+const paper = title.parentElement;
+paper.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+
+</body>
 </html>
