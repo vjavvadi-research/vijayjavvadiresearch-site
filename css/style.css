@@ -41,10 +41,11 @@ color:#38bdf8;
 /* ===============================
 HEADER
 =============================== */
-
 header{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+text-align:center;
 padding:80px 20px;
-background:white;
 }
 
 .profile-pic{
@@ -64,16 +65,17 @@ margin-bottom:10px;
 }
 
 .subtitle{
-font-size:18px;
-color:#475569;
-margin-bottom:22px;
+margin-top:12px;
+font-size:20px;
+color:#cbd5f5;
 }
 
 .description{
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.6;
+max-width:750px;
+margin:20px auto 0;
+font-size:17px;
+line-height:1.7;
+color:#e2e8f0;
 }
 
 
@@ -336,6 +338,91 @@ font-weight:500;
 .paper-content a:hover{
 text-decoration:underline;
 }
+.paper-links{
+margin-top:15px;
+}
+
+.paper-links a{
+display:inline-block;
+margin-right:18px;
+color:#2563eb;
+font-weight:500;
+text-decoration:none;
+}
+
+.paper-links a:hover{
+text-decoration:underline;
+}
+/* ===============================
+   Research Accordion Styling
+   =============================== */
+
+.accordion{
+max-width:1000px;
+margin:60px auto;
+padding:0 20px;
+}
+
+.paper{
+background:#ffffff;
+border:1px solid #e5e7eb;
+border-radius:10px;
+margin-bottom:20px;
+transition:all 0.25s ease;
+overflow:hidden;
+}
+
+.paper:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Title row */
+
+.paper-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px;
+font-size:19px;
+font-weight:600;
+cursor:pointer;
+color:#111827;
+}
+
+/* Arrow */
+
+.paper-title .arrow{
+font-size:16px;
+transition:transform 0.3s ease;
+}
+
+/* Content */
+
+.paper-content{
+max-height:0;
+overflow:hidden;
+padding:0 22px;
+transition:max-height 0.4s ease;
+line-height:1.7;
+color:#374151;
+}
+
+/* Open accordion */
+
+.paper.active .paper-content{
+max-height:600px;
+padding:22px;
+}
+
+/* Rotate arrow */
+
+.paper.active .arrow{
+transform:rotate(90deg);
+}
+
+/* Links */
+
 .paper-links{
 margin-top:15px;
 }
