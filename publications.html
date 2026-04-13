@@ -17,15 +17,15 @@
 <nav>
 
 <a href="index.html">Home</a>
+<a href="research.html">Research</a>
 <a href="program.html">Research Program</a>
 <a href="vision.html">Research Vision</a>
-<a href="publications.html">Publications</a>
+<a href="timeline.html">Research Timeline</a>
 <a href="projects.html">Projects</a>
+<a href="publications.html">Publications</a>
 <a href="impact.html">Impact</a>
-<a href="service.html">Professional Service</a>
-<a href="speaking.html">Speaking</a>
 <a href="recognition.html">Recognition</a>
-<a href="timeline.html">Timeline</a>
+<a href="speaking.html">Speaking</a>
 <a href="contact.html">Contact</a>
 
 </nav>
@@ -41,10 +41,9 @@ AI-Driven Software Quality Engineering Research
 
 <div class="description">
 
-This research portfolio focuses on artificial intelligence applications in
-software testing, quality engineering, and intelligent automation systems.
-The work explores machine learning, large language models, and intelligent
-analytics to improve reliability and efficiency in large-scale software systems.
+This page presents research papers, working manuscripts, and future scholarly
+work in artificial intelligence, software testing, intelligent automation,
+and software quality engineering.
 
 </div>
 
@@ -59,19 +58,32 @@ analytics to improve reliability and efficiency in large-scale software systems.
 <div class="paper">
 
 <div class="paper-title">
-<span>AI-Driven Software Defect Prediction Using Repository Analytics</span>
+<span>Paper 1 — Repository Analytics & Defect Prediction</span>
 <span class="arrow">▶</span>
 </div>
 
 <div class="paper-content">
 
+<p><strong>Abstract</strong></p>
+
 <p>
-This research proposes a machine learning framework that analyzes repository
-metrics including commit activity, code churn, and file modification history
-to identify defect-prone software modules. The approach enables predictive
-risk analysis for large software projects and supports intelligent
-test prioritization strategies.
+Software systems are continuously evolving and increasing in complexity, making defect detection a major challenge in modern software engineering.
+Traditional testing strategies often allocate testing resources uniformly across software modules, which can lead to inefficient testing and missed defects.
+This research proposes an AI-driven defect prediction framework that uses software repository analytics to identify defect-prone modules early in the development lifecycle.
+Development activity metrics—such as commit frequency, number of developers, code churn, and file age—are extracted from version control repositories and used as input features for machine learning models.
+The framework was evaluated using a dataset of 237,250 software files collected from five large open-source repositories, of which 49,903 files were identified as defect-prone through commit history analysis.
+Three machine learning models—Logistic Regression, Decision Tree, and Random Forest—were trained and evaluated using repository-derived features.
+Experimental results show that machine learning models can effectively identify defect-prone components. The Random Forest model achieved the best performance with an accuracy of 0.872 and ROC-AUC of 0.905.
+The findings demonstrate that repository analytics combined with machine learning can support risk-based testing strategies, enabling development teams to prioritize high-risk modules and improve software reliability.
 </p>
+
+<p><strong>Status:</strong> Completed — Manuscript Prepared (Not Submitted)</p>
+
+<div class="paper-links">
+<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank">GitHub</a>
+<a href="papers/defect_prediction_paper.pdf" target="_blank">PDF</a>
+<a href="#" target="_blank">Publication Site</a>
+</div>
 
 </div>
 
@@ -84,19 +96,33 @@ test prioritization strategies.
 <div class="paper">
 
 <div class="paper-title">
-<span>AI-Driven Self-Healing Test Automation Framework</span>
+<span>Paper 2 — AI-Driven Self-Healing Test Automation</span>
 <span class="arrow">▶</span>
 </div>
 
 <div class="paper-content">
 
+<p><strong>Abstract</strong></p>
+
 <p>
-This research introduces a self-healing test automation architecture that
-automatically adapts to user interface changes during test execution.
-Using DOM similarity detection and machine learning models, the system
-dynamically identifies alternative element locators to prevent automation
-failures caused by UI updates.
+Modern software systems evolve rapidly, causing automated test scripts to frequently fail due to minor user interface changes, dynamic element identifiers, or evolving application structures.
+Traditional automation frameworks require continuous manual maintenance to update broken locators and test scripts, resulting in increased maintenance cost and reduced testing efficiency.
+This research proposes an AI-driven self-healing test automation framework capable of automatically detecting, diagnosing, and repairing failing test cases caused by user interface changes.
+The framework integrates machine learning models, DOM similarity analysis, and intelligent locator recovery techniques to dynamically identify alternative elements when original locators become invalid.
+The proposed architecture monitors historical execution data and page structure patterns to generate predictive locator models that enable automated recovery during test execution.
+When a test failure occurs due to element changes, the framework evaluates multiple candidate elements using structural similarity metrics, attribute matching, and machine learning ranking algorithms to determine the most probable replacement element.
+Experimental evaluation demonstrates that the self-healing framework significantly reduces automation maintenance effort while improving test execution stability across evolving application versions.
+The results indicate that AI-driven locator recovery techniques can increase test execution success rates while minimizing manual intervention in large-scale enterprise automation environments.
+The research highlights the potential of intelligent automation frameworks to transform traditional test automation into adaptive testing systems capable of maintaining long-term reliability in rapidly evolving software applications.
 </p>
+
+<p><strong>Status:</strong> In Progress</p>
+
+<div class="paper-links">
+<a href="#" target="_blank">GitHub</a>
+<a href="#" target="_blank">PDF</a>
+<a href="#" target="_blank">Publication Site</a>
+</div>
 
 </div>
 
@@ -109,18 +135,32 @@ failures caused by UI updates.
 <div class="paper">
 
 <div class="paper-title">
-<span>Autonomous Regression Testing Systems</span>
+<span>Paper 3 — Autonomous Regression Testing Systems</span>
 <span class="arrow">▶</span>
 </div>
 
 <div class="paper-content">
 
+<p><strong>Abstract</strong></p>
+
 <p>
-This work explores autonomous regression testing systems capable of
-automatically prioritizing test suites based on historical defect patterns
-and repository analytics. The system dynamically selects high-risk tests
-to improve testing efficiency while maintaining strong defect detection.
+Regression testing is a critical activity in software development to ensure that new code changes do not introduce unintended defects into previously validated functionality.
+However, traditional regression testing approaches often require extensive manual effort to maintain and execute large test suites, resulting in increased execution time and inefficient use of testing resources.
+This research presents an autonomous regression testing system that leverages machine learning and software repository analytics to automatically generate, prioritize, and execute regression test cases.
+The proposed system analyzes historical development data, defect history, and code change patterns to identify high-risk components that require focused regression testing.
+The framework integrates multiple intelligent components, including repository mining for development activity analysis, defect prediction models for identifying defect-prone modules, and automated test generation techniques that dynamically create regression test scenarios based on application behavior and historical test coverage.
+A risk-based prioritization mechanism is implemented to optimize regression testing by focusing testing efforts on modules with higher predicted defect probability.
+Experimental results demonstrate that the autonomous regression testing framework significantly improves regression testing efficiency by reducing redundant test executions while maintaining high defect detection capability.
+The findings suggest that autonomous testing systems can transform traditional regression testing practices by enabling self-optimizing testing frameworks capable of adapting testing strategies based on evolving software development patterns and risk profiles.
 </p>
+
+<p><strong>Status:</strong> Planned</p>
+
+<div class="paper-links">
+<a href="#" target="_blank">GitHub</a>
+<a href="#" target="_blank">PDF</a>
+<a href="#" target="_blank">Publication Site</a>
+</div>
 
 </div>
 
@@ -133,18 +173,33 @@ to improve testing efficiency while maintaining strong defect detection.
 <div class="paper">
 
 <div class="paper-title">
-<span>LLM-Based Test Case Generation from Requirements</span>
+<span>Paper 4 — LLM-Based Test Case Generation</span>
 <span class="arrow">▶</span>
 </div>
 
 <div class="paper-content">
 
+<p><strong>Abstract</strong></p>
+
 <p>
-This research investigates the use of large language models to automatically
-generate software test cases from system requirements, user stories,
-and functional specifications. The framework translates textual
-requirements into structured automated test scenarios.
+Test case design is a time-consuming activity that requires significant domain knowledge and manual effort from quality engineers.
+As software systems become increasingly complex, traditional manual test design approaches struggle to maintain adequate test coverage across rapidly evolving application features.
+This research explores the use of Large Language Models (LLMs) to automatically generate software test cases from system requirements, user stories, and application specifications.
+By leveraging the natural language understanding capabilities of modern language models, the proposed framework converts textual software requirements into structured test scenarios capable of validating system behavior across multiple functional paths.
+The research introduces an architecture that integrates requirement analysis, prompt engineering techniques, and automated test generation pipelines to transform functional specifications into executable test scripts.
+The framework supports generation of test scenarios for user interface testing, API testing, and integration testing.
+To ensure reliability, the generated test cases are validated using rule-based verification mechanisms that evaluate logical correctness, completeness, and coverage of system requirements.
+Experimental evaluation demonstrates that LLM-generated test cases can significantly accelerate test design while improving requirement coverage compared to traditional manual approaches.
+The results highlight the potential of LLM-driven intelligent testing systems to enhance test automation frameworks by enabling scalable, adaptive, and requirement-driven test generation capabilities for modern software systems.
 </p>
+
+<p><strong>Status:</strong> Planned</p>
+
+<div class="paper-links">
+<a href="#" target="_blank">GitHub</a>
+<a href="#" target="_blank">PDF</a>
+<a href="#" target="_blank">Publication Site</a>
+</div>
 
 </div>
 
@@ -157,262 +212,38 @@ requirements into structured automated test scenarios.
 <div class="paper">
 
 <div class="paper-title">
-<span>Intelligent API Contract Testing for Microservices</span>
+<span>Paper 5 — Intelligent API Contract Testing</span>
 <span class="arrow">▶</span>
 </div>
 
 <div class="paper-content">
 
-<p>
-This study proposes an intelligent contract testing framework designed
-for microservice architectures. The system analyzes API specifications
-and detects compatibility issues between services to prevent
-integration failures in distributed systems.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 6 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>AI-Powered Quality Analytics for Software Systems</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
+<p><strong>Abstract</strong></p>
 
 <p>
-This research explores the use of artificial intelligence to analyze
-software quality metrics across development pipelines. The framework
-identifies patterns in test results, defect data, and development
-activity to generate predictive quality insights.
+Modern software architectures increasingly rely on microservices and distributed systems that communicate through APIs.
+Ensuring compatibility between service providers and consumers is essential for maintaining system reliability.
+However, traditional API testing approaches often fail to detect subtle contract violations caused by evolving service interfaces and inconsistent API implementations.
+This research proposes an intelligent API contract testing framework that leverages machine learning techniques and schema analysis to automatically detect inconsistencies between API specifications and actual service behavior.
+The proposed system analyzes API definitions such as OpenAPI specifications and dynamically generates contract validation tests to verify request and response structures.
+The framework introduces automated schema comparison techniques capable of identifying contract drift, structural mismatches, and behavioral inconsistencies between interacting services.
+Additionally, machine learning models are used to analyze historical API usage patterns to detect anomalies and potential integration risks.
+Experimental evaluation demonstrates that intelligent contract testing significantly improves detection of API compatibility issues in distributed microservice environments.
+The framework enables continuous validation of service contracts during software development and deployment pipelines, reducing integration failures and improving system stability.
+The proposed approach highlights the potential of AI-driven contract validation systems to enhance reliability and maintain consistency across complex service-oriented architectures.
 </p>
 
+<p><strong>Status:</strong> Planned</p>
+
+<div class="paper-links">
+<a href="#" target="_blank">GitHub</a>
+<a href="#" target="_blank">PDF</a>
+<a href="#" target="_blank">Publication Site</a>
 </div>
 
 </div>
 
-
-
-<!-- PAPER 7 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Machine Learning for Intelligent Test Prioritization</span>
-<span class="arrow">▶</span>
 </div>
-
-<div class="paper-content">
-
-<p>
-This research proposes a machine learning approach to optimize
-test execution order in continuous integration environments.
-By analyzing historical test failures and code changes,
-the system prioritizes tests that are most likely to detect defects.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 8 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Autonomous UI Testing Using Computer Vision</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This work investigates computer vision techniques for autonomous
-UI testing. Instead of relying on traditional element locators,
-the system uses visual recognition models to identify UI components
-based on screen layout and appearance.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 9 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>AI-Driven Continuous Testing Framework</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This research presents a continuous testing architecture
-that integrates artificial intelligence into CI/CD pipelines.
-The system dynamically selects test strategies based on
-risk prediction models and development activity patterns.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 10 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Cloud-Based Distributed Testing Platforms</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This research explores scalable cloud architectures for
-large-scale distributed testing. The platform enables
-parallel execution of test suites across cloud infrastructure
-to accelerate quality assurance processes.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 11 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>AI-Assisted Root Cause Analysis for Software Failures</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This research investigates machine learning models capable of
-automatically identifying the root causes of software failures.
-The framework analyzes logs, error traces, and test failures
-to assist engineers in diagnosing defects faster.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 12 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Intelligent Test Data Generation Using AI</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This study proposes a framework for automatically generating
-test data using artificial intelligence models.
-The system produces diverse input datasets that improve
-test coverage and expose hidden defects.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 13 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Predictive Quality Engineering for Large Software Systems</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This research introduces predictive quality engineering models
-that analyze historical development data to forecast
-future quality risks in large software systems.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 14 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>AI-Driven Automation Framework for Enterprise Applications</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This work proposes a modular automation framework
-that integrates artificial intelligence techniques
-to improve test maintenance and scalability
-for enterprise software applications.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 15 -->
-
-<div class="paper">
-
-<div class="paper-title">
-<span>Intelligent Software Testing Ecosystems</span>
-<span class="arrow">▶</span>
-</div>
-
-<div class="paper-content">
-
-<p>
-This research explores the concept of intelligent
-testing ecosystems where artificial intelligence
-systems continuously analyze development activity
-and automatically adapt testing strategies.
-</p>
-
-</div>
-
-</div>
-
 
 
 </section>
@@ -421,10 +252,9 @@ and automatically adapt testing strategies.
 <footer>
 
 © 2026 Vijay Prasad Javvadi  
-AI-Driven Software Quality Engineering Research
+AI-Driven Software Quality Research
 
 </footer>
-
 
 
 <script>
