@@ -257,3 +257,82 @@ font-size:15px;
 line-height:1.7;
 text-align:left;
 }
+/* Accordion container */
+
+.accordion{
+max-width:900px;
+margin:60px auto;
+padding:0 20px;
+}
+
+/* Paper card */
+
+.paper{
+background:white;
+border-radius:8px;
+margin-bottom:16px;
+border:1px solid #e5e7eb;
+overflow:hidden;
+transition:all 0.2s ease;
+}
+
+/* Hover effect */
+
+.paper:hover{
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Title row */
+
+.paper-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+padding:20px;
+font-size:18px;
+font-weight:600;
+color:#111827;
+}
+
+/* Arrow */
+
+.paper-title .arrow{
+transition:transform 0.3s ease;
+}
+
+/* Content */
+
+.paper-content{
+max-height:0;
+overflow:hidden;
+padding:0 20px;
+transition:max-height 0.4s ease;
+color:#374151;
+line-height:1.7;
+}
+
+/* Open state */
+
+.paper.active .paper-content{
+max-height:500px;
+padding:20px;
+}
+
+/* Rotate arrow */
+
+.paper.active .arrow{
+transform:rotate(90deg);
+}
+
+/* Links */
+
+.paper-content a{
+color:#2563eb;
+text-decoration:none;
+font-weight:500;
+}
+
+.paper-content a:hover{
+text-decoration:underline;
+}
