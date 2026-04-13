@@ -424,7 +424,7 @@ width:1200px;
 margin:auto;
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
 }
 
 .logo a{
@@ -437,9 +437,10 @@ text-decoration:none;
 .nav-links{
 list-style:none;
 display:flex;
-gap:28px;
+gap:30px;
 margin:0;
 padding:0;
+justify-content:center;
 }
 
 .nav-links a{
