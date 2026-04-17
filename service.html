@@ -7,6 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Professional Service | Vijay Prasad Javvadi</title>
+<meta name="description" content="Professional service activities including research reviewing, conference participation, technical mentoring, and community contributions in software engineering.">
+<meta property="og:title" content="Professional Service | Vijay Prasad Javvadi">
+<meta property="og:description" content="Professional service and community contributions in software engineering research.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/service.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -14,9 +20,15 @@
 
 <body>
 
-<nav class="navbar">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
 
 <div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
 
 <ul class="nav-links">
 
@@ -59,168 +71,123 @@ testing and quality engineering.
 </header>
 
 
+<main id="main-content">
+
 <section class="accordion">
 
 
-<!-- SECTION 1 -->
-
 <div class="paper">
-
-<div class="paper-title">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
 <span>Journal and Conference Reviewing</span>
-<span class="arrow">▶</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
-
-<div class="paper-content">
-
+<div class="paper-content" role="region">
 <p>
-
 Participation in the peer review process supports the integrity
 and quality of scholarly research. Reviewing activities involve
 evaluating research manuscripts related to software engineering,
 artificial intelligence, and automated testing systems.
-
 </p>
-
 <ul>
-
 <li>Reviewing research papers in software engineering and AI-driven testing</li>
 <li>Evaluating experimental methodologies and research contributions</li>
 <li>Providing feedback to improve scientific rigor and clarity</li>
-
 </ul>
-
+</div>
 </div>
 
-</div>
-
-
-
-<!-- SECTION 2 -->
 
 <div class="paper">
-
-<div class="paper-title">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
 <span>Technical Community Contributions</span>
-<span class="arrow">▶</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
-
-<div class="paper-content">
-
+<div class="paper-content" role="region">
 <p>
-
 Active participation in technical communities helps advance
 best practices in software engineering and test automation.
-
 </p>
-
 <ul>
-
 <li>Contributions to open-source automation frameworks</li>
 <li>Sharing knowledge on AI-driven testing techniques</li>
 <li>Participating in engineering discussions and technical forums</li>
-
 </ul>
-
+</div>
 </div>
 
-</div>
-
-
-
-<!-- SECTION 3 -->
 
 <div class="paper">
-
-<div class="paper-title">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
 <span>Mentoring and Knowledge Sharing</span>
-<span class="arrow">▶</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
-
-<div class="paper-content">
-
+<div class="paper-content" role="region">
 <p>
-
 Mentoring and knowledge sharing activities help support the
 next generation of software engineers and researchers.
-
 </p>
-
 <ul>
-
 <li>Mentoring engineers in test automation and software quality engineering</li>
 <li>Sharing research insights related to intelligent testing systems</li>
 <li>Supporting learning initiatives in software development practices</li>
-
 </ul>
-
+</div>
 </div>
 
-</div>
-
-
-
-<!-- SECTION 4 -->
 
 <div class="paper">
-
-<div class="paper-title">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
 <span>Professional Memberships</span>
-<span class="arrow">▶</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
-
-<div class="paper-content">
-
+<div class="paper-content" role="region">
 <p>
-
 Professional memberships help facilitate collaboration,
 knowledge exchange, and professional development.
-
 </p>
-
 <ul>
-
 <li>Participation in professional engineering communities</li>
 <li>Engagement with research and technology organizations</li>
 <li>Collaboration with industry and academic experts</li>
-
 </ul>
-
 </div>
-
 </div>
-
 
 
 </section>
 
+</main>
+
 
 <footer>
 
-© 2026 Vijay Prasad Javvadi  
+&copy; 2026 Vijay Prasad Javvadi &mdash;
 AI-Driven Software Quality Engineering Research
 
 </footer>
 
 
-
 <script>
-
-const papers = document.querySelectorAll(".paper-title");
-
-papers.forEach(title => {
-
-title.addEventListener("click", () => {
-
-const paper = title.parentElement;
-paper.classList.toggle("active");
-
+document.querySelectorAll(".paper-title").forEach(function(title) {
+  title.addEventListener("click", function() {
+    var paper = this.parentElement;
+    paper.classList.toggle("active");
+    this.setAttribute("aria-expanded", paper.classList.contains("active"));
+  });
+  title.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      this.click();
+    }
+  });
 });
 
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
 });
-
 </script>
-
 
 </body>
 </html>

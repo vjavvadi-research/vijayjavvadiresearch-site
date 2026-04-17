@@ -7,68 +7,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Speaking | Vijay Prasad Javvadi</title>
+<meta name="description" content="Conference talks, workshops, and technical presentations on AI-driven test automation, machine learning for software quality, and intelligent testing systems.">
+<meta property="og:title" content="Speaking | Vijay Prasad Javvadi">
+<meta property="og:description" content="Speaking engagements on AI-driven test automation and intelligent testing systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/speaking.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
-
-<style>
-
-.speaking-container{
-width:900px;
-margin:auto;
-margin-top:50px;
-}
-
-.speaking-card{
-background:white;
-border-radius:8px;
-padding:25px;
-margin-bottom:25px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-border-left:5px solid #9333ea;
-}
-
-.speaking-title{
-font-size:20px;
-font-weight:600;
-margin-bottom:10px;
-color:#111827;
-}
-
-.speaking-meta{
-font-size:14px;
-color:#9333ea;
-margin-bottom:10px;
-font-weight:600;
-}
-
-.speaking-card p{
-font-size:15px;
-color:#374151;
-line-height:1.6;
-margin-bottom:12px;
-}
-
-.speaking-links a{
-display:inline-block;
-margin-right:12px;
-font-size:14px;
-color:#2563eb;
-text-decoration:none;
-}
-
-.speaking-links a:hover{
-text-decoration:underline;
-}
-
-</style>
 
 </head>
 
 <body>
 
-<nav class="navbar">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
 
 <div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
 
 <ul class="nav-links">
 
@@ -96,9 +56,7 @@ text-decoration:underline;
 <h1>Speaking</h1>
 
 <div class="subtitle">
-
 Conference Talks, Workshops, and Technical Presentations
-
 </div>
 
 <div class="description">
@@ -113,177 +71,109 @@ practices.
 </header>
 
 
+<main id="main-content">
+
 <section class="speaking-container">
 
 
-<!-- Talk 1 -->
-
 <div class="speaking-card">
-
 <div class="speaking-title">
 AI-Driven Software Defect Prediction Using Repository Analytics
 </div>
-
 <div class="speaking-meta">
-Research Talk • Software Engineering Community
+Research Talk &middot; Software Engineering Community
 </div>
-
 <p>
-
 This talk presents research on predicting defect-prone software
 modules using machine learning models and repository mining.
 The work demonstrates how development metrics such as code
 churn, commit frequency, and file age can help identify risk areas
 in large software systems.
-
 </p>
-
-<div class="speaking-links">
-
-<a href="#">Slides</a>
-<a href="#">Video</a>
-<a href="#">Research Paper</a>
-
 </div>
 
-</div>
-
-
-
-<!-- Talk 2 -->
 
 <div class="speaking-card">
-
 <div class="speaking-title">
 Autonomous Test Case Generation Using Large Language Models
 </div>
-
 <div class="speaking-meta">
-Technical Workshop • AI in Software Testing
+Technical Workshop &middot; AI in Software Testing
 </div>
-
 <p>
-
 This presentation explores the use of large language models
 for automated test case generation. The talk highlights how
 AI can assist testers in generating meaningful test scenarios
 from software requirements and specifications.
-
 </p>
-
-<div class="speaking-links">
-
-<a href="#">Slides</a>
-<a href="#">Demo</a>
-
 </div>
 
-</div>
-
-
-
-<!-- Talk 3 -->
 
 <div class="speaking-card">
-
 <div class="speaking-title">
 AI-Powered Continuous Testing Platforms
 </div>
-
 <div class="speaking-meta">
-Industry Talk • DevOps and Quality Engineering
+Industry Talk &middot; DevOps and Quality Engineering
 </div>
-
 <p>
-
 This talk discusses integrating machine learning models
 within CI/CD pipelines to improve automated testing strategies
 and enable predictive quality analytics.
-
 </p>
-
-<div class="speaking-links">
-
-<a href="#">Slides</a>
-<a href="#">Presentation</a>
-
 </div>
 
-</div>
-
-
-
-<!-- Talk 4 -->
 
 <div class="speaking-card">
-
 <div class="speaking-title">
 Self-Healing Test Automation Frameworks
 </div>
-
 <div class="speaking-meta">
-Automation Conference • Test Engineering
+Automation Conference &middot; Test Engineering
 </div>
-
 <p>
-
 This talk explores techniques for developing self-healing
 automation frameworks that automatically adjust test
 scripts when application UI changes occur.
-
 </p>
-
-<div class="speaking-links">
-
-<a href="#">Slides</a>
-<a href="#">GitHub</a>
-
 </div>
 
-</div>
-
-
-
-<!-- Talk 5 -->
 
 <div class="speaking-card">
-
 <div class="speaking-title">
 Risk-Based Testing Using Machine Learning
 </div>
-
 <div class="speaking-meta">
-Research Seminar • Software Quality Engineering
+Research Seminar &middot; Software Quality Engineering
 </div>
-
 <p>
-
 This presentation discusses how machine learning models
 can prioritize testing activities by identifying high-risk
 areas in software systems.
-
 </p>
-
-<div class="speaking-links">
-
-<a href="#">Slides</a>
-<a href="#">Research</a>
-
-</div>
-
 </div>
 
 
 </section>
 
+</main>
+
 
 <footer>
 
-© 2026 Vijay Prasad Javvadi  
+&copy; 2026 Vijay Prasad Javvadi &mdash;
 AI-Driven Software Quality Engineering Research
 
 </footer>
 
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
 
 </body>
 </html>

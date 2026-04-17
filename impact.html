@@ -7,62 +7,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Research Impact | Vijay Prasad Javvadi</title>
+<meta name="description" content="Research impact in AI-driven software quality engineering including defect prediction, autonomous testing, and intelligent automation systems.">
+<meta property="og:title" content="Research Impact | Vijay Prasad Javvadi">
+<meta property="og:description" content="Research impact in AI-driven automation, predictive analytics, and intelligent testing systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/impact.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
-
-<style>
-
-.impact-container{
-width:900px;
-margin:auto;
-margin-top:50px;
-}
-
-.impact-card{
-background:white;
-border-radius:8px;
-padding:25px;
-margin-bottom:25px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-border-left:5px solid #2563eb;
-}
-
-.impact-title{
-font-size:20px;
-font-weight:600;
-margin-bottom:10px;
-color:#111827;
-}
-
-.impact-card p{
-font-size:15px;
-color:#374151;
-line-height:1.6;
-margin-bottom:12px;
-}
-
-.impact-links a{
-display:inline-block;
-margin-right:12px;
-font-size:14px;
-color:#2563eb;
-text-decoration:none;
-}
-
-.impact-links a:hover{
-text-decoration:underline;
-}
-
-</style>
 
 </head>
 
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
 
 <div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
 
 <ul class="nav-links">
 
@@ -89,9 +55,7 @@ text-decoration:underline;
 <h1>Research Impact</h1>
 
 <div class="subtitle">
-
 Advancing Intelligent Software Quality Engineering
-
 </div>
 
 <div class="description">
@@ -106,162 +70,109 @@ efficiency, and scalability in modern software engineering practices.
 </header>
 
 
+<main id="main-content">
 
 <section class="impact-container">
 
 
-<!-- Impact 1 -->
-
 <div class="impact-card">
-
 <div class="impact-title">
 AI-Driven Defect Prediction for Software Systems
 </div>
-
 <p>
-
 Research on machine learning-based defect prediction demonstrates how
 repository analytics can be used to identify defect-prone modules before
 software failures occur. This work contributes to improving software
 reliability and supports risk-based testing strategies.
-
 </p>
-
 <div class="impact-links">
-
-<a href="#">Publication</a>
-<a href="#">GitHub</a>
-<a href="#">Dataset</a>
-
+<a href="publications.html">Publication</a>
+<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub</a>
+</div>
 </div>
 
-</div>
-
-
-
-<!-- Impact 2 -->
 
 <div class="impact-card">
-
 <div class="impact-title">
 Autonomous Test Case Generation Using Large Language Models
 </div>
-
 <p>
-
 This research explores the use of large language models to automatically
 generate test cases from software specifications. The work helps reduce
 manual test design effort and enables scalable testing for complex
 software systems.
-
 </p>
-
 <div class="impact-links">
-
-<a href="#">Publication</a>
-<a href="#">GitHub</a>
-<a href="#">Demo</a>
-
+<a href="publications.html">Publication</a>
+</div>
 </div>
 
-</div>
-
-
-
-<!-- Impact 3 -->
 
 <div class="impact-card">
-
 <div class="impact-title">
 AI-Powered Continuous Testing Platforms
 </div>
-
 <p>
-
 This project investigates the integration of machine learning models
 within continuous integration pipelines to support predictive quality
 analytics and automated testing prioritization.
-
 </p>
-
 <div class="impact-links">
-
-<a href="#">Publication</a>
-<a href="#">GitHub</a>
-<a href="#">Architecture</a>
-
+<a href="program.html">Research Program</a>
+</div>
 </div>
 
-</div>
-
-
-
-<!-- Impact 4 -->
 
 <div class="impact-card">
-
 <div class="impact-title">
 Self-Healing Test Automation Frameworks
 </div>
-
 <p>
-
 Self-healing test automation systems dynamically adjust test scripts
 when UI or API changes occur. This research helps reduce test maintenance
 costs and increases stability of automated testing pipelines.
-
 </p>
-
 <div class="impact-links">
-
-<a href="#">Publication</a>
-<a href="#">Framework</a>
-<a href="#">GitHub</a>
-
+<a href="projects.html">Projects</a>
+</div>
 </div>
 
-</div>
-
-
-
-<!-- Impact 5 -->
 
 <div class="impact-card">
-
 <div class="impact-title">
 Intelligent Risk-Based Testing Using Machine Learning
 </div>
-
 <p>
-
 This research applies machine learning techniques to identify high-risk
 areas in software systems and prioritize testing activities. The approach
 helps teams focus testing efforts on components most likely to fail.
-
 </p>
-
 <div class="impact-links">
-
-<a href="#">Publication</a>
-<a href="#">Research</a>
-<a href="#">Code</a>
-
+<a href="research.html">Research</a>
 </div>
-
 </div>
 
 
 </section>
 
+</main>
 
 
 <footer>
 
-© 2026 Vijay Prasad Javvadi  
+&copy; 2026 Vijay Prasad Javvadi &mdash;
 AI-Driven Software Quality Engineering Research
 
 </footer>
 
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
 
 </body>
 </html>

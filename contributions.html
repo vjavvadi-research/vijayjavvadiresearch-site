@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Original Contributions</title>
-<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contributions | Vijay Prasad Javvadi</title>
+<meta name="description" content="Original research contributions to AI-driven software testing, defect prediction, and intelligent quality engineering.">
+<meta property="og:title" content="Contributions | Vijay Prasad Javvadi">
+<meta property="og:description" content="Research contributions to AI-driven software testing and intelligent quality engineering.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/contributions.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<header>
-<h1>Vijay P. Javvadi</h1>
-<p class="subtitle">Researcher in AI-Driven Test Automation and Intelligent Quality Engineering</p>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
 
 <div class="nav-container">
 
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
 
 <ul class="nav-links">
 
@@ -35,18 +49,30 @@
 </div>
 
 </nav>
-</header>
 
 
-<div class="container">
+<header>
 
-<h2>Research Contributions</h2>
+<h1>Research Contributions</h1>
 
-<p>
+<div class="subtitle">
+Original Contributions to AI-Driven Software Quality Engineering
+</div>
+
+<div class="description">
+
 The research focuses on developing intelligent testing systems
 that apply artificial intelligence, machine learning, and repository
 analytics to improve software quality engineering.
-</p>
+
+</div>
+
+</header>
+
+
+<main id="main-content">
+
+<div class="container">
 
 <h2>Key Contributions</h2>
 
@@ -61,9 +87,24 @@ analytics to improve software quality engineering.
 
 </div>
 
+</main>
+
+
 <footer>
-© 2026 Vijay P. Javvadi Research
+
+&copy; 2026 Vijay Prasad Javvadi &mdash;
+AI-Driven Software Quality Research
+
 </footer>
+
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
 
 </body>
 </html>

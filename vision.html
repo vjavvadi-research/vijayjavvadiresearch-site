@@ -1,37 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Vision | Vijay P. Javvadi</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research Vision | Vijay Prasad Javvadi</title>
+<meta name="description" content="Long-term research vision for AI-driven software quality engineering, autonomous testing systems, and intelligent software reliability.">
+<meta property="og:title" content="Research Vision | Vijay Prasad Javvadi">
+<meta property="og:description" content="Long-term research vision for AI-driven software quality engineering and autonomous testing systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/vision.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
+
+<div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="service.html">Services</a></li>
+<li><a href="impact.html">Impact</a></li>
+<li><a href="recognition.html">Recognition</a></li>
+<li><a href="speaking.html">Speaking</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
 <header>
-  <h1>Research Vision</h1>
-  <p class="subtitle">Long-Term Vision for AI-Driven Software Quality Engineering</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <a href="research.html">Research</a>
-      <div class="dropdown-content">
-        <a href="program.html">Research Program</a>
-        <a href="vision.html">Research Vision</a>
-        <a href="timeline.html">Research Timeline</a>
-      </div>
-    </div>
-    <a href="projects.html">Projects</a>
-    <a href="publications.html">Publications</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="impact.html">Impact</a>
-    <a href="recognition.html">Recognition</a>
-    <a href="speaking.html">Speaking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+<h1>Research Vision</h1>
+
+<div class="subtitle">
+Long-Term Vision for AI-Driven Software Quality Engineering
+</div>
+
+<div class="description">
+
+This page outlines the long-term research vision for developing autonomous
+software quality engineering systems powered by artificial intelligence,
+machine learning, and predictive analytics.
+
+</div>
+
 </header>
 
-<main>
-  <div class="container">
-    <section>
+<main id="main-content">
+
+<section class="accordion">
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Autonomous Software Quality Systems</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+The long-term vision is to develop fully autonomous software quality
+engineering systems where AI models continuously analyze software
+repositories, predict risks, generate tests, and improve reliability
+through self-learning testing frameworks.
+</p>
+
+<p>
+These systems will combine repository analytics, defect prediction,
+intelligent test generation, and self-healing automation into unified
+platforms capable of maintaining software quality with minimal human
+intervention.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Predictive Quality Analytics at Scale</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+Future research will explore how predictive analytics can be applied
+at enterprise scale to continuously monitor software health, forecast
+defect trends, and automatically adjust testing strategies based on
+evolving risk profiles.
+</p>
+
+<p>
+This includes developing real-time quality dashboards powered by
+machine learning models that provide actionable insights to development
+teams throughout the software lifecycle.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>AI-Native Software Development</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+The research program envisions a future where AI is deeply integrated
+into every phase of software development - from requirements analysis
+and code generation to testing, deployment, and monitoring.
+</p>
+
+<p>
+This vision guides the development of intelligent tools and frameworks
+that make AI-assisted software engineering practical and accessible
+for modern development teams.
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+<footer>
+
+&copy; 2026 Vijay Prasad Javvadi &mdash;
+AI-Driven Software Quality Research
+
+</footer>
+
+
+<script>
+document.querySelectorAll(".paper-title").forEach(function(title) {
+  title.addEventListener("click", function() {
+    var paper = this.parentElement;
+    paper.classList.toggle("active");
+    this.setAttribute("aria-expanded", paper.classList.contains("active"));
+  });
+  title.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      this.click();
+    }
+  });
+});
+
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
+
+</body>
 </html>

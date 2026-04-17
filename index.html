@@ -7,6 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vijay Prasad Javvadi | AI-Driven Software Quality Research</title>
+<meta name="description" content="Independent researcher in AI-driven software quality engineering. Research focuses on defect prediction, intelligent test automation, and machine learning for software reliability.">
+<meta property="og:title" content="Vijay Prasad Javvadi | AI-Driven Software Quality Research">
+<meta property="og:description" content="Independent researcher in AI-driven software quality engineering, defect prediction, and intelligent test automation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -14,10 +20,15 @@
 
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
 
 <div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
 
 <ul class="nav-links">
 
@@ -42,7 +53,7 @@
 
 <header>
 
-<div class="profile-pic"></div>
+<div class="profile-pic" aria-label="Profile photo placeholder">VP</div>
 
 <h1>Vijay Prasad Javvadi</h1>
 
@@ -68,13 +79,15 @@ real-world enterprise software systems.
 </header>
 
 
+<main id="main-content">
+
 <section class="tiles">
 
 <a href="research.html" class="tile-link">
 <div class="tile">
 <h3>Research Areas</h3>
 <p>
-AI-driven test automation, machine learning–based defect prediction,
+AI-driven test automation, machine learning-based defect prediction,
 autonomous testing systems, and intelligent software quality analytics.
 </p>
 </div>
@@ -115,13 +128,24 @@ and intelligent automation to modern software engineering.
 
 </section>
 
+</main>
+
 
 <footer>
 
-© 2026 Vijay Prasad Javvadi  
+&copy; 2026 Vijay Prasad Javvadi &mdash;
 AI-Driven Software Quality Research
 
 </footer>
+
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
 
 </body>
 </html>

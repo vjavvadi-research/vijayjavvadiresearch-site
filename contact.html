@@ -7,6 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact | Vijay Prasad Javvadi</title>
+<meta name="description" content="Contact Vijay Prasad Javvadi for research collaboration, speaking invitations, and professional inquiries in AI-driven software quality engineering.">
+<meta property="og:title" content="Contact | Vijay Prasad Javvadi">
+<meta property="og:description" content="Contact for research collaboration, speaking invitations, and professional inquiries.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/contact.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -14,11 +20,18 @@
 
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
+
 <div class="nav-container">
 
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
 <ul class="nav-links">
+
 <li><a href="index.html">Home</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="program.html">Program</a></li>
@@ -30,17 +43,19 @@
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
 <li><a href="contact.html">Contact</a></li>
+
 </ul>
+
 </div>
+
 </nav>
+
 <header>
 
 <h1>Contact</h1>
 
 <div class="subtitle">
-
 Research Collaboration, Speaking Invitations, and Professional Inquiries
-
 </div>
 
 <div class="description">
@@ -54,6 +69,7 @@ automation systems, please use the contact information below.
 </header>
 
 
+<main id="main-content">
 
 <section class="contact-container">
 
@@ -85,14 +101,11 @@ Intelligent Quality Engineering
 
 <strong>Professional Profiles:</strong><br>
 
-<a href="#">Google Scholar</a><br>
-<a href="#">LinkedIn</a><br>
-<a href="#">GitHub</a>
+<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
 
 </div>
 
 </div>
-
 
 
 <div class="contact-card">
@@ -101,32 +114,48 @@ Intelligent Quality Engineering
 Send a Message
 </div>
 
-<form class="contact-form">
+<form class="contact-form" action="https://formspree.io/f/xplaceholder" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea rows="5" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
 
+<div class="form-status" id="form-status"></div>
+
 </form>
+
+<p style="font-size:13px;color:#9ca3af;margin-top:12px;">
+To activate this form, replace the Formspree action URL with your own endpoint.
+You can get a free one at <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>.
+</p>
 
 </div>
 
 
 </section>
 
+</main>
 
 
 <footer>
 
-© 2026 Vijay Prasad Javvadi  
+&copy; 2026 Vijay Prasad Javvadi &mdash;
 AI-Driven Software Quality Engineering Research
 
 </footer>
 
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
 
 </body>
 </html>

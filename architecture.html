@@ -1,37 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Architecture | Vijay P. Javvadi</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Architecture | Vijay Prasad Javvadi</title>
+<meta name="description" content="System architecture for AI-driven quality engineering platforms including defect prediction, self-healing automation, and intelligent testing systems.">
+<meta property="og:title" content="Architecture | Vijay Prasad Javvadi">
+<meta property="og:description" content="System architecture for AI-driven quality engineering platforms.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/architecture.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
+
+<div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="service.html">Services</a></li>
+<li><a href="impact.html">Impact</a></li>
+<li><a href="recognition.html">Recognition</a></li>
+<li><a href="speaking.html">Speaking</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
 <header>
-  <h1>Architecture</h1>
-  <p class="subtitle">AI-Driven Quality Engineering System Architecture</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <a href="research.html">Research</a>
-      <div class="dropdown-content">
-        <a href="program.html">Research Program</a>
-        <a href="vision.html">Research Vision</a>
-        <a href="timeline.html">Research Timeline</a>
-      </div>
-    </div>
-    <a href="projects.html">Projects</a>
-    <a href="publications.html">Publications</a>
-    <a href="architecture.html">Architecture</a>
-    <a href="impact.html">Impact</a>
-    <a href="recognition.html">Recognition</a>
-    <a href="speaking.html">Speaking</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+<h1>Architecture</h1>
+
+<div class="subtitle">
+AI-Driven Quality Engineering System Architecture
+</div>
+
+<div class="description">
+
+This page presents the high-level system architecture for the AI-driven
+software quality engineering research platform, showing how the core
+components interconnect.
+
+</div>
+
 </header>
 
-<main>
-  <div class="container">
-    <section>
+<main id="main-content">
+
+<section class="accordion">
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Platform Overview</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+The AI-driven quality engineering platform integrates multiple intelligent
+components into a unified system. At its core, the platform combines
+repository mining, machine learning models, and automation frameworks
+to deliver predictive software quality insights.
+</p>
+
+<p><strong>Core Components:</strong></p>
+
+<ul>
+<li>Repository Analytics Engine - mines version control data for development metrics</li>
+<li>Defect Prediction Module - ML models that identify defect-prone components</li>
+<li>Self-Healing Automation Layer - adaptive test execution with locator recovery</li>
+<li>Test Generation Engine - LLM-powered test case creation from specifications</li>
+<li>Quality Analytics Dashboard - real-time visualization of quality metrics</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Data Pipeline</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+The data pipeline collects software repository metadata, processes
+development activity metrics, and feeds them into machine learning
+models for defect prediction and risk assessment.
+</p>
+
+<p>
+Key data sources include Git commit history, code change frequency,
+developer contribution patterns, and historical defect records.
+The pipeline supports batch and incremental processing modes for
+both offline analysis and real-time quality monitoring.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Integration with CI/CD Pipelines</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p>
+The platform is designed to integrate with modern CI/CD workflows.
+Defect prediction models and test prioritization algorithms run as
+part of the build pipeline, providing risk assessments before code
+is merged and deployed.
+</p>
+
+<p>
+This continuous feedback loop enables development teams to make
+data-driven decisions about testing effort allocation and release
+readiness based on predicted software quality.
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+<footer>
+
+&copy; 2026 Vijay Prasad Javvadi &mdash;
+AI-Driven Software Quality Research
+
+</footer>
+
+
+<script>
+document.querySelectorAll(".paper-title").forEach(function(title) {
+  title.addEventListener("click", function() {
+    var paper = this.parentElement;
+    paper.classList.toggle("active");
+    this.setAttribute("aria-expanded", paper.classList.contains("active"));
+  });
+  title.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      this.click();
+    }
+  });
+});
+
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
+
+</body>
 </html>
