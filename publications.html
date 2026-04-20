@@ -36,10 +36,10 @@
 <li><a href="research.html">Research</a></li>
 <li><a href="program.html">Program</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="product.html">Product</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="service.html">Services</a></li>
 <li><a href="impact.html">Impact</a></li>
-<li><a href="recognition.html">Recognition</a></li>
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
 <li><a href="contact.html">Contact</a></li>
@@ -79,7 +79,7 @@ and software quality engineering.
 <div class="paper">
 
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 1 &mdash; Repository Analytics &amp; Defect Prediction</span>
+<span>Paper 1 &mdash; AI-Driven Software Defect Prediction Using Repository Analytics and Machine Learning: An Empirical Study on Large-Scale Open-Source Systems</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 
@@ -88,21 +88,13 @@ and software quality engineering.
 <p><strong>Abstract</strong></p>
 
 <p>
-Software systems are continuously evolving and increasing in complexity, making defect detection a major challenge in modern software engineering.
-Traditional testing strategies often allocate testing resources uniformly across software modules, which can lead to inefficient testing and missed defects.
-This research proposes an AI-driven defect prediction framework that uses software repository analytics to identify defect-prone modules early in the development lifecycle.
-Development activity metrics&mdash;such as commit frequency, number of developers, code churn, and file age&mdash;are extracted from version control repositories and used as input features for machine learning models.
-The framework was evaluated using a dataset of 237,250 software files collected from five large open-source repositories, of which 49,903 files were identified as defect-prone through commit history analysis.
-Three machine learning models&mdash;Logistic Regression, Decision Tree, and Random Forest&mdash;were trained and evaluated using repository-derived features.
-Experimental results show that machine learning models can effectively identify defect-prone components. The Random Forest model achieved the best performance with an accuracy of 0.872 and ROC-AUC of 0.905.
-The findings demonstrate that repository analytics combined with machine learning can support risk-based testing strategies, enabling development teams to prioritize high-risk modules and improve software reliability.
+Empirical evaluation of 6 ML classifiers (LR, DT, RF, GB, XGB, MLP) on 284,676 instances across 5 open-source repositories (Elasticsearch, Spring Boot, Hadoop, Kafka, Express). Random Forest achieves best F1=0.632, AUC=0.904. Risk-based testing shows top 10% of files capture 42.4% of defects (4.2x improvement).
 </p>
 
-<p><strong>Status:</strong> Completed &mdash; Manuscript Prepared (Not Submitted)</p>
+<p><strong>Status:</strong> Completed</p>
 
 <div class="paper-links">
 <a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub</a>
-<a href="papers/defect_prediction_paper.pdf" target="_blank" rel="noopener">PDF</a>
 </div>
 
 </div>
@@ -116,7 +108,7 @@ The findings demonstrate that repository analytics combined with machine learnin
 <div class="paper">
 
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 2 &mdash; AI-Driven Self-Healing Test Automation</span>
+<span>Paper 2 &mdash; Constructing a Multi-Repository Defect Prediction Dataset from Open-Source Software Systems: Methodology, Validation, and Benchmark Analysis</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 
@@ -125,18 +117,10 @@ The findings demonstrate that repository analytics combined with machine learnin
 <p><strong>Abstract</strong></p>
 
 <p>
-Modern software systems evolve rapidly, causing automated test scripts to frequently fail due to minor user interface changes, dynamic element identifiers, or evolving application structures.
-Traditional automation frameworks require continuous manual maintenance to update broken locators and test scripts, resulting in increased maintenance cost and reduced testing efficiency.
-This research proposes an AI-driven self-healing test automation framework capable of automatically detecting, diagnosing, and repairing failing test cases caused by user interface changes.
-The framework integrates machine learning models, DOM similarity analysis, and intelligent locator recovery techniques to dynamically identify alternative elements when original locators become invalid.
-The proposed architecture monitors historical execution data and page structure patterns to generate predictive locator models that enable automated recovery during test execution.
-When a test failure occurs due to element changes, the framework evaluates multiple candidate elements using structural similarity metrics, attribute matching, and machine learning ranking algorithms to determine the most probable replacement element.
-Experimental evaluation demonstrates that the self-healing framework significantly reduces automation maintenance effort while improving test execution stability across evolving application versions.
-The results indicate that AI-driven locator recovery techniques can increase test execution success rates while minimizing manual intervention in large-scale enterprise automation environments.
-The research highlights the potential of intelligent automation frameworks to transform traditional test automation into adaptive testing systems capable of maintaining long-term reliability in rapidly evolving software applications.
+Large-scale dataset of 284,676 instances from 5 mature OSS projects with systematic methodology for repository selection, automated feature extraction, and defect labelling. 50-330x larger than existing benchmarks (PROMISE, AEEEM). Covers 10-year window (2013-2023).
 </p>
 
-<p><strong>Status:</strong> In Progress</p>
+<p><strong>Status:</strong> Completed</p>
 
 </div>
 
@@ -149,7 +133,7 @@ The research highlights the potential of intelligent automation frameworks to tr
 <div class="paper">
 
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 3 &mdash; Autonomous Regression Testing Systems</span>
+<span>Paper 3 &mdash; Comparative Analysis of Machine Learning Classifiers for Software Defect Prediction: From Logistic Regression to Gradient Boosting and Neural Networks</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 
@@ -158,17 +142,10 @@ The research highlights the potential of intelligent automation frameworks to tr
 <p><strong>Abstract</strong></p>
 
 <p>
-Regression testing is a critical activity in software development to ensure that new code changes do not introduce unintended defects into previously validated functionality.
-However, traditional regression testing approaches often require extensive manual effort to maintain and execute large test suites, resulting in increased execution time and inefficient use of testing resources.
-This research presents an autonomous regression testing system that leverages machine learning and software repository analytics to automatically generate, prioritize, and execute regression test cases.
-The proposed system analyzes historical development data, defect history, and code change patterns to identify high-risk components that require focused regression testing.
-The framework integrates multiple intelligent components, including repository mining for development activity analysis, defect prediction models for identifying defect-prone modules, and automated test generation techniques that dynamically create regression test scenarios based on application behavior and historical test coverage.
-A risk-based prioritization mechanism is implemented to optimize regression testing by focusing testing efforts on modules with higher predicted defect probability.
-Experimental results demonstrate that the autonomous regression testing framework significantly improves regression testing efficiency by reducing redundant test executions while maintaining high defect detection capability.
-The findings suggest that autonomous testing systems can transform traditional regression testing practices by enabling self-optimizing testing frameworks capable of adapting testing strategies based on evolving software development patterns and risk profiles.
+Rigorous comparative evaluation of 6 classifiers with statistical significance testing (parametric + non-parametric), SMOTE impact analysis, and hyperparameter sensitivity studies. Ensemble methods significantly outperform single models. Cohen&rsquo;s d=2.34 (p&lt;0.001) for RF vs LR.
 </p>
 
-<p><strong>Status:</strong> Planned</p>
+<p><strong>Status:</strong> Completed</p>
 
 </div>
 
@@ -181,7 +158,7 @@ The findings suggest that autonomous testing systems can transform traditional r
 <div class="paper">
 
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 4 &mdash; LLM-Based Test Case Generation</span>
+<span>Paper 4 &mdash; Feature Importance and Interpretability in Software Defect Prediction: A Multi-Method Analysis Using SHAP, Gini Importance, and Permutation Testing</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 
@@ -190,18 +167,10 @@ The findings suggest that autonomous testing systems can transform traditional r
 <p><strong>Abstract</strong></p>
 
 <p>
-Test case design is a time-consuming activity that requires significant domain knowledge and manual effort from quality engineers.
-As software systems become increasingly complex, traditional manual test design approaches struggle to maintain adequate test coverage across rapidly evolving application features.
-This research explores the use of Large Language Models (LLMs) to automatically generate software test cases from system requirements, user stories, and application specifications.
-By leveraging the natural language understanding capabilities of modern language models, the proposed framework converts textual software requirements into structured test scenarios capable of validating system behavior across multiple functional paths.
-The research introduces an architecture that integrates requirement analysis, prompt engineering techniques, and automated test generation pipelines to transform functional specifications into executable test scripts.
-The framework supports generation of test scenarios for user interface testing, API testing, and integration testing.
-To ensure reliability, the generated test cases are validated using rule-based verification mechanisms that evaluate logical correctness, completeness, and coverage of system requirements.
-Experimental evaluation demonstrates that LLM-generated test cases can significantly accelerate test design while improving requirement coverage compared to traditional manual approaches.
-The results highlight the potential of LLM-driven intelligent testing systems to enhance test automation frameworks by enabling scalable, adaptive, and requirement-driven test generation capabilities for modern software systems.
+Multi-method feature importance analysis across 6 model architectures. Code churn accounts for 28.5% of predictive signal. Kendall tau cross-model concordance tau=0.73-0.89. Permutation importance reveals Gini overestimates high-cardinality features by 20-30%.
 </p>
 
-<p><strong>Status:</strong> Planned</p>
+<p><strong>Status:</strong> Completed</p>
 
 </div>
 
@@ -214,7 +183,7 @@ The results highlight the potential of LLM-driven intelligent testing systems to
 <div class="paper">
 
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 5 &mdash; Intelligent API Contract Testing</span>
+<span>Paper 5 &mdash; Cross-Repository Transfer Learning in Software Defect Prediction: Leave-One-Out Evaluation and Domain Adaptation Strategies</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 
@@ -223,19 +192,85 @@ The results highlight the potential of LLM-driven intelligent testing systems to
 <p><strong>Abstract</strong></p>
 
 <p>
-Modern software architectures increasingly rely on microservices and distributed systems that communicate through APIs.
-Ensuring compatibility between service providers and consumers is essential for maintaining system reliability.
-However, traditional API testing approaches often fail to detect subtle contract violations caused by evolving service interfaces and inconsistent API implementations.
-This research proposes an intelligent API contract testing framework that leverages machine learning techniques and schema analysis to automatically detect inconsistencies between API specifications and actual service behavior.
-The proposed system analyzes API definitions such as OpenAPI specifications and dynamically generates contract validation tests to verify request and response structures.
-The framework introduces automated schema comparison techniques capable of identifying contract drift, structural mismatches, and behavioral inconsistencies between interacting services.
-Additionally, machine learning models are used to analyze historical API usage patterns to detect anomalies and potential integration risks.
-Experimental evaluation demonstrates that intelligent contract testing significantly improves detection of API compatibility issues in distributed microservice environments.
-The framework enables continuous validation of service contracts during software development and deployment pipelines, reducing integration failures and improving system stability.
-The proposed approach highlights the potential of AI-driven contract validation systems to enhance reliability and maintain consistency across complex service-oriented architectures.
+Systematic leave-one-repository-out validation revealing defect rate mismatch as primary transfer failure driver. Multi-source training achieves F1=0.601 across diverse targets. Platt scaling calibration improves poorly-transferring scenarios by up to 0.079 F1.
 </p>
 
-<p><strong>Status:</strong> Planned</p>
+<p><strong>Status:</strong> Completed</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 6 -->
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Paper 6 &mdash; Risk-Based Software Testing Using Repository Defect Prediction: Coverage Analysis, CI/CD Integration, and Operational Deployment</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+End-to-end operational deployment of Gradient Boosting model in production FastAPI microservice with GitHub Actions integration. Top 10% files capture 43.2% defects (4.3x improvement). Complete CI/CD pipeline integration with advisory vs gating rollout.
+</p>
+
+<p><strong>Status:</strong> Deployed in Production</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 7 -->
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Paper 7 &mdash; AI-Driven Self-Healing Web Test Automation Using DOM Similarity and Machine Learning</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+Framework that automatically recovers broken Selenium locators at runtime using DOM similarity analysis and ML-assisted ranking. Uses 8 feature families for weighted similarity scoring with hybrid heuristic + ML ranking. Mutation-based evaluation pipeline simulates realistic UI evolution.
+</p>
+
+<p><strong>Status:</strong> In Progress</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PAPER 8 -->
+
+<div class="paper">
+
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Paper 8 &mdash; AI-Driven Test Case Generation from Natural-Language Requirements: A Prompt-Engineered, Rule-Verified Framework for Scalable Software Quality Engineering</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+
+<div class="paper-content" role="region">
+
+<p><strong>Abstract</strong></p>
+
+<p>
+RAITG framework converting 312 requirements across 3 domains into executable tests via LLM + deterministic rule-based verification. 68% effort reduction (184h to 58.9h). Requirement coverage improves from 71.2% to 94.1%. First-pass verification rate 96.3%.
+</p>
+
+<p><strong>Status:</strong> Completed / Production Service Deployed</p>
 
 </div>
 

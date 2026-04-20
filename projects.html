@@ -36,10 +36,10 @@
 <li><a href="research.html">Research</a></li>
 <li><a href="program.html">Program</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="product.html">Product</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="service.html">Services</a></li>
 <li><a href="impact.html">Impact</a></li>
-<li><a href="recognition.html">Recognition</a></li>
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
 <li><a href="contact.html">Contact</a></li>
@@ -77,25 +77,92 @@ Engineering research program.
 
 <div class="paper">
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>TestForge AI &mdash; Intelligent Test Automation Platform</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+<div class="paper-content" role="region">
+<p>
+An enterprise-grade platform that generates production-ready test automation
+frameworks, prioritizes tests using defect prediction, and manages distributed
+test execution with intelligent risk scoring. Combines framework generation,
+LLM-powered test creation, and ML-driven prioritization in a unified platform.
+</p>
+<p><strong>Technology Stack:</strong><br>
+Next.js 14, React 18, TypeScript, Express.js, FastAPI, SQLite, Redis,
+Docker Compose, Anthropic Claude API, scikit-learn, XGBoost
+</p>
+<p><strong>Status:</strong> In Active Development</p>
+<div class="paper-links">
+<a href="product.html">Product Details</a>
+</div>
+</div>
+</div>
+
+
+<div class="paper">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
 <span>AI Defect Prediction Platform</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 <div class="paper-content" role="region">
-<p><strong>Description:</strong></p>
 <p>
-A machine learning system that predicts defect-prone software
-modules using repository analytics. The system analyzes commit
-history, code churn, and development activity to identify
-high-risk components in large software systems.
+Machine learning system that predicts defect-prone software modules using
+repository analytics. Evaluated 6 classifiers on 284,676 instances across
+5 open-source repositories. Random Forest achieves AUC 0.904 with 4.3x
+improvement in defect detection efficiency via risk-based testing.
 </p>
 <p><strong>Technology Stack:</strong><br>
-Python, Machine Learning, Scikit-Learn, Git Mining, Data Analytics
+Python, scikit-learn, XGBoost, GitPython, pandas, SMOTE, FastAPI
 </p>
-<p><strong>GitHub:</strong><br>
-<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">
-View Repository
-</a>
+<p><strong>Status:</strong> Completed &mdash; Production Deployed</p>
+<div class="paper-links">
+<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub</a>
+<a href="publications.html">6 Research Papers</a>
+</div>
+</div>
+</div>
+
+
+<div class="paper">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Test Case Generation Service (RAITG)</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+<div class="paper-content" role="region">
+<p>
+FastAPI microservice that converts natural-language requirements into
+executable test cases using Claude LLM with prompt engineering and
+deterministic rule-based verification. Supports pytest, Gherkin,
+Playwright, and Postman output formats. Achieves 94.1% requirement
+coverage with 96.3% first-pass verification rate.
 </p>
+<p><strong>Technology Stack:</strong><br>
+Python, FastAPI, Anthropic Claude API, PyYAML, Pydantic, Docker
+</p>
+<p><strong>Status:</strong> Completed &mdash; Production Deployed</p>
+<div class="paper-links">
+<a href="publications.html">Research Paper</a>
+</div>
+</div>
+</div>
+
+
+<div class="paper">
+<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+<span>Test Prioritization Service</span>
+<span class="arrow" aria-hidden="true">&#9654;</span>
+</div>
+<div class="paper-content" role="region">
+<p>
+Production REST service that scores files by defect probability using
+a Gradient Boosting model trained on repository metrics. Integrates with
+CI/CD pipelines to reorder test execution by risk rank. Response latency
+under 30ms per request.
+</p>
+<p><strong>Technology Stack:</strong><br>
+Python, FastAPI, scikit-learn, joblib, GitPython, structlog, Docker
+</p>
+<p><strong>Status:</strong> Completed &mdash; Production Deployed</p>
 </div>
 </div>
 
@@ -106,15 +173,14 @@ View Repository
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 <div class="paper-content" role="region">
-<p><strong>Description:</strong></p>
 <p>
-An intelligent automation framework capable of automatically
-recovering from UI element changes. The framework detects
-broken locators and dynamically identifies alternative
-elements using similarity analysis.
+Intelligent automation framework that recovers broken Selenium locators
+at runtime using DOM similarity analysis and ML-assisted ranking.
+Uses 8 feature families (tag, ID, name, class, text, placeholder, ARIA,
+path) with a hybrid heuristic + logistic regression ranking approach.
 </p>
 <p><strong>Technology Stack:</strong><br>
-Java, Selenium, Playwright, Machine Learning, DOM Analysis
+Java, TypeScript, Selenium WebDriver, Playwright, DOM Analysis, Logistic Regression
 </p>
 <p><strong>Status:</strong> In Development</p>
 </div>
@@ -123,63 +189,40 @@ Java, Selenium, Playwright, Machine Learning, DOM Analysis
 
 <div class="paper">
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>LLM-Based Test Case Generator</span>
+<span>AI Governance Framework</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 <div class="paper-content" role="region">
-<p><strong>Description:</strong></p>
 <p>
-A system that automatically generates test cases from
-software requirements using large language models.
-The platform converts textual specifications into
-structured automated test scenarios.
+Unified data governance layer for all AI quality services. Provides
+payload size controls (512KB default), content redaction via regex patterns,
+author privacy hashing, prompt versioning and allowlists, and
+service-specific configuration for git analysis and test generation.
 </p>
 <p><strong>Technology Stack:</strong><br>
-Python, OpenAI APIs, NLP, Automation Frameworks
+Python, PyYAML, pytest
 </p>
-<p><strong>Status:</strong> Planned</p>
+<p><strong>Status:</strong> Completed</p>
 </div>
 </div>
 
 
 <div class="paper">
 <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Intelligent API Contract Testing Platform</span>
+<span>Production Test Automation Reference Framework</span>
 <span class="arrow" aria-hidden="true">&#9654;</span>
 </div>
 <div class="paper-content" role="region">
-<p><strong>Description:</strong></p>
 <p>
-A platform designed to detect API contract mismatches
-between microservices. The system analyzes API schemas
-and validates request and response structures to ensure
-service compatibility.
+Full-featured UI and API test automation framework with BDD support,
+Page Object Model pattern, parallel execution, and multi-environment
+configuration. Includes database connectors (PostgreSQL, Snowflake, Oracle)
+and cloud integration (AWS S3/Secrets Manager, Azure Blob/Key Vault).
 </p>
 <p><strong>Technology Stack:</strong><br>
-Java, Spring Boot, REST APIs, Contract Testing
+TypeScript, Playwright, Cucumber-JS, Axios, Allure Reporting, GitHub Actions, Jenkins
 </p>
-<p><strong>Status:</strong> Planned</p>
-</div>
-</div>
-
-
-<div class="paper">
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Autonomous Regression Testing Engine</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-<div class="paper-content" role="region">
-<p><strong>Description:</strong></p>
-<p>
-An intelligent regression testing system that automatically
-prioritizes test execution based on predicted software risk.
-Machine learning models analyze historical failures to
-identify tests most likely to detect defects.
-</p>
-<p><strong>Technology Stack:</strong><br>
-Python, CI/CD Integration, Automation Frameworks, Machine Learning
-</p>
-<p><strong>Status:</strong> Planned</p>
+<p><strong>Status:</strong> Completed</p>
 </div>
 </div>
 

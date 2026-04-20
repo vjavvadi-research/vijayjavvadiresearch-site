@@ -36,10 +36,10 @@
 <li><a href="research.html">Research</a></li>
 <li><a href="program.html">Program</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="product.html">Product</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="service.html">Services</a></li>
 <li><a href="impact.html">Impact</a></li>
-<li><a href="recognition.html">Recognition</a></li>
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
 <li><a href="contact.html">Contact</a></li>
@@ -82,9 +82,9 @@ reliability in large-scale software systems.
 <div class="tile">
 <h3>Repository Analytics &amp; Defect Prediction</h3>
 <p>
-Using repository mining and machine learning models to identify
-defect-prone software modules and support risk-based testing
-strategies in large-scale software systems.
+6-paper research series evaluating ML classifiers on 284,676 code instances
+across 5 open-source repositories. Random Forest achieves AUC 0.904.
+Risk-based testing captures 43% of defects from the top 10% of files.
 </p>
 </div>
 
@@ -92,39 +92,49 @@ strategies in large-scale software systems.
 <div class="tile">
 <h3>AI-Driven Self-Healing Test Automation</h3>
 <p>
-Developing intelligent automation frameworks capable of detecting
-and repairing failing automated test scripts caused by UI changes
-using machine learning techniques.
+Framework that recovers broken Selenium locators at runtime using
+DOM similarity analysis and ML-assisted ranking with 8 feature families.
+Mutation-based evaluation simulates realistic UI evolution scenarios.
 </p>
 </div>
 
 
 <div class="tile">
-<h3>Autonomous Regression Testing Systems</h3>
+<h3>LLM-Driven Test Case Generation</h3>
 <p>
-Designing testing platforms that automatically generate,
-prioritize, and execute regression tests based on repository
-analytics and defect prediction models.
+RAITG framework converting 312 requirements into executable tests via
+LLM + rule-based verification. Achieves 68% effort reduction, 94.1%
+requirement coverage, and 96.3% first-pass verification rate.
 </p>
 </div>
 
 
 <div class="tile">
-<h3>LLM-Based Test Case Generation</h3>
+<h3>Cross-Repository Transfer Learning</h3>
 <p>
-Applying large language models to automatically generate
-software test cases from requirements, user stories,
-and application specifications.
+Systematic leave-one-repository-out validation for defect prediction
+models. Multi-source training achieves F1=0.601 across diverse targets.
+Platt scaling calibration improves transfer by up to 0.079 F1.
 </p>
 </div>
 
 
 <div class="tile">
-<h3>Intelligent API Contract Testing</h3>
+<h3>Risk-Based CI/CD Testing Integration</h3>
 <p>
-Developing AI-driven techniques to validate API contracts
-and detect compatibility issues between microservices
-in distributed software systems.
+Production deployment of Gradient Boosting model in FastAPI microservice
+with GitHub Actions integration. Achieves 4.3x improvement in defect
+detection efficiency via risk-ranked test execution.
+</p>
+</div>
+
+
+<div class="tile">
+<h3>AI Governance for Quality Engineering</h3>
+<p>
+Unified data governance layer with payload controls, content redaction,
+author privacy hashing, prompt versioning, and audit trails for
+responsible AI usage across all quality services.
 </p>
 </div>
 

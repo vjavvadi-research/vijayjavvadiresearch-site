@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TestForge AI | Vijay Prasad Javvadi</title>
+<meta name="description" content="TestForge AI — an intelligent test automation platform with AI-driven framework generation, defect-driven test prioritization, and multi-language support.">
+<meta property="og:title" content="TestForge AI | Vijay Prasad Javvadi">
+<meta property="og:description" content="AI-powered test automation platform with framework generation and intelligent test prioritization.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vijayjavvadiresearch.ai/product.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* Product Hero */
+.product-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #172554 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.product-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product-hero h1 {
+  font-size: 42px;
+  color: white;
+  margin: 0 0 12px;
+}
+
+.product-hero h1 span {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.product-tagline {
+  font-size: 20px;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-status .dot {
+  width: 8px;
+  height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+
+/* Feature Grid */
+.features-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  color: #111827;
+  margin: 0 0 10px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Tech Stack */
+.tech-section {
+  background: #f8fafc;
+  padding: 60px 20px;
+}
+
+.tech-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.tech-card h4 {
+  font-size: 14px;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.tech-card p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* Architecture Section */
+.arch-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.arch-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.arch-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+
+/* Differentiators */
+.diff-section {
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+  padding: 60px 20px;
+  color: white;
+}
+
+.diff-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.diff-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.diff-card h3 {
+  color: #a5b4fc;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.diff-card p {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.cta-link {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cta-link:hover {
+  background: #4f46e5;
+  text-decoration: none;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .product-hero { padding: 50px 20px; }
+  .product-hero h1 { font-size: 28px; }
+  .product-tagline { font-size: 16px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .diff-grid { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" aria-label="Main navigation">
+
+<div class="nav-container">
+
+<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="product.html">Product</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="service.html">Services</a></li>
+<li><a href="impact.html">Impact</a></li>
+<li><a href="speaking.html">Speaking</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+<div class="product-hero">
+
+<div class="product-badge">Research-Driven Product</div>
+
+<h1>Test<span>Forge</span> AI</h1>
+
+<p class="product-tagline">
+An intelligent test automation platform that generates production-ready
+frameworks, prioritizes tests using defect prediction, and scales across
+languages, frameworks, and CI/CD systems.
+</p>
+
+<div class="product-status">
+<span class="dot"></span>
+In Active Development
+</div>
+
+</div>
+
+
+<main id="main-content">
+
+
+<!-- KEY FEATURES -->
+<section class="features-section">
+
+<h2>Platform Capabilities</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<div class="feature-icon">&#9881;</div>
+<h3>Instant Framework Generation</h3>
+<p>
+Generate complete, production-ready test automation frameworks in seconds.
+Choose your language (Java, TypeScript, Python, C#, JavaScript), framework
+(Playwright, Selenium, Cypress, WebDriverIO), pattern, and tooling &mdash;
+and download a fully configured project.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&#9878;</div>
+<h3>Defect-Driven Test Prioritization</h3>
+<p>
+ML models analyze your Git history &mdash; commit frequency, code churn,
+developer patterns &mdash; to score test files by risk. Run only the tests
+most likely to catch defects, reducing execution time while maintaining
+detection capability.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&#128300;</div>
+<h3>LLM-Powered Test Generation</h3>
+<p>
+Convert natural-language requirements into executable test cases
+using a prompt-engineered, rule-verified pipeline. Supports Gherkin,
+Playwright, pytest, and Postman output formats with 94.1% requirement coverage.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&#128274;</div>
+<h3>AI Governance Layer</h3>
+<p>
+Built-in data governance with payload size controls, content redaction,
+author privacy (hashing), and prompt versioning. Ensures responsible
+AI usage across all platform services.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&#128268;</div>
+<h3>CI/CD &amp; Webhook Integration</h3>
+<p>
+Native integration with GitHub Actions, Jenkins, GitLab CI, and
+Azure DevOps. HMAC-signed webhooks notify your systems on test
+completion. API key authentication for pipeline access.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&#128202;</div>
+<h3>Quality Analytics Dashboard</h3>
+<p>
+Track test execution history, pass/fail trends, risk scoring, and
+project health across your entire testing portfolio. Real-time
+visibility into testing outcomes and quality metrics.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ARCHITECTURE DIAGRAM -->
+<section class="arch-section">
+
+<h2>Platform Architecture</h2>
+<p class="arch-subtitle">Microservices-oriented architecture with intelligent ML pipeline integration</p>
+
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1000px;margin:0 auto;display:block;" role="img" aria-label="TestForge AI platform architecture diagram">
+
+<!-- Background -->
+<rect width="1000" height="620" rx="12" fill="#0f172a"/>
+
+<!-- Title -->
+<text x="500" y="35" text-anchor="middle" fill="#94a3b8" font-size="14" font-weight="600" letter-spacing="2">TESTFORGE AI &mdash; SYSTEM ARCHITECTURE</text>
+
+<!-- ====== PRESENTATION LAYER ====== -->
+<rect x="30" y="55" width="940" height="90" rx="8" fill="rgba(99,102,241,0.12)" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4"/>
+<text x="50" y="78" fill="#a5b4fc" font-size="11" font-weight="600" letter-spacing="1.5">PRESENTATION LAYER</text>
+
+<rect x="50" y="88" width="180" height="46" rx="6" fill="#312e81"/>
+<text x="140" y="108" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Next.js 14 + React 18</text>
+<text x="140" y="124" text-anchor="middle" fill="#818cf8" font-size="10">UI Dashboard</text>
+
+<rect x="250" y="88" width="180" height="46" rx="6" fill="#312e81"/>
+<text x="340" y="108" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Framework Builder</text>
+<text x="340" y="124" text-anchor="middle" fill="#818cf8" font-size="10">Step-by-Step Wizard</text>
+
+<rect x="450" y="88" width="180" height="46" rx="6" fill="#312e81"/>
+<text x="540" y="108" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">DDT Dashboard</text>
+<text x="540" y="124" text-anchor="middle" fill="#818cf8" font-size="10">Risk Scoring &amp; Prioritization</text>
+
+<rect x="650" y="88" width="140" height="46" rx="6" fill="#312e81"/>
+<text x="720" y="108" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Admin Panel</text>
+<text x="720" y="124" text-anchor="middle" fill="#818cf8" font-size="10">Users &amp; Audit</text>
+
+<rect x="810" y="88" width="140" height="46" rx="6" fill="#312e81"/>
+<text x="880" y="108" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Swagger UI</text>
+<text x="880" y="124" text-anchor="middle" fill="#818cf8" font-size="10">API Documentation</text>
+
+<!-- Arrow down from presentation to API -->
+<line x1="500" y1="145" x2="500" y2="165" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ====== API LAYER ====== -->
+<rect x="30" y="165" width="940" height="100" rx="8" fill="rgba(34,197,94,0.08)" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4"/>
+<text x="50" y="188" fill="#4ade80" font-size="11" font-weight="600" letter-spacing="1.5">API GATEWAY &amp; SERVICES</text>
+
+<rect x="50" y="198" width="200" height="55" rx="6" fill="#14532d"/>
+<text x="150" y="218" text-anchor="middle" fill="#bbf7d0" font-size="11" font-weight="600">Express.js API</text>
+<text x="150" y="234" text-anchor="middle" fill="#4ade80" font-size="10">JWT Auth &middot; RBAC &middot; Rate Limit</text>
+<text x="150" y="246" text-anchor="middle" fill="#4ade80" font-size="9">Port 4000</text>
+
+<rect x="270" y="198" width="200" height="55" rx="6" fill="#14532d"/>
+<text x="370" y="218" text-anchor="middle" fill="#bbf7d0" font-size="11" font-weight="600">Framework Generator</text>
+<text x="370" y="234" text-anchor="middle" fill="#4ade80" font-size="10">Template Engine &middot; Archiver</text>
+<text x="370" y="246" text-anchor="middle" fill="#4ade80" font-size="9">Handlebars &middot; ZIP Builder</text>
+
+<rect x="490" y="198" width="220" height="55" rx="6" fill="#14532d"/>
+<text x="600" y="218" text-anchor="middle" fill="#bbf7d0" font-size="11" font-weight="600">Test Prioritization Service</text>
+<text x="600" y="234" text-anchor="middle" fill="#4ade80" font-size="10">FastAPI &middot; ML Models &middot; Git Mining</text>
+<text x="600" y="246" text-anchor="middle" fill="#4ade80" font-size="9">Risk Scoring &middot; Defect Prediction</text>
+
+<rect x="730" y="198" width="220" height="55" rx="6" fill="#14532d"/>
+<text x="840" y="218" text-anchor="middle" fill="#bbf7d0" font-size="11" font-weight="600">Test Generation Service</text>
+<text x="840" y="234" text-anchor="middle" fill="#4ade80" font-size="10">Claude API &middot; RAITG Framework</text>
+<text x="840" y="246" text-anchor="middle" fill="#4ade80" font-size="9">Rule-Based Verification</text>
+
+<!-- Arrow down from API to ML -->
+<line x1="500" y1="265" x2="500" y2="290" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ====== ML / INTELLIGENCE LAYER ====== -->
+<rect x="30" y="290" width="940" height="100" rx="8" fill="rgba(245,158,11,0.08)" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4"/>
+<text x="50" y="313" fill="#fbbf24" font-size="11" font-weight="600" letter-spacing="1.5">MACHINE LEARNING &amp; INTELLIGENCE LAYER</text>
+
+<rect x="50" y="323" width="175" height="55" rx="6" fill="#451a03"/>
+<text x="137" y="343" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">Defect Prediction</text>
+<text x="137" y="359" text-anchor="middle" fill="#fbbf24" font-size="10">Random Forest &middot; XGBoost</text>
+<text x="137" y="371" text-anchor="middle" fill="#fbbf24" font-size="9">AUC 0.904 &middot; F1 0.632</text>
+
+<rect x="243" y="323" width="175" height="55" rx="6" fill="#451a03"/>
+<text x="330" y="343" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">Repository Mining</text>
+<text x="330" y="359" text-anchor="middle" fill="#fbbf24" font-size="10">GitPython &middot; Metrics</text>
+<text x="330" y="371" text-anchor="middle" fill="#fbbf24" font-size="9">284K instances &middot; 5 repos</text>
+
+<rect x="436" y="323" width="175" height="55" rx="6" fill="#451a03"/>
+<text x="523" y="343" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">LLM Pipeline</text>
+<text x="523" y="359" text-anchor="middle" fill="#fbbf24" font-size="10">Claude API &middot; Prompts</text>
+<text x="523" y="371" text-anchor="middle" fill="#fbbf24" font-size="9">68% effort reduction</text>
+
+<rect x="629" y="323" width="175" height="55" rx="6" fill="#451a03"/>
+<text x="716" y="343" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">Self-Healing Engine</text>
+<text x="716" y="359" text-anchor="middle" fill="#fbbf24" font-size="10">DOM Similarity &middot; ML Rank</text>
+<text x="716" y="371" text-anchor="middle" fill="#fbbf24" font-size="9">Locator Recovery</text>
+
+<rect x="822" y="323" width="130" height="55" rx="6" fill="#451a03"/>
+<text x="887" y="343" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">Governance</text>
+<text x="887" y="359" text-anchor="middle" fill="#fbbf24" font-size="10">Redaction &middot; Privacy</text>
+<text x="887" y="371" text-anchor="middle" fill="#fbbf24" font-size="9">Audit &middot; Controls</text>
+
+<!-- Arrow down from ML to Data -->
+<line x1="500" y1="390" x2="500" y2="415" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ====== DATA LAYER ====== -->
+<rect x="30" y="415" width="520" height="90" rx="8" fill="rgba(236,72,153,0.08)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4"/>
+<text x="50" y="438" fill="#f472b6" font-size="11" font-weight="600" letter-spacing="1.5">DATA &amp; STORAGE</text>
+
+<rect x="50" y="448" width="150" height="46" rx="6" fill="#500724"/>
+<text x="125" y="468" text-anchor="middle" fill="#fda4af" font-size="11" font-weight="600">SQLite + WAL</text>
+<text x="125" y="482" text-anchor="middle" fill="#f472b6" font-size="10">Projects &middot; Users &middot; Runs</text>
+
+<rect x="218" y="448" width="150" height="46" rx="6" fill="#500724"/>
+<text x="293" y="468" text-anchor="middle" fill="#fda4af" font-size="11" font-weight="600">Redis Cache</text>
+<text x="293" y="482" text-anchor="middle" fill="#f472b6" font-size="10">Rate Limiting &middot; Sessions</text>
+
+<rect x="386" y="448" width="150" height="46" rx="6" fill="#500724"/>
+<text x="461" y="468" text-anchor="middle" fill="#fda4af" font-size="11" font-weight="600">Artifact Store</text>
+<text x="461" y="482" text-anchor="middle" fill="#f472b6" font-size="10">ZIP Downloads &middot; Reports</text>
+
+<!-- ====== INTEGRATION LAYER ====== -->
+<rect x="570" y="415" width="400" height="90" rx="8" fill="rgba(6,182,212,0.08)" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4"/>
+<text x="590" y="438" fill="#22d3ee" font-size="11" font-weight="600" letter-spacing="1.5">INTEGRATIONS &amp; CI/CD</text>
+
+<rect x="590" y="448" width="110" height="46" rx="6" fill="#083344"/>
+<text x="645" y="468" text-anchor="middle" fill="#a5f3fc" font-size="10" font-weight="600">GitHub Actions</text>
+<text x="645" y="482" text-anchor="middle" fill="#22d3ee" font-size="9">Workflows</text>
+
+<rect x="710" y="448" width="80" height="46" rx="6" fill="#083344"/>
+<text x="750" y="468" text-anchor="middle" fill="#a5f3fc" font-size="10" font-weight="600">Jenkins</text>
+<text x="750" y="482" text-anchor="middle" fill="#22d3ee" font-size="9">Pipelines</text>
+
+<rect x="800" y="448" width="80" height="46" rx="6" fill="#083344"/>
+<text x="840" y="468" text-anchor="middle" fill="#a5f3fc" font-size="10" font-weight="600">Webhooks</text>
+<text x="840" y="482" text-anchor="middle" fill="#22d3ee" font-size="9">HMAC Signed</text>
+
+<rect x="890" y="448" width="65" height="46" rx="6" fill="#083344"/>
+<text x="922" y="468" text-anchor="middle" fill="#a5f3fc" font-size="10" font-weight="600">Docker</text>
+<text x="922" y="482" text-anchor="middle" fill="#22d3ee" font-size="9">Compose</text>
+
+<!-- ====== SUPPORTED FRAMEWORKS ====== -->
+<rect x="30" y="530" width="940" height="70" rx="8" fill="rgba(255,255,255,0.04)" stroke="#475569" stroke-width="1"/>
+<text x="50" y="555" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1.5">SUPPORTED FRAMEWORKS</text>
+
+<text x="80" y="582" fill="#e2e8f0" font-size="12">Java</text>
+<text x="145" y="582" fill="#e2e8f0" font-size="12">TypeScript</text>
+<text x="240" y="582" fill="#e2e8f0" font-size="12">Python</text>
+<text x="315" y="582" fill="#e2e8f0" font-size="12">C#</text>
+
+<text x="380" y="582" fill="#64748b" font-size="12">|</text>
+
+<text x="405" y="582" fill="#e2e8f0" font-size="12">Playwright</text>
+<text x="495" y="582" fill="#e2e8f0" font-size="12">Selenium</text>
+<text x="575" y="582" fill="#e2e8f0" font-size="12">Cypress</text>
+<text x="645" y="582" fill="#e2e8f0" font-size="12">WebDriverIO</text>
+
+<text x="745" y="582" fill="#64748b" font-size="12">|</text>
+
+<text x="770" y="582" fill="#e2e8f0" font-size="12">Cucumber</text>
+<text x="850" y="582" fill="#e2e8f0" font-size="12">pytest</text>
+<text x="910" y="582" fill="#e2e8f0" font-size="12">TestNG</text>
+
+<!-- Arrow marker -->
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+</marker>
+</defs>
+
+</svg>
+
+</section>
+
+
+<!-- WHAT MAKES IT DIFFERENT -->
+<section class="diff-section">
+
+<h2>What Sets TestForge AI Apart</h2>
+
+<div class="diff-grid">
+
+<div class="diff-card">
+<h3>Research-Backed Intelligence</h3>
+<p>
+Every ML model is validated through rigorous academic research &mdash;
+6 peer-reviewed papers on defect prediction alone, with 284,676
+real-world code instances and statistical significance testing.
+Not just heuristics; real science.
+</p>
+</div>
+
+<div class="diff-card">
+<h3>4.3x Defect Detection Efficiency</h3>
+<p>
+The defect prediction engine identifies the top 10% highest-risk
+files that contain 43% of all defects. Teams test smarter,
+not harder &mdash; catching more bugs with fewer test runs.
+</p>
+</div>
+
+<div class="diff-card">
+<h3>True Multi-Language, Multi-Framework</h3>
+<p>
+5 languages, 4+ automation frameworks, BDD tools, and CI/CD systems
+with 30+ validated template combinations. Generated projects are
+production-ready with Page Object patterns, reporting, and parallel execution.
+</p>
+</div>
+
+<div class="diff-card">
+<h3>Verified LLM Test Generation</h3>
+<p>
+Unlike raw LLM output, every generated test passes through a
+deterministic 4-class rule verification engine. First-pass
+verification rate of 96.3% &mdash; eliminating hallucinated or
+incomplete test cases before they reach your pipeline.
+</p>
+</div>
+
+<div class="diff-card">
+<h3>Built-In AI Governance</h3>
+<p>
+Enterprise-ready controls: payload size caps, content redaction
+(passwords, tokens, PII), author privacy hashing, prompt
+versioning, and audit trails. Responsible AI by design.
+</p>
+</div>
+
+<div class="diff-card">
+<h3>From Research to Production</h3>
+<p>
+Not a prototype. Three production microservices with Docker deployment,
+health checks, Swagger documentation, webhook integrations, and
+role-based access control. Designed for real engineering teams.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TECH STACK -->
+<section class="tech-section">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+<h4>Frontend</h4>
+<p>Next.js 14, React 18, TypeScript, Tailwind CSS</p>
+</div>
+
+<div class="tech-card">
+<h4>Backend API</h4>
+<p>Express.js, TypeScript, SQLite, Redis</p>
+</div>
+
+<div class="tech-card">
+<h4>ML Services</h4>
+<p>FastAPI, scikit-learn, XGBoost, GitPython</p>
+</div>
+
+<div class="tech-card">
+<h4>LLM Integration</h4>
+<p>Anthropic Claude API, Prompt Engineering</p>
+</div>
+
+<div class="tech-card">
+<h4>Infrastructure</h4>
+<p>Docker Compose, GitHub Actions, HMAC Webhooks</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+
+<h2>TestForge AI is in Active Development</h2>
+
+<p>
+The platform is being developed as part of an ongoing research program
+in AI-driven software quality engineering. Follow the research or get in touch
+to learn more.
+</p>
+
+<a href="contact.html" class="cta-link">Get in Touch</a>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+&copy; 2026 Vijay Prasad Javvadi &mdash;
+AI-Driven Software Quality Research
+
+</footer>
+
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  var links = document.querySelector(".nav-links");
+  links.classList.toggle("open");
+  this.setAttribute("aria-expanded", links.classList.contains("open"));
+});
+</script>
+
+</body>
+</html>
