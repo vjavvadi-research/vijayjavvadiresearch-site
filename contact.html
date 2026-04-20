@@ -114,23 +114,28 @@ Intelligent Quality Engineering
 Send a Message
 </div>
 
-<form class="contact-form" action="https://formspree.io/f/xplaceholder" method="POST">
+<form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
 
-<input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+<input type="email" name="_replyto" placeholder="Your Email" required aria-label="Your Email">
 
 <textarea rows="5" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
 
-<button type="submit">Send Message</button>
+<input type="hidden" name="_subject" value="New message from vijayjavvadiresearch.ai">
+
+<button type="submit" id="submit-btn">Send Message</button>
 
 <div class="form-status" id="form-status"></div>
 
 </form>
 
-<p style="font-size:13px;color:#9ca3af;margin-top:12px;">
-To activate this form, replace the Formspree action URL with your own endpoint.
-You can get a free one at <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>.
+<p style="font-size:13px;color:#6b7280;margin-top:12px;">
+<strong>Setup:</strong> To activate this form, go to
+<a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a>,
+create a free account, add a new form pointing to
+<strong>research@vijayjavvadiresearch.ai</strong>,
+then replace <code>YOUR_FORM_ID</code> in the HTML with your form ID (e.g. <code>xAbCdEfG</code>).
 </p>
 
 </div>
@@ -143,8 +148,40 @@ You can get a free one at <a href="https://formspree.io" target="_blank" rel="no
 
 <footer>
 
-&copy; 2026 Vijay Prasad Javvadi &mdash;
-AI-Driven Software Quality Engineering Research
+<div class="footer-content">
+
+<div class="footer-section">
+<h4>Research</h4>
+<a href="research.html">Research Areas</a>
+<a href="publications.html">Publications</a>
+<a href="program.html">Research Program</a>
+<a href="impact.html">Impact</a>
+</div>
+
+<div class="footer-section">
+<h4>Product &amp; Projects</h4>
+<a href="product.html">TestForge AI</a>
+<a href="projects.html">Projects</a>
+<a href="timeline.html">Timeline</a>
+</div>
+
+<div class="footer-section">
+<h4>Connect</h4>
+<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
+<a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="footer-section">
+<h4>About</h4>
+<p>Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+&copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
+</div>
 
 </footer>
 

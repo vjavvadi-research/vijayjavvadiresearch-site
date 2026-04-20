@@ -636,10 +636,57 @@ header h1 {
 
 footer {
   margin-top: 80px;
-  padding: 30px 20px;
+  padding: 40px 20px 30px;
   background: #0f172a;
   color: #94a3b8;
   font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: left;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+}
+
+.footer-section a {
+  display: block;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 3px 0;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer-section p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #94a3b8;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
 }
 
 
