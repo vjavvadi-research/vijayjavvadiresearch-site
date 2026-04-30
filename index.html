@@ -7,14 +7,151 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vijay Prasad Javvadi | AI-Driven Software Quality Research</title>
-<meta name="description" content="Independent researcher in AI-driven software quality engineering. Research focuses on defect prediction, intelligent test automation, and machine learning for software reliability.">
+<meta name="description" content="Independent researcher in AI-driven software quality engineering. TestForge AI — the platform built from this research — is now live in public beta at testforge-ai.com.">
 <meta property="og:title" content="Vijay Prasad Javvadi | AI-Driven Software Quality Research">
-<meta property="og:description" content="Independent researcher in AI-driven software quality engineering, defect prediction, and intelligent test automation.">
+<meta property="og:description" content="Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation. TestForge AI now live at testforge-ai.com.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vijayjavvadiresearch.ai/">
+<link rel="canonical" href="https://vijayjavvadiresearch.ai/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Launch Banner */
+.launch-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #172554 100%);
+  padding: 50px 20px;
+  margin: 0;
+}
+
+.launch-banner-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.launch-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 197, 94, 0.18);
+  color: #4ade80;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.launch-pill .dot {
+  width: 8px;
+  height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: launch-pulse 2s infinite;
+}
+
+@keyframes launch-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.launch-h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: white;
+  line-height: 1.3;
+}
+
+.launch-h2 a {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  border-bottom: 1.5px solid rgba(129, 140, 248, 0.4);
+}
+
+.launch-h2 a:hover {
+  border-bottom-color: rgba(129, 140, 248, 0.9);
+}
+
+.launch-text {
+  font-size: 16px;
+  color: #cbd5e1;
+  max-width: 680px;
+  margin: 0 auto 24px;
+  line-height: 1.65;
+}
+
+.launch-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.launch-cta {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  transition: all 0.2s;
+}
+
+.launch-cta:hover {
+  background: #4f46e5;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.launch-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s;
+}
+
+.launch-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
+.tile-status {
+  display: inline-block;
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .launch-h2 { font-size: 22px; }
+  .launch-text { font-size: 15px; }
+  .launch-actions { flex-direction: column; align-items: stretch; }
+  .launch-cta, .launch-secondary { text-align: center; }
+}
+</style>
 
 </head>
 
@@ -38,7 +175,6 @@
 <li><a href="publications.html">Publications</a></li>
 <li><a href="product.html">Product</a></li>
 <li><a href="projects.html">Projects</a></li>
-<li><a href="service.html">Services</a></li>
 <li><a href="impact.html">Impact</a></li>
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
@@ -80,6 +216,41 @@ real-world enterprise software systems.
 
 
 <main id="main-content">
+
+
+<!-- LAUNCH BANNER -->
+<section class="launch-banner" aria-label="TestForge AI launch announcement">
+
+<div class="launch-banner-inner">
+
+<div class="launch-pill">
+<span class="dot"></span>
+Now Live &middot; Public Beta
+</div>
+
+<h2 class="launch-h2">
+TestForge AI is live at
+<a href="https://testforge-ai.com/" target="_blank" rel="noopener">testforge-ai.com</a>
+</h2>
+
+<p class="launch-text">
+The intelligent test automation platform built from this research program &mdash; framework
+generation, defect-driven prioritization, and verified LLM test generation. Try the public beta today.
+</p>
+
+<div class="launch-actions">
+<a class="launch-cta" href="https://testforge-ai.com/" target="_blank" rel="noopener">
+Visit testforge-ai.com &rarr;
+</a>
+<a class="launch-secondary" href="product.html">
+Read the product page
+</a>
+</div>
+
+</div>
+
+</section>
+
 
 <section class="tiles">
 
@@ -129,11 +300,12 @@ and intelligent automation to modern software engineering.
 
 <a href="product.html" class="tile-link">
 <div class="tile" style="border-left:4px solid #6366f1;">
+<span class="tile-status">Live &middot; Public Beta</span>
 <h3>TestForge AI</h3>
 <p>
 Intelligent test automation platform with framework generation,
 defect-driven prioritization, and LLM-powered test creation.
-In active development.
+Now live at testforge-ai.com.
 </p>
 </div>
 </a>

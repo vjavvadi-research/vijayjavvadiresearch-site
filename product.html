@@ -6,12 +6,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TestForge AI | Vijay Prasad Javvadi</title>
-<meta name="description" content="TestForge AI — an intelligent test automation platform with AI-driven framework generation, defect-driven test prioritization, and multi-language support.">
-<meta property="og:title" content="TestForge AI | Vijay Prasad Javvadi">
-<meta property="og:description" content="AI-powered test automation platform with framework generation and intelligent test prioritization.">
+<title>TestForge AI — Now in Public Beta | Vijay Prasad Javvadi</title>
+<meta name="description" content="TestForge AI is live in public beta at testforge-ai.com — an intelligent test automation platform with AI-driven framework generation, defect-driven test prioritization, and verified LLM test generation.">
+<meta property="og:title" content="TestForge AI — Now in Public Beta | testforge-ai.com">
+<meta property="og:description" content="AI-powered test automation platform — framework generation, defect-driven prioritization, and verified LLM test generation. Now live in public beta.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vijayjavvadiresearch.ai/product.html">
+<link rel="canonical" href="https://vijayjavvadiresearch.ai/product.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
 
 <link rel="stylesheet" href="css/style.css">
@@ -79,9 +80,217 @@
   animation: pulse 2s infinite;
 }
 
+.product-status a {
+  color: #4ade80;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.product-status a:hover {
+  text-decoration: underline;
+}
+
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
+}
+
+/* Hero CTA buttons */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #6366f1;
+  color: white;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
+.btn-primary .arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(3px);
+}
+
+
+/* Stats Bar */
+.stats-section {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 40px 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-item .stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat-item .stat-label {
+  font-size: 13px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+
+/* How It Works */
+.howit-section {
+  background: #f8fafc;
+  padding: 60px 20px;
+}
+
+.howit-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.howit-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.howit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.howit-step {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.howit-step .step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.howit-step h3 {
+  font-size: 17px;
+  color: #111827;
+  margin: 0 0 10px;
+}
+
+.howit-step p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Product Tour */
+.tour-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.tour-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.tour-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.tour-image-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb;
+  background: #0f172a;
+}
+
+.tour-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tour-caption {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 14px;
+  font-style: italic;
 }
 
 
@@ -293,6 +502,11 @@
   .feature-grid { grid-template-columns: 1fr; }
   .diff-grid { grid-template-columns: 1fr; }
   .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .howit-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .stat-item .stat-number { font-size: 28px; }
+  .hero-buttons { flex-direction: column; align-items: stretch; }
+  .btn-primary, .btn-secondary { text-align: center; }
 }
 
 </style>
@@ -319,7 +533,6 @@
 <li><a href="publications.html">Publications</a></li>
 <li><a href="product.html">Product</a></li>
 <li><a href="projects.html">Projects</a></li>
-<li><a href="service.html">Services</a></li>
 <li><a href="impact.html">Impact</a></li>
 <li><a href="speaking.html">Speaking</a></li>
 <li><a href="timeline.html">Timeline</a></li>
@@ -347,13 +560,56 @@ languages, frameworks, and CI/CD systems.
 
 <div class="product-status">
 <span class="dot"></span>
-In Active Development
+Public Beta &middot; Live at
+<a href="https://testforge-ai.com/" target="_blank" rel="noopener">testforge-ai.com</a>
+</div>
+
+<div class="hero-buttons">
+<a class="btn-primary" href="https://testforge-ai.com/" target="_blank" rel="noopener">
+Visit testforge-ai.com <span class="arrow">&rarr;</span>
+</a>
+<a class="btn-secondary" href="#how-it-works">See how it works</a>
 </div>
 
 </div>
 
 
 <main id="main-content">
+
+
+<!-- STATS BAR -->
+<section class="stats-section" aria-label="Key research metrics">
+
+<div class="stats-grid">
+
+<div class="stat-item">
+<span class="stat-number">0.904</span>
+<span class="stat-label">Defect Prediction AUC</span>
+</div>
+
+<div class="stat-item">
+<span class="stat-number">96.3%</span>
+<span class="stat-label">Test Verification Rate</span>
+</div>
+
+<div class="stat-item">
+<span class="stat-number">4.3&times;</span>
+<span class="stat-label">Defect Detection Lift</span>
+</div>
+
+<div class="stat-item">
+<span class="stat-number">68%</span>
+<span class="stat-label">Effort Reduction</span>
+</div>
+
+<div class="stat-item">
+<span class="stat-number">284K+</span>
+<span class="stat-label">Code Instances Analyzed</span>
+</div>
+
+</div>
+
+</section>
 
 
 <!-- KEY FEATURES -->
@@ -426,6 +682,76 @@ visibility into testing outcomes and quality metrics.
 </div>
 
 </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="howit-section">
+
+<h2>How TestForge AI Works</h2>
+<p class="howit-subtitle">From sign-up to a prioritized, production-ready test pipeline in four steps.</p>
+
+<div class="howit-grid">
+
+<div class="howit-step">
+<div class="step-num">1</div>
+<h3>Sign Up &amp; Connect</h3>
+<p>
+Create an account at testforge-ai.com and connect your GitHub repository.
+TestForge AI ingests your commit history, code churn, and project metadata
+in minutes &mdash; no agent install required.
+</p>
+</div>
+
+<div class="howit-step">
+<div class="step-num">2</div>
+<h3>Generate Your Framework</h3>
+<p>
+Use the step-by-step wizard to scaffold a complete test automation
+framework. Pick your language, runner, BDD layer, and CI target &mdash;
+download a fully wired, production-ready project.
+</p>
+</div>
+
+<div class="howit-step">
+<div class="step-num">3</div>
+<h3>Prioritize with Defect Prediction</h3>
+<p>
+The DDT engine scores every test file by defect risk using ML models
+trained on real repository data. Run the highest-risk slice first
+and catch more bugs in a fraction of the time.
+</p>
+</div>
+
+<div class="howit-step">
+<div class="step-num">4</div>
+<h3>Generate &amp; Verify Tests</h3>
+<p>
+Convert natural-language requirements into Gherkin, Playwright, pytest,
+or Postman tests through the LLM pipeline &mdash; every output passes
+through a deterministic rule-verification layer before it reaches CI.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCT TOUR -->
+<section class="tour-section">
+
+<h2>Product Tour</h2>
+<p class="tour-subtitle">A look inside the live platform at testforge-ai.com.</p>
+
+<div class="tour-image-wrap">
+<img src="img/Screenshot%202026-04-17%20040510.png" alt="TestForge AI dashboard screenshot" loading="lazy">
+</div>
+
+<p class="tour-caption">
+TestForge AI dashboard &mdash; framework generation, defect-driven prioritization, and run history in one workspace.
+</p>
 
 </section>
 
@@ -708,15 +1034,21 @@ role-based access control. Designed for real engineering teams.
 <!-- CTA -->
 <section class="cta-section">
 
-<h2>TestForge AI is in Active Development</h2>
+<h2>TestForge AI is Live in Public Beta</h2>
 
 <p>
-The platform is being developed as part of an ongoing research program
-in AI-driven software quality engineering. Follow the research or get in touch
-to learn more.
+Try the platform yourself at testforge-ai.com, or get in touch to discuss
+research collaboration, early-adopter access, or enterprise pilots.
 </p>
 
-<a href="contact.html" class="cta-link">Get in Touch</a>
+<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+<a href="https://testforge-ai.com/" target="_blank" rel="noopener" class="cta-link">
+Visit testforge-ai.com &rarr;
+</a>
+<a href="contact.html" class="cta-link" style="background:#fff;color:#6366f1;border:1.5px solid #6366f1;">
+Get in Touch
+</a>
+</div>
 
 </section>
 
