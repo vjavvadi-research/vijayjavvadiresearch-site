@@ -1,350 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Publications | Vijay Prasad Javvadi</title>
-<meta name="description" content="Research publications on AI-driven software testing, defect prediction models, self-healing automation, and intelligent quality engineering systems.">
-<meta property="og:title" content="Publications | Vijay Prasad Javvadi">
-<meta property="og:description" content="Research publications on AI-driven software testing and intelligent quality engineering.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vijayjavvadiresearch.ai/publications.html">
-<meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
-<link rel="canonical" href="https://vijayjavvadiresearch.ai/publications.html">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Publications | Vijay Prasad Javvadi</title>
+  <meta name="description" content="Six consolidated research papers on AI-driven software quality engineering — defect prediction, cross-repository transfer, risk-based testing, self-healing automation, LLM test generation, and post-execution attribution.">
+  <meta name="author" content="Vijay Prasad Javvadi">
+  <meta property="og:title" content="Publications | Vijay Prasad Javvadi">
+  <meta property="og:description" content="Six consolidated research papers on AI-driven software quality engineering — defect prediction, cross-repository transfer, risk-based testing, self-healing automation, LLM test generation, and post-execution attribution.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayjavvadiresearch.ai/publications.html">
+  <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://vijayjavvadiresearch.ai/publications.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+  <link rel="preconnect" href="https://rsms.me/" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav class="navbar" aria-label="Main navigation">
-
-<div class="nav-container">
-
-<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-<span></span><span></span><span></span>
-</button>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="program.html">Program</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="product.html">Product</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="impact.html">Impact</a></li>
-<li><a href="speaking.html">Speaking</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> Vijay&nbsp;Javvadi&nbsp;Research</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-
-<header>
-
-<h1>Publications</h1>
-
-<div class="subtitle">
-AI-Driven Software Quality Engineering Research
-</div>
-
-<div class="description">
-
-This page presents research papers, working manuscripts, and future scholarly
-work in artificial intelligence, software testing, intelligent automation,
-and software quality engineering.
-
-</div>
-
+<header class="site-header">
+  <div class="header-inner">
+    <span class="eyebrow">Publications · 6 papers · 2026</span>
+    <h1>Publications</h1>
+    <p class="subtitle">AI-Driven Software Quality Engineering Research</p>
+    <p class="description">
+      The portfolio was consolidated in May 2026 from an earlier eight-slice series into six papers with
+      distinct methodological identities. Every number on this page is grounded in on-disk experimental
+      artefacts &mdash; trained models, CSVs, JSONs, and figures &mdash; not retrospective summaries.
+    </p>
+  </div>
 </header>
-
 
 <main id="main-content">
 
-<section class="accordion">
-
-
-<!-- PAPER 1 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 1 &mdash; AI-Driven Software Defect Prediction Using Repository Analytics and Machine Learning: An Empirical Study on Large-Scale Open-Source Systems</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Empirical evaluation of 6 ML classifiers (LR, DT, RF, GB, XGB, MLP) on 284,676 instances across 5 open-source repositories (Elasticsearch, Spring Boot, Hadoop, Kafka, Express). Random Forest achieves best F1=0.682, AUC=0.904. Risk-based testing shows top 10% of files capture 43.2% of defects (4.3x improvement), top 20% capture 69.5%, and top 30% capture 81.8%.
-</p>
-
-<p><strong>Status:</strong> Completed</p>
-
-<div class="paper-links">
-<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub</a>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 2 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 2 &mdash; Constructing a Multi-Repository Defect Prediction Dataset from Open-Source Software Systems: Methodology, Validation, and Benchmark Analysis</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Large-scale dataset of 284,676 instances from 5 mature OSS projects with systematic methodology for repository selection, automated feature extraction, and defect labelling. 50-330x larger than existing benchmarks (PROMISE, AEEEM). Covers 10-year window (2013-2023).
-</p>
-
-<p><strong>Status:</strong> Completed</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 3 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 3 &mdash; Comparative Analysis of Machine Learning Classifiers for Software Defect Prediction: From Logistic Regression to Gradient Boosting and Neural Networks</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Rigorous comparative evaluation of 6 classifiers with statistical significance testing (parametric + non-parametric), SMOTE impact analysis, and hyperparameter sensitivity studies. Ensemble methods significantly outperform single models. Cohen&rsquo;s d=2.34 (p&lt;0.001) for RF vs LR.
-</p>
-
-<p><strong>Status:</strong> Completed</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 4 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 4 &mdash; Feature Importance and Interpretability in Software Defect Prediction: A Multi-Method Analysis Using SHAP, Gini Importance, and Permutation Testing</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Multi-method feature importance analysis across 6 model architectures. Code churn accounts for 28.5% of predictive signal. Kendall tau cross-model concordance tau=0.73-0.89. Permutation importance reveals Gini overestimates high-cardinality features by 20-30%.
-</p>
-
-<p><strong>Status:</strong> Completed</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 5 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 5 &mdash; Cross-Repository Transfer Learning in Software Defect Prediction: Leave-One-Out Evaluation and Domain Adaptation Strategies</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Systematic leave-one-repository-out validation revealing defect rate mismatch as primary transfer failure driver. Multi-source training achieves F1=0.601 across diverse targets. Platt scaling calibration improves poorly-transferring scenarios by up to 0.079 F1.
-</p>
-
-<p><strong>Status:</strong> Completed</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 6 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 6 &mdash; Risk-Based Software Testing Using Repository Defect Prediction: Coverage Analysis, CI/CD Integration, and Operational Deployment</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-End-to-end operational deployment of Gradient Boosting model in production FastAPI microservice with GitHub Actions integration. Top 10% files capture 43.2% defects (4.3x improvement). Complete CI/CD pipeline integration with advisory vs gating rollout.
-</p>
-
-<p><strong>Status:</strong> Deployed in Production</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 7 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 7 &mdash; AI-Driven Self-Healing Web Test Automation Using DOM Similarity and Machine Learning</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-Framework that automatically recovers broken Selenium locators at runtime using DOM similarity analysis and ML-assisted ranking. Uses 8 feature families for weighted similarity scoring with hybrid heuristic + ML ranking. Mutation-based evaluation pipeline simulates realistic UI evolution.
-</p>
-
-<p><strong>Status:</strong> In Progress</p>
-
-</div>
-
-</div>
-
-
-
-<!-- PAPER 8 -->
-
-<div class="paper">
-
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Paper 8 &mdash; AI-Driven Test Case Generation from Natural-Language Requirements: A Prompt-Engineered, Rule-Verified Framework for Scalable Software Quality Engineering</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
-
-<div class="paper-content" role="region">
-
-<p><strong>Abstract</strong></p>
-
-<p>
-RAITG framework converting 312 requirements across 3 domains into executable tests via LLM + deterministic rule-based verification. 68% effort reduction (184h to 58.9h). Requirement coverage improves from 71.2% to 94.1%. First-pass verification rate 96.3%.
-</p>
-
-<p><strong>Status:</strong> Completed / Production Service Deployed</p>
-
-</div>
-
-</div>
-
-
-</section>
+  <section class="section section-narrow">
+
+    <div class="toolbar" role="search">
+      <input id="paper-search" type="search" placeholder="Search titles, abstracts, methods…" aria-label="Search publications">
+      <div class="chips" role="tablist" aria-label="Filter by status">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="completed"  type="button">Completed</button>
+        <button class="chip" data-filter="production" type="button">In production</button>
+        <button class="chip" data-filter="progress"   type="button">In progress</button>
+        <button class="chip" data-filter="vision"     type="button">Vision</button>
+      </div>
+    </div>
+
+    <div class="accordion" id="papers">
+
+      <!-- PAPER A -->
+      <article class="paper" id="paper-a" data-status="completed" data-tags="defect prediction empirical random forest gradient boosting xgboost machine learning">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER A</span>
+          <span>Process-Metric-Based Software Defect Prediction at Scale: An Empirical Evaluation of Six Machine Learning Classifiers Across 296,457 File Instances from Five Open-Source Systems</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill completed">Completed</span></span>
+            <span class="kv"><b>Length:</b> 9 pages</span>
+            <span class="kv"><b>Target venue:</b> IEEE Software / IEEE Access / EMSE</span>
+          </div>
+          <p><strong>Abstract.</strong> Uniform empirical comparison of six classifiers (LR, DT, RF, GB, XGB, MLP) on a 296,457-instance dataset assembled from five mature open-source systems (Elasticsearch, Spring Boot, Hadoop, Kafka, Express). Stratified 5-fold cross-validation with paired-<em>t</em> and Wilcoxon significance testing. Random Forest is best (AUC 0.8998, F1 binary 0.6355, F1 macro 0.7595); XGBoost is the closest competitor (AUC 0.8955).</p>
+          <p><strong>Contributions.</strong> Multi-model Gini feature importance with explicit caveat on Strobl 2007 high-cardinality bias; documentation of the deployed model <code>gb-paper1-v4-fixed_age</code>; honest threats-to-validity disclosure including the <code>file_age_days</code> sign bug that contaminated 40% of rows in the prior revision and is now eliminated.</p>
+          <div class="paper-links">
+            <a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub repository &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PAPER B -->
+      <article class="paper" id="paper-b" data-status="completed" data-tags="cross-repository transfer learning defect prediction LORO leave-one-out">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER B</span>
+          <span>Cross-Repository Software Defect Prediction: A Leave-One-Repository-Out Empirical Study of Process-Metric Transferability Across Five Heterogeneous Open-Source Systems</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill completed">Completed</span></span>
+            <span class="kv"><b>Length:</b> 5 pages</span>
+            <span class="kv"><b>Target venue:</b> MSR / IEEE Access / AST @ ICSE</span>
+          </div>
+          <p><strong>Abstract.</strong> Systematic leave-one-repository-out validation reveals an AUC&ndash;F1 asymmetry under cross-repository conditions and identifies defect-rate mismatch as the primary qualitative predictor of transfer degradation. Cross-repository AUC ranges 0.817&ndash;0.913 with mean 0.867; cross F1 ranges 0.525&ndash;0.707 with mean 0.631. The cross-within F1 gap shrinks to 0.027 after the <code>file_age_days</code> correction.</p>
+          <p><strong>What's explicitly out of scope.</strong> No 20-pair pairwise matrix, no MMD distance analysis, and no domain-adaptation methods (TCA / CORAL / DANN). These are signposted as future work rather than claimed.</p>
+        </div>
+      </article>
+
+      <!-- PAPER C -->
+      <article class="paper" id="paper-c" data-status="production" data-tags="risk-based testing prioritization CI/CD top-k coverage FastAPI">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER C</span>
+          <span>Risk-Based Software Test Prioritization via Machine-Learning Defect Prediction: An Empirical Top-k Coverage Study and CI/CD Integration Pattern</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill production">Deployed in production</span></span>
+            <span class="kv"><b>Length:</b> 6 pages</span>
+            <span class="kv"><b>Target venue:</b> IEEE Software (industry) / QRS / ICST industry</span>
+          </div>
+          <p><strong>Abstract.</strong> Top-<em>k</em> coverage analysis at k &isin; {10, 20, 30, 40, 50}% with risk-vs-random lift factors. Top 10% of files capture <strong>43.82%</strong> of defects (4.37&times; lift, 81.4% of the oracle ceiling at the 18.61% base rate). Top 20% reaches 69.62%, top 30% reaches 83.64%. The production model <code>gb-paper1-v4-fixed_age</code> is integrated as a FastAPI microservice triggered by GitHub Actions with explicit advisory-vs-gating rollout criteria.</p>
+          <p><strong>Honest disclosure.</strong> No production telemetry is yet instrumented; the paper describes the design pattern and the offline coverage substrate. A telemetry-grounded follow-up is in progress.</p>
+        </div>
+      </article>
+
+      <!-- PAPER D -->
+      <article class="paper" id="paper-d" data-status="progress" data-tags="self-healing selenium DOM machine learning locator">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER D</span>
+          <span>Self-Healing Test Automation via Tree-Ensemble Locator Ranking: An Empirical Evaluation on 2,400 Mutation Events Across Seven Refactoring Classes</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">In progress</span></span>
+            <span class="kv"><b>Target venue:</b> ICST / ASE industry / ISSTA tool</span>
+          </div>
+          <p><strong>Abstract.</strong> A framework that automatically recovers broken Selenium locators at runtime using DOM similarity analysis and tree-ensemble ranking over eight feature families (id-stability, role/aria, structural neighbourhood, text proximity, depth, attribute Jaccard, sibling-index, and Xpath-edit distance). Mutation-based evaluation pipeline simulates realistic UI evolution: 2,400 mutation events spanning seven refactoring classes.</p>
+          <p>Hybrid heuristic + ML ranking produces a deterministic top-1 candidate plus calibrated confidence used to gate auto-heal vs. flag-for-review.</p>
+        </div>
+      </article>
+
+      <!-- PAPER E -->
+      <article class="paper" id="paper-e" data-status="completed" data-tags="LLM test generation requirements RAITG natural language">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER E</span>
+          <span>LLM-Based Test Case Generation from Natural-Language Requirements: A Verified Multi-Domain Empirical Study with Symbolic Mutation Indicators</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill production">Completed / production service</span></span>
+            <span class="kv"><b>Target venue:</b> ASE / ICSE-NIER / IEEE Access</span>
+          </div>
+          <p><strong>Abstract.</strong> The RAITG framework converts 312 requirements across three domains (banking, healthcare, e-commerce) into executable tests using an LLM plus deterministic rule-based verification. End-to-end results: 68% effort reduction (184h&nbsp;&rarr;&nbsp;58.9h), requirement coverage 71.2%&nbsp;&rarr;&nbsp;94.1%, and first-pass verification rate 96.3%. Symbolic mutation indicators are used as a domain-agnostic adequacy proxy.</p>
+        </div>
+      </article>
+
+      <!-- PAPER F -->
+      <article class="paper" id="paper-f" data-status="vision" data-tags="defect attribution SHAP test failure triage vision">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">PAPER F</span>
+          <span>Post-Execution Defect Attribution: A Framework for Fusing Test-Failure Signals with SHAP-Explained Repository Priors <em>(Vision)</em></span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill vision">Vision paper</span></span>
+            <span class="kv"><b>Target venue:</b> ICSE-NIER / FSE Ideas / ASE-NIER</span>
+          </div>
+          <p><strong>Abstract.</strong> A practitioner-oriented vision for fusing dynamic test-failure signals (stack traces, failure clustering, suspect-set ranking) with SHAP-explained repository priors from the deployed defect-prediction model, producing actionable triage advice rather than ranked file lists. Outlines a four-stage attribution pipeline, validation strategy, and integration points with the existing FastAPI microservice.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="callout" style="margin-top:36px">
+      <strong>Consolidation note.</strong> The previous Paper&nbsp;1&ndash;Paper&nbsp;8 listing has been replaced by this six-paper portfolio (May 2026). Paper&nbsp;2 (dataset construction) and Paper&nbsp;3 (classifier comparison) were folded into <strong>Paper&nbsp;A</strong> to avoid salami-slicing; Paper&nbsp;4 (feature importance / SHAP) is also part of Paper&nbsp;A with SHAP claims removed and Gini-only analysis kept honest.
+    </div>
+  </section>
 
 </main>
 
-
-<footer>
-
-<div class="footer-content">
-
-<div class="footer-section">
-<h4>Research</h4>
-<a href="research.html">Research Areas</a>
-<a href="publications.html">Publications</a>
-<a href="program.html">Research Program</a>
-<a href="impact.html">Impact</a>
-</div>
-
-<div class="footer-section">
-<h4>Product &amp; Projects</h4>
-<a href="product.html">TestForge AI</a>
-<a href="projects.html">Projects</a>
-<a href="timeline.html">Timeline</a>
-</div>
-
-<div class="footer-section">
-<h4>Connect</h4>
-<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
-<a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div class="footer-section">
-<h4>About</h4>
-<p>Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-&copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
-</div>
-
-</footer>
-
-
 <script>
-document.querySelectorAll(".paper-title").forEach(function(title) {
-  title.addEventListener("click", function() {
-    var paper = this.parentElement;
-    paper.classList.toggle("active");
-    this.setAttribute("aria-expanded", paper.classList.contains("active"));
+(function(){
+  var papers = Array.prototype.slice.call(document.querySelectorAll('#papers .paper'));
+  var search = document.getElementById('paper-search');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var activeFilter = 'all';
+  function apply() {
+    var q = (search.value || '').toLowerCase().trim();
+    papers.forEach(function(p){
+      var hay = (p.textContent + ' ' + (p.getAttribute('data-tags')||'')).toLowerCase();
+      var matchText = !q || hay.indexOf(q) !== -1;
+      var matchFilt = activeFilter === 'all' || p.getAttribute('data-status') === activeFilter;
+      p.style.display = (matchText && matchFilt) ? '' : 'none';
+    });
+  }
+  search.addEventListener('input', apply);
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){ x.classList.remove('active'); });
+      c.classList.add('active');
+      activeFilter = c.getAttribute('data-filter');
+      apply();
+    });
   });
-  title.addEventListener("keydown", function(e) {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      this.click();
-    }
-  });
-});
-
-document.querySelector(".nav-toggle").addEventListener("click", function() {
-  var links = document.querySelector(".nav-links");
-  links.classList.toggle("open");
-  this.setAttribute("aria-expanded", links.classList.contains("open"));
-});
+})();
 </script>
-
-
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Research</h4>
+      <a href="research.html">Research Areas</a>
+      <a href="publications.html">Publications</a>
+      <a href="program.html">Research Program</a>
+      <a href="architecture.html">System Architecture</a>
+      <a href="impact.html">Impact</a>
+    </div>
+    <div class="footer-section">
+      <h4>Product &amp; Projects</h4>
+      <a href="product.html">TestForge AI</a>
+      <a href="projects.html">Projects</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="vision.html">Vision</a>
+    </div>
+    <div class="footer-section">
+      <h4>Profile</h4>
+      <a href="contributions.html">Contributions</a>
+      <a href="recognition.html">Recognition</a>
+      <a href="service.html">Service</a>
+      <a href="speaking.html">Speaking</a>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+      <a href="contact.html">Contact</a>
+      <p style="margin-top:14px">Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
+  </div>
+</footer><script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var links  = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  // accordion
+  document.querySelectorAll('.paper-title').forEach(function(t){
+    t.addEventListener('click', function(){
+      var p = this.parentElement;
+      var open = p.classList.toggle('active');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    t.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
+  });
+})();
+</script>
 </body>
 </html>

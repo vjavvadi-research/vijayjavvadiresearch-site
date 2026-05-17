@@ -1,231 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Architecture | Vijay Prasad Javvadi</title>
-<meta name="description" content="System architecture for AI-driven quality engineering platforms including defect prediction, self-healing automation, and intelligent testing systems.">
-<meta property="og:title" content="Architecture | Vijay Prasad Javvadi">
-<meta property="og:description" content="System architecture for AI-driven quality engineering platforms.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vijayjavvadiresearch.ai/architecture.html">
-<meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
-<link rel="canonical" href="https://vijayjavvadiresearch.ai/architecture.html">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>System Architecture | Vijay Prasad Javvadi</title>
+  <meta name="description" content="Five-layer architecture for AI-driven software quality engineering — data sources, feature extraction, ML/LLM core, runtime services, and CI/CD surface — anchored to six research papers.">
+  <meta name="author" content="Vijay Prasad Javvadi">
+  <meta property="og:title" content="System Architecture | Vijay Prasad Javvadi">
+  <meta property="og:description" content="Five-layer architecture for AI-driven software quality engineering — data sources, feature extraction, ML/LLM core, runtime services, and CI/CD surface — anchored to six research papers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayjavvadiresearch.ai/architecture.html">
+  <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://vijayjavvadiresearch.ai/architecture.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+  <link rel="preconnect" href="https://rsms.me/" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav class="navbar" aria-label="Main navigation">
-
-<div class="nav-container">
-
-<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-<span></span><span></span><span></span>
-</button>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="program.html">Program</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="product.html">Product</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="impact.html">Impact</a></li>
-<li><a href="speaking.html">Speaking</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> Vijay&nbsp;Javvadi&nbsp;Research</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="architecture.html" class="active">Architecture</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-
-
-<header>
-
-<h1>Architecture</h1>
-
-<div class="subtitle">
-AI-Driven Quality Engineering System Architecture
-</div>
-
-<div class="description">
-
-This page presents the high-level system architecture for the AI-driven
-software quality engineering research platform, showing how the core
-components interconnect.
-
-</div>
-
+<header class="site-header">
+  <div class="header-inner">
+    <span class="eyebrow">System Architecture · v2 · May 2026</span>
+    <h1>System Architecture</h1>
+    <p class="subtitle">How the six papers compose one production-grade platform</p>
+    <p class="description">
+      A five-layer architecture &mdash; data sources, feature extraction, ML &amp; LLM core, runtime services, and CI/CD surface &mdash;
+      with an AI-governance side rail across the stack. Every component is anchored to the paper or papers that produced it.
+    </p>
+  </div>
 </header>
 
 <main id="main-content">
 
-<section class="accordion">
+  <section class="arch-wrap" style="margin-top:48px">
+    <div class="arch-svg-card" aria-label="System architecture diagram">
+      <svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="archTitle archDesc" font-family="Inter, Segoe UI, sans-serif">
+  <title id="archTitle">AI-Driven Software Quality Engineering — System Architecture</title>
+  <desc id="archDesc">Layered architecture from data sources through ML and runtime services to CI/CD integration, with all six research papers anchored to the components they produce.</desc>
 
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="ml" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+    <linearGradient id="svc" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="ui" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="gov" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .lbl { fill: #e2e8f0; font-size: 12px; }
+      .ttl { fill: #ffffff; font-size: 13.5px; font-weight: 700; }
+      .sub { fill: #cbd5e1; font-size: 11px; }
+      .lane { fill: #1f2937; opacity: .35; }
+      .lane-ttl { fill: #94a3b8; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+      .tag { fill: #fde68a; font-size: 10px; font-weight: 700; }
+      .pipe { stroke: #64748b; stroke-width: 1.6; fill: none; stroke-dasharray: 4 4; }
+      .flow { stroke: #94a3b8; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
 
-<div class="paper">
+  <rect width="1200" height="780" fill="url(#bgGrad)" rx="14"/>
 
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Platform Overview</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
+  <!-- LANES -->
+  <rect class="lane" x="20"  y="50"  width="1160" height="90"/>
+  <rect class="lane" x="20"  y="160" width="1160" height="150"/>
+  <rect class="lane" x="20"  y="330" width="1160" height="170"/>
+  <rect class="lane" x="20"  y="520" width="1160" height="130"/>
+  <rect class="lane" x="20"  y="670" width="1160" height="90"/>
 
-<div class="paper-content" role="region">
+  <text class="lane-ttl" x="34" y="75">1 · DATA SOURCES</text>
+  <text class="lane-ttl" x="34" y="185">2 · FEATURE EXTRACTION &amp; DATASET</text>
+  <text class="lane-ttl" x="34" y="355">3 · ML / LLM CORE</text>
+  <text class="lane-ttl" x="34" y="545">4 · RUNTIME SERVICES (FastAPI)</text>
+  <text class="lane-ttl" x="34" y="695">5 · CI/CD &amp; DEVELOPER SURFACE</text>
 
-<p>
-The AI-driven quality engineering platform integrates multiple intelligent
-components into a unified system. At its core, the platform combines
-repository mining, machine learning models, and automation frameworks
-to deliver predictive software quality insights.
-</p>
+  <!-- LANE 1: data sources -->
+  <g>
+    <rect x="160"  y="88" width="180" height="44" rx="8" fill="url(#data)"/>
+    <text class="ttl" x="250" y="106" text-anchor="middle">Git Commit Logs</text>
+    <text class="sub" x="250" y="122" text-anchor="middle">Elasticsearch · Spring Boot · Hadoop</text>
 
-<p><strong>Core Components:</strong></p>
+    <rect x="360"  y="88" width="180" height="44" rx="8" fill="url(#data)"/>
+    <text class="ttl" x="450" y="106" text-anchor="middle">Issue / Defect History</text>
+    <text class="sub" x="450" y="122" text-anchor="middle">Keyword labels · bug tags · JIRA</text>
 
-<ul>
-<li>Repository Analytics Engine - mines version control data for development metrics</li>
-<li>Defect Prediction Module - ML models that identify defect-prone components</li>
-<li>Self-Healing Automation Layer - adaptive test execution with locator recovery</li>
-<li>Test Generation Engine - LLM-powered test case creation from specifications</li>
-<li>Quality Analytics Dashboard - real-time visualization of quality metrics</li>
-</ul>
+    <rect x="560"  y="88" width="180" height="44" rx="8" fill="url(#data)"/>
+    <text class="ttl" x="650" y="106" text-anchor="middle">Live DOM Snapshots</text>
+    <text class="sub" x="650" y="122" text-anchor="middle">Selenium / Playwright sessions</text>
 
-</div>
+    <rect x="760"  y="88" width="180" height="44" rx="8" fill="url(#data)"/>
+    <text class="ttl" x="850" y="106" text-anchor="middle">Natural-Language Reqs</text>
+    <text class="sub" x="850" y="122" text-anchor="middle">312 reqs · 3 domains</text>
 
-</div>
+    <rect x="960"  y="88" width="180" height="44" rx="8" fill="url(#data)"/>
+    <text class="ttl" x="1050" y="106" text-anchor="middle">Test-Run Telemetry</text>
+    <text class="sub" x="1050" y="122" text-anchor="middle">Failures · stack traces · timings</text>
+  </g>
 
+  <!-- LANE 2: feature extraction & dataset -->
+  <g>
+    <rect x="60"  y="200" width="260" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text class="ttl" x="190" y="222" text-anchor="middle">Repository Analytics Engine</text>
+    <text class="sub" x="190" y="241" text-anchor="middle">commit_count · unique_developers · churn</text>
+    <text class="sub" x="190" y="256" text-anchor="middle">lines_added · lines_deleted · file_age_days</text>
+    <text class="sub" x="190" y="271" text-anchor="middle">commit_frequency (bug-fixed in v4)</text>
 
-<div class="paper">
+    <rect x="340" y="200" width="260" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text class="ttl" x="470" y="222" text-anchor="middle">Unified Dataset</text>
+    <text class="sub" x="470" y="241" text-anchor="middle">296,457 file instances · 5 OSS repos</text>
+    <text class="sub" x="470" y="256" text-anchor="middle">18.61% defect ratio · 10-yr window</text>
+    <text class="tag" x="470" y="278" text-anchor="middle">▸ PAPER A §3</text>
 
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Data Pipeline</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
+    <rect x="620" y="200" width="260" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text class="ttl" x="750" y="222" text-anchor="middle">DOM Feature Extractor</text>
+    <text class="sub" x="750" y="241" text-anchor="middle">8 feature families · id-stability · role/aria</text>
+    <text class="sub" x="750" y="256" text-anchor="middle">structural · text · depth · attribute Jaccard</text>
+    <text class="tag" x="750" y="278" text-anchor="middle">▸ PAPER D</text>
 
-<div class="paper-content" role="region">
+    <rect x="900" y="200" width="260" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text class="ttl" x="1030" y="222" text-anchor="middle">Requirement Pre-processor</text>
+    <text class="sub" x="1030" y="241" text-anchor="middle">RAITG prompt templates · domain glossary</text>
+    <text class="sub" x="1030" y="256" text-anchor="middle">acceptance-criteria normalisation</text>
+    <text class="tag" x="1030" y="278" text-anchor="middle">▸ PAPER E</text>
+  </g>
 
-<p>
-The data pipeline collects software repository metadata, processes
-development activity metrics, and feeds them into machine learning
-models for defect prediction and risk assessment.
-</p>
+  <!-- LANE 3: ML / LLM core -->
+  <g>
+    <rect x="60"  y="365" width="240" height="120" rx="10" fill="url(#ml)"/>
+    <text class="ttl" x="180" y="388" text-anchor="middle">Defect-Prediction Models</text>
+    <text class="sub" x="180" y="408" text-anchor="middle">LR · DT · RF · GB · XGB · MLP</text>
+    <text class="sub" x="180" y="425" text-anchor="middle">RF AUC 0.8998 (best)</text>
+    <text class="sub" x="180" y="442" text-anchor="middle">XGB AUC 0.8955</text>
+    <text class="sub" x="180" y="459" text-anchor="middle">Stratified 5-fold CV · SMOTE</text>
+    <text class="tag" x="180" y="477" text-anchor="middle">▸ PAPER A · PAPER B</text>
 
-<p>
-Key data sources include Git commit history, code change frequency,
-developer contribution patterns, and historical defect records.
-The pipeline supports batch and incremental processing modes for
-both offline analysis and real-time quality monitoring.
-</p>
+    <rect x="320" y="365" width="240" height="120" rx="10" fill="url(#ml)"/>
+    <text class="ttl" x="440" y="388" text-anchor="middle">Cross-Repo Transfer</text>
+    <text class="sub" x="440" y="408" text-anchor="middle">Leave-one-repository-out</text>
+    <text class="sub" x="440" y="425" text-anchor="middle">Cross AUC 0.867 · F1 0.631</text>
+    <text class="sub" x="440" y="442" text-anchor="middle">AUC–F1 asymmetry analysis</text>
+    <text class="sub" x="440" y="459" text-anchor="middle">Defect-rate mismatch driver</text>
+    <text class="tag" x="440" y="477" text-anchor="middle">▸ PAPER B</text>
 
-</div>
+    <rect x="580" y="365" width="240" height="120" rx="10" fill="url(#ml)"/>
+    <text class="ttl" x="700" y="388" text-anchor="middle">Locator-Ranking Models</text>
+    <text class="sub" x="700" y="408" text-anchor="middle">Tree-ensemble over 8 features</text>
+    <text class="sub" x="700" y="425" text-anchor="middle">2,400 mutation events</text>
+    <text class="sub" x="700" y="442" text-anchor="middle">7 refactor classes</text>
+    <text class="sub" x="700" y="459" text-anchor="middle">Heuristic + ML hybrid</text>
+    <text class="tag" x="700" y="477" text-anchor="middle">▸ PAPER D</text>
 
-</div>
+    <rect x="840" y="365" width="240" height="120" rx="10" fill="url(#ml)"/>
+    <text class="ttl" x="960" y="388" text-anchor="middle">LLM + Rule Verifier</text>
+    <text class="sub" x="960" y="408" text-anchor="middle">Prompt-engineered generation</text>
+    <text class="sub" x="960" y="425" text-anchor="middle">Deterministic rule check</text>
+    <text class="sub" x="960" y="442" text-anchor="middle">Symbolic mutation indicators</text>
+    <text class="sub" x="960" y="459" text-anchor="middle">96.3% first-pass verify</text>
+    <text class="tag" x="960" y="477" text-anchor="middle">▸ PAPER E</text>
+  </g>
 
+  <!-- LANE 4: services -->
+  <g>
+    <rect x="60"  y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
+    <text class="ttl" x="160" y="565" text-anchor="middle">Risk Prediction API</text>
+    <text class="sub" x="160" y="585" text-anchor="middle">/predict · gb-paper1-v4</text>
+    <text class="sub" x="160" y="600" text-anchor="middle">top-k coverage endpoint</text>
+    <text class="tag" x="160" y="623" text-anchor="middle">▸ PAPER C</text>
 
-<div class="paper">
+    <rect x="280" y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
+    <text class="ttl" x="380" y="565" text-anchor="middle">Test Prioritisation</text>
+    <text class="sub" x="380" y="585" text-anchor="middle">Top 10% → 43.82% defects</text>
+    <text class="sub" x="380" y="600" text-anchor="middle">4.37× risk-vs-random lift</text>
+    <text class="tag" x="380" y="623" text-anchor="middle">▸ PAPER C</text>
 
-<div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-<span>Integration with CI/CD Pipelines</span>
-<span class="arrow" aria-hidden="true">&#9654;</span>
-</div>
+    <rect x="500" y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
+    <text class="ttl" x="600" y="565" text-anchor="middle">Self-Healing Runtime</text>
+    <text class="sub" x="600" y="585" text-anchor="middle">DOM-similarity recovery</text>
+    <text class="sub" x="600" y="600" text-anchor="middle">Confidence-gated heal/flag</text>
+    <text class="tag" x="600" y="623" text-anchor="middle">▸ PAPER D</text>
 
-<div class="paper-content" role="region">
+    <rect x="720" y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
+    <text class="ttl" x="820" y="565" text-anchor="middle">Test Generation Service</text>
+    <text class="sub" x="820" y="585" text-anchor="middle">Reqs → executable tests</text>
+    <text class="sub" x="820" y="600" text-anchor="middle">94.1% req coverage</text>
+    <text class="tag" x="820" y="623" text-anchor="middle">▸ PAPER E</text>
 
-<p>
-The platform is designed to integrate with modern CI/CD workflows.
-Defect prediction models and test prioritization algorithms run as
-part of the build pipeline, providing risk assessments before code
-is merged and deployed.
-</p>
+    <rect x="940" y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
+    <text class="ttl" x="1040" y="565" text-anchor="middle">Defect-Attribution Svc</text>
+    <text class="sub" x="1040" y="585" text-anchor="middle">SHAP × test-failure fusion</text>
+    <text class="sub" x="1040" y="600" text-anchor="middle">Triage suggestions (vision)</text>
+    <text class="tag" x="1040" y="623" text-anchor="middle">▸ PAPER F</text>
+  </g>
 
-<p>
-This continuous feedback loop enables development teams to make
-data-driven decisions about testing effort allocation and release
-readiness based on predicted software quality.
-</p>
+  <!-- LANE 5: CI/CD -->
+  <g>
+    <rect x="160" y="688" width="200" height="50" rx="10" fill="url(#ui)"/>
+    <text class="ttl" x="260" y="710" text-anchor="middle">GitHub Actions</text>
+    <text class="sub" x="260" y="726" text-anchor="middle">PR &amp; merge gating · advisory</text>
 
-</div>
+    <rect x="380" y="688" width="200" height="50" rx="10" fill="url(#ui)"/>
+    <text class="ttl" x="480" y="710" text-anchor="middle">Risk Dashboard</text>
+    <text class="sub" x="480" y="726" text-anchor="middle">Quality metrics · drilldowns</text>
 
-</div>
+    <rect x="600" y="688" width="200" height="50" rx="10" fill="url(#ui)"/>
+    <text class="ttl" x="700" y="710" text-anchor="middle">CLI &amp; IDE Plugin</text>
+    <text class="sub" x="700" y="726" text-anchor="middle">Pre-commit risk hints</text>
 
+    <rect x="820" y="688" width="200" height="50" rx="10" fill="url(#ui)"/>
+    <text class="ttl" x="920" y="710" text-anchor="middle">Reports &amp; Audit Log</text>
+    <text class="sub" x="920" y="726" text-anchor="middle">Versioned prompts · receipts</text>
+  </g>
 
-</section>
+  <!-- Governance side rail -->
+  <g>
+    <rect x="40" y="160" width="20" height="490" rx="6" fill="url(#gov)"/>
+    <text transform="translate(54 650) rotate(-90)" class="ttl">AI GOVERNANCE  ·  payload controls · prompt versioning · privacy hashing · audit trails</text>
+  </g>
+
+  <!-- FLOWS (data sources → extraction → core → services → ci/cd) -->
+  <g>
+    <!-- D1->E1 -->
+    <path class="flow" marker-end="url(#arrow)" d="M 250 132 V 200"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 450 132 V 200"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 650 132 V 200"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 850 132 V 200"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 1050 132 V 200"/>
+
+    <!-- extraction -> core -->
+    <path class="flow" marker-end="url(#arrow)" d="M 190 290 V 365"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 470 290 V 365"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 750 290 V 365"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 1030 290 V 365"/>
+
+    <!-- core -> services -->
+    <path class="flow" marker-end="url(#arrow)" d="M 180 485 V 540"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 380 485 C 380 510, 380 510, 380 540"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 700 485 V 540"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 960 485 C 960 510, 1040 510, 1040 540"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 820 485 V 540"/>
+
+    <!-- services -> ci/cd -->
+    <path class="flow" marker-end="url(#arrow)" d="M 160 640 V 688"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 380 640 V 688"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 600 640 C 600 665, 700 665, 700 688"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 820 640 V 688"/>
+    <path class="flow" marker-end="url(#arrow)" d="M 1040 640 C 1040 665, 920 665, 920 688"/>
+
+    <!-- telemetry loop back -->
+    <path class="pipe" d="M 1050 132 C 1180 230, 1180 540, 1100 590"/>
+    <text class="lbl" x="1170" y="370" text-anchor="end" fill="#94a3b8">▲ telemetry &amp; feedback loop</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">AI-Driven Software Quality Engineering — System Architecture</text>
+</svg>
+
+    </div>
+    <div class="arch-legend" aria-hidden="true">
+      <span class="leg"><span class="swatch" style="background:linear-gradient(135deg,#0ea5e9,#0369a1)"></span> Data sources</span>
+      <span class="leg"><span class="swatch" style="background:#0f172a;border:1px solid #38bdf8"></span> Feature extraction</span>
+      <span class="leg"><span class="swatch" style="background:linear-gradient(135deg,#6366f1,#4338ca)"></span> ML / LLM core</span>
+      <span class="leg"><span class="swatch" style="background:linear-gradient(135deg,#10b981,#047857)"></span> Runtime services</span>
+      <span class="leg"><span class="swatch" style="background:linear-gradient(135deg,#f59e0b,#b45309)"></span> CI/CD surface</span>
+      <span class="leg"><span class="swatch" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)"></span> AI governance</span>
+    </div>
+  </section>
+
+  <section class="section section-narrow">
+    <h2>Layer-by-layer walkthrough</h2>
+    <p class="lead">Each layer publishes a stable contract to the one above it; each box names the paper(s) where its design is justified.</p>
+
+    <div class="accordion" id="arch-accordion">
+
+      <article class="paper active">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="true">
+          <span class="num">1</span><span>Data sources</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>Five upstream sources feed the platform: <strong>Git commit logs</strong> (history across Elasticsearch, Spring Boot, Hadoop, Kafka, Express), <strong>issue / defect history</strong> (keyword labelling on bug tags), <strong>live DOM snapshots</strong> from Selenium and Playwright sessions, <strong>natural-language requirements</strong> (312 across three domains), and <strong>test-run telemetry</strong> from real CI executions.</p>
+          <p>Sources are intentionally heterogeneous: the platform's job is to fuse them into a single risk model and a single triage signal.</p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">2</span><span>Feature extraction &amp; dataset</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>The <strong>Repository Analytics Engine</strong> produces the seven process metrics powering Paper&nbsp;A: <code>commit_count</code>, <code>unique_developers</code>, <code>code_churn</code>, <code>lines_added</code>, <code>lines_deleted</code>, <code>file_age_days</code>, and <code>commit_frequency</code>. The May 2026 rebuild corrected the <code>file_age_days</code> sign bug that previously contaminated 40% of rows, lifting <code>commit_frequency</code> from a near-zero contributor to a meaningful secondary signal.</p>
+          <p>In parallel the <strong>DOM feature extractor</strong> (Paper&nbsp;D) emits eight feature families and the <strong>requirement pre-processor</strong> (Paper&nbsp;E) normalises requirements via the RAITG prompt schema and domain glossary.</p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">3</span><span>ML / LLM core</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>Four model families share a uniform training pipeline (stratified 5-fold CV, SMOTE oversampling, paired-<em>t</em>/Wilcoxon significance):</p>
+          <p><strong>Defect-prediction models</strong> &mdash; six classifiers benchmarked head-to-head, Random Forest best at AUC 0.8998 (Paper&nbsp;A). <strong>Cross-repository transfer</strong> &mdash; leave-one-repository-out with cross AUC 0.867 and cross F1 0.631 (Paper&nbsp;B). <strong>Locator-ranking models</strong> &mdash; tree ensembles over 2,400 mutation events spanning seven refactor classes (Paper&nbsp;D). <strong>LLM + rule verifier</strong> &mdash; prompt-engineered generation with deterministic rule checks and symbolic mutation indicators (Paper&nbsp;E).</p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">4</span><span>Runtime services (FastAPI)</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>Five microservices expose the trained models behind versioned HTTP endpoints: <strong>risk-prediction API</strong>, <strong>test-prioritisation service</strong> (top-10% capture 43.82% of defects, 4.37&times; lift; Paper&nbsp;C), <strong>self-healing runtime</strong>, <strong>test-generation service</strong> (94.1% requirement coverage, 96.3% first-pass verification; Paper&nbsp;E), and the <strong>defect-attribution service</strong> (Paper&nbsp;F, vision).</p>
+          <p>The production model in service is <code>gb-paper1-v4-fixed_age</code> &mdash; Gradient Boosting with SMOTE, trained on 386,076 instances post-correction, AUC 0.8917.</p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">5</span><span>CI/CD surface</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>The platform meets developers where they already work: a <strong>GitHub Actions integration</strong> with advisory and gating rollouts, a <strong>risk dashboard</strong>, a <strong>CLI / IDE plugin</strong> for pre-commit risk hints, and <strong>versioned reports and audit logs</strong> &mdash; including the immutable prompt receipts that the AI governance layer requires.</p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num">G</span><span>AI Governance side rail</span><span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content">
+          <p>A cross-cutting concern, not a layer. Implements <strong>payload controls</strong>, <strong>content redaction</strong>, <strong>author-privacy hashing</strong>, <strong>prompt versioning</strong>, and <strong>audit trails</strong>. Every model call &mdash; whether to the defect classifier, the LLM, or the attribution service &mdash; passes through this rail and produces a verifiable receipt.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="callout">
+      <strong>Why this shape?</strong> The architecture is deliberately ML-agnostic at the service boundary &mdash; the same FastAPI contract serves the current Gradient Boosting model and would serve a fine-tuned transformer if and when one outperforms it on calibration, not just on raw AUC.
+    </div>
+  </section>
 
 </main>
-
-
-<footer>
-
-<div class="footer-content">
-
-<div class="footer-section">
-<h4>Research</h4>
-<a href="research.html">Research Areas</a>
-<a href="publications.html">Publications</a>
-<a href="program.html">Research Program</a>
-<a href="impact.html">Impact</a>
-</div>
-
-<div class="footer-section">
-<h4>Product &amp; Projects</h4>
-<a href="product.html">TestForge AI</a>
-<a href="projects.html">Projects</a>
-<a href="timeline.html">Timeline</a>
-</div>
-
-<div class="footer-section">
-<h4>Connect</h4>
-<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
-<a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div class="footer-section">
-<h4>About</h4>
-<p>Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-&copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
-</div>
-
-</footer>
-
-
-<script>
-document.querySelectorAll(".paper-title").forEach(function(title) {
-  title.addEventListener("click", function() {
-    var paper = this.parentElement;
-    paper.classList.toggle("active");
-    this.setAttribute("aria-expanded", paper.classList.contains("active"));
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Research</h4>
+      <a href="research.html">Research Areas</a>
+      <a href="publications.html">Publications</a>
+      <a href="program.html">Research Program</a>
+      <a href="architecture.html">System Architecture</a>
+      <a href="impact.html">Impact</a>
+    </div>
+    <div class="footer-section">
+      <h4>Product &amp; Projects</h4>
+      <a href="product.html">TestForge AI</a>
+      <a href="projects.html">Projects</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="vision.html">Vision</a>
+    </div>
+    <div class="footer-section">
+      <h4>Profile</h4>
+      <a href="contributions.html">Contributions</a>
+      <a href="recognition.html">Recognition</a>
+      <a href="service.html">Service</a>
+      <a href="speaking.html">Speaking</a>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+      <a href="contact.html">Contact</a>
+      <p style="margin-top:14px">Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
+  </div>
+</footer><script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var links  = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  // accordion
+  document.querySelectorAll('.paper-title').forEach(function(t){
+    t.addEventListener('click', function(){
+      var p = this.parentElement;
+      var open = p.classList.toggle('active');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    t.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
   });
-  title.addEventListener("keydown", function(e) {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      this.click();
-    }
-  });
-});
-
-document.querySelector(".nav-toggle").addEventListener("click", function() {
-  var links = document.querySelector(".nav-links");
-  links.classList.toggle("open");
-  this.setAttribute("aria-expanded", links.classList.contains("open"));
-});
+})();
 </script>
-
 </body>
 </html>
