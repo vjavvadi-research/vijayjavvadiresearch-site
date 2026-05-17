@@ -1,235 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Research Impact | Vijay Prasad Javvadi</title>
-<meta name="description" content="Research impact in AI-driven software quality engineering including defect prediction, autonomous testing, and intelligent automation systems.">
-<meta property="og:title" content="Research Impact | Vijay Prasad Javvadi">
-<meta property="og:description" content="Research impact in AI-driven automation, predictive analytics, and intelligent testing systems.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vijayjavvadiresearch.ai/impact.html">
-<meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
-<link rel="canonical" href="https://vijayjavvadiresearch.ai/impact.html">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Research Impact | Vijay Prasad Javvadi</title>
+  <meta name="description" content="Reproducible impact metrics from six AI-driven software quality engineering papers — 296,457 instances, AUC 0.8998, 43.82% defect capture in the top 10%, 68% effort reduction in LLM test generation.">
+  <meta name="author" content="Vijay Prasad Javvadi">
+  <meta property="og:title" content="Research Impact | Vijay Prasad Javvadi">
+  <meta property="og:description" content="Reproducible impact metrics from six AI-driven software quality engineering papers — 296,457 instances, AUC 0.8998, 43.82% defect capture in the top 10%, 68% effort reduction in LLM test generation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayjavvadiresearch.ai/impact.html">
+  <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://vijayjavvadiresearch.ai/impact.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+  <link rel="preconnect" href="https://rsms.me/" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav class="navbar" aria-label="Main navigation">
-
-<div class="nav-container">
-
-<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-<span></span><span></span><span></span>
-</button>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="program.html">Program</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="product.html">Product</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="impact.html">Impact</a></li>
-<li><a href="speaking.html">Speaking</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> Vijay&nbsp;Javvadi&nbsp;Research</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="impact.html" class="active">Impact</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-
-<header>
-
-<h1>Research Impact</h1>
-
-<div class="subtitle">
-Advancing Intelligent Software Quality Engineering
-</div>
-
-<div class="description">
-
-The research contributions presented on this platform focus on advancing
-AI-driven automation, predictive analytics for software quality, and
-intelligent testing systems. These innovations aim to improve reliability,
-efficiency, and scalability in modern software engineering practices.
-
-</div>
-
+<header class="site-header">
+  <div class="header-inner">
+    <span class="eyebrow">Research Impact</span>
+    <h1>Research Impact</h1>
+    <p class="subtitle">Numbers grounded in on-disk experimental artefacts</p>
+    <p class="description">
+      Every metric below is reproducible from CSVs, trained models, and figures in the source repositories. No number on this page
+      is a retrospective summary; each one comes from a verified experiment.
+    </p>
+  </div>
 </header>
-
 
 <main id="main-content">
 
-<section class="impact-container">
+  <section class="section">
+    <h2>Headline numbers</h2>
+    <div class="tiles">
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">296,457</h3>
+        <p><strong>File instances</strong> across 5 mature OSS systems &mdash; 50&ndash;330&times; larger than PROMISE / AEEEM benchmarks. 10-year commit window.</p>
+      </div>
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">0.8998</h3>
+        <p><strong>AUC of the best classifier</strong> (Random Forest, Paper&nbsp;A). XGBoost a close second at 0.8955.</p>
+      </div>
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">43.82%</h3>
+        <p><strong>Defects captured in the top 10%</strong> of risk-ranked files &mdash; a 4.37&times; lift over uniform random and 81.4% of the oracle ceiling.</p>
+      </div>
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">68%</h3>
+        <p><strong>Effort reduction</strong> from manual test authoring to RAITG (Paper&nbsp;E): 184h&nbsp;&rarr;&nbsp;58.9h across 312 requirements.</p>
+      </div>
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">94.1%</h3>
+        <p><strong>Requirement coverage</strong> achieved by the LLM + rule-verifier pipeline, up from 71.2% manual baseline.</p>
+      </div>
+      <div class="tile center">
+        <h3 style="font-size:34px;color:var(--brand-600);margin:6px 0">96.3%</h3>
+        <p><strong>First-pass verification rate</strong> for generated tests &mdash; the deterministic rule check passes on the first try.</p>
+      </div>
+    </div>
+  </section>
 
-
-<div class="impact-card">
-<div class="impact-title">
-284,676 Code Instances Analyzed Across 5 Repositories
-</div>
-<p>
-The defect prediction research series analyzed 284,676 file instances
-from Elasticsearch, Spring Boot, Hadoop, Kafka, and Express spanning
-10 years of commit history &mdash; 50-330x larger than existing academic
-benchmarks (PROMISE, AEEEM).
-</p>
-<div class="impact-links">
-<a href="publications.html">6 Papers</a>
-<a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub</a>
-</div>
-</div>
-
-
-<div class="impact-card">
-<div class="impact-title">
-4.3x Improvement in Defect Detection Efficiency
-</div>
-<p>
-Risk-based testing using ML defect prediction identifies the top 10%
-highest-risk files that contain 43.2% of all defects. Deployed as a
-production FastAPI microservice integrated with GitHub Actions CI/CD pipelines.
-</p>
-<div class="impact-links">
-<a href="publications.html">Paper 6</a>
-<a href="product.html">TestForge AI</a>
-<a href="https://testforge-ai.com/" target="_blank" rel="noopener">testforge-ai.com</a>
-</div>
-</div>
-
-
-<div class="impact-card">
-<div class="impact-title">
-68% Reduction in Test Design Effort via LLM Generation
-</div>
-<p>
-The RAITG framework converts natural-language requirements into executable
-test cases with rule-based verification. Manual baseline of 184 hours
-reduced to 58.9 hours. Requirement coverage improved from 71.2% to 94.1%
-with a 96.3% first-pass verification rate.
-</p>
-<div class="impact-links">
-<a href="publications.html">Paper 8</a>
-</div>
-</div>
-
-
-<div class="impact-card">
-<div class="impact-title">
-3 Production Microservices Deployed
-</div>
-<p>
-Research operationalized into production services: Test Prioritization
-Service (FastAPI + ML models), Test Case Generation Service (Claude API +
-RAITG), and AI Governance Framework &mdash; all integrated into the
-TestForge AI platform with Docker deployment and Swagger documentation.
-Now live in public beta at testforge-ai.com.
-</p>
-<div class="impact-links">
-<a href="product.html">TestForge AI</a>
-<a href="projects.html">Projects</a>
-<a href="https://testforge-ai.com/" target="_blank" rel="noopener">testforge-ai.com</a>
-</div>
-</div>
-
-
-<div class="impact-card">
-<div class="impact-title">
-Self-Healing Automation Reduces Maintenance Cost
-</div>
-<p>
-DOM similarity analysis with 8 feature families and ML-assisted ranking
-enables automatic recovery of broken test locators at runtime. Hybrid
-heuristic + logistic regression ranking provides resilient UI test
-automation across evolving application versions.
-</p>
-<div class="impact-links">
-<a href="publications.html">Paper 7</a>
-</div>
-</div>
-
-
-<div class="impact-card">
-<div class="impact-title">
-8 Research Papers in AI-Driven Software Quality
-</div>
-<p>
-A comprehensive research portfolio spanning defect prediction (6 papers),
-self-healing automation (1 paper), and LLM-driven test generation (1 paper).
-Rigorous methodology with statistical significance testing, cross-validation,
-and real-world production deployment.
-</p>
-<div class="impact-links">
-<a href="publications.html">All Publications</a>
-<a href="research.html">Research Areas</a>
-</div>
-</div>
-
-
-</section>
-
+  <section class="section section-narrow">
+    <h2>Where the research lives in production</h2>
+    <p class="lead">A direct line from each paper to a running service or running deployment.</p>
+    <ul style="max-width:760px;margin:0 auto;padding:0">
+      <li class="callout"><strong>Paper&nbsp;A</strong> &rarr; the production defect-prediction model in TestForge AI is <code>gb-paper1-v4-fixed_age</code>: Gradient Boosting + SMOTE, AUC 0.8917 on the corrected dataset.</li>
+      <li class="callout"><strong>Paper&nbsp;C</strong> &rarr; the FastAPI <code>/predict</code> microservice and the GitHub Actions integration that turn that model into pre-merge risk advice.</li>
+      <li class="callout"><strong>Paper&nbsp;E</strong> &rarr; the test-generation service in TestForge AI that emits Playwright + BDD specs from English requirements.</li>
+      <li class="callout"><strong>Paper&nbsp;D</strong> &rarr; the self-healing runtime that recovers broken Selenium locators using DOM similarity and tree-ensemble ranking.</li>
+    </ul>
+  </section>
 </main>
-
-
-<footer>
-
-<div class="footer-content">
-
-<div class="footer-section">
-<h4>Research</h4>
-<a href="research.html">Research Areas</a>
-<a href="publications.html">Publications</a>
-<a href="program.html">Research Program</a>
-<a href="impact.html">Impact</a>
-</div>
-
-<div class="footer-section">
-<h4>Product &amp; Projects</h4>
-<a href="product.html">TestForge AI</a>
-<a href="projects.html">Projects</a>
-<a href="timeline.html">Timeline</a>
-</div>
-
-<div class="footer-section">
-<h4>Connect</h4>
-<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
-<a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div class="footer-section">
-<h4>About</h4>
-<p>Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-&copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
-</div>
-
-</footer>
-
-
-<script>
-document.querySelector(".nav-toggle").addEventListener("click", function() {
-  var links = document.querySelector(".nav-links");
-  links.classList.toggle("open");
-  this.setAttribute("aria-expanded", links.classList.contains("open"));
-});
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Research</h4>
+      <a href="research.html">Research Areas</a>
+      <a href="publications.html">Publications</a>
+      <a href="program.html">Research Program</a>
+      <a href="architecture.html">System Architecture</a>
+      <a href="impact.html">Impact</a>
+    </div>
+    <div class="footer-section">
+      <h4>Product &amp; Projects</h4>
+      <a href="product.html">TestForge AI</a>
+      <a href="projects.html">Projects</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="vision.html">Vision</a>
+    </div>
+    <div class="footer-section">
+      <h4>Profile</h4>
+      <a href="contributions.html">Contributions</a>
+      <a href="recognition.html">Recognition</a>
+      <a href="service.html">Service</a>
+      <a href="speaking.html">Speaking</a>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+      <a href="contact.html">Contact</a>
+      <p style="margin-top:14px">Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
+  </div>
+</footer><script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var links  = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  // accordion
+  document.querySelectorAll('.paper-title').forEach(function(t){
+    t.addEventListener('click', function(){
+      var p = this.parentElement;
+      var open = p.classList.toggle('active');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    t.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
+  });
+})();
 </script>
-
 </body>
 </html>

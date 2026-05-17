@@ -1,253 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Research Timeline | Vijay Prasad Javvadi</title>
-<meta name="description" content="Research timeline of AI-driven software quality engineering — from 2024 foundational research through the 2026 TestForge AI public beta launch, with a roadmap to 2030.">
-<meta property="og:title" content="Research Timeline | Vijay Prasad Javvadi">
-<meta property="og:description" content="From 2024 foundational research to the 2026 TestForge AI public beta — milestones in AI-driven software quality engineering.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vijayjavvadiresearch.ai/timeline.html">
-<meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
-<link rel="canonical" href="https://vijayjavvadiresearch.ai/timeline.html">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
-
-<link rel="stylesheet" href="css/style.css">
-
-<style>
-.tl-badge {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 12px;
-  margin-bottom: 8px;
-}
-.tl-badge.achieved { background: rgba(34,197,94,0.15); color: #16a34a; }
-.tl-badge.current  { background: rgba(99,102,241,0.15); color: #6366f1; }
-.tl-badge.planned  { background: rgba(245,158,11,0.15); color: #b45309; }
-.tl-badge.vision   { background: rgba(139,92,246,0.15); color: #7c3aed; }
-.tl-highlight {
-  font-weight: 600;
-  color: #1e293b;
-}
-.tl-link {
-  color: #6366f1;
-  text-decoration: none;
-  font-weight: 600;
-}
-.tl-link:hover { text-decoration: underline; }
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Research Timeline | Vijay Prasad Javvadi</title>
+  <meta name="description" content="Chronological view of the AI-driven software quality engineering research program — from first experiments through the May 2026 consolidation and the production gb-paper1-v4 deployment.">
+  <meta name="author" content="Vijay Prasad Javvadi">
+  <meta property="og:title" content="Research Timeline | Vijay Prasad Javvadi">
+  <meta property="og:description" content="Chronological view of the AI-driven software quality engineering research program — from first experiments through the May 2026 consolidation and the production gb-paper1-v4 deployment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayjavvadiresearch.ai/timeline.html">
+  <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://vijayjavvadiresearch.ai/timeline.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+  <link rel="preconnect" href="https://rsms.me/" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav class="navbar" aria-label="Main navigation">
-
-<div class="nav-container">
-
-<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-<span></span><span></span><span></span>
-</button>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="program.html">Program</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="product.html">Product</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="impact.html">Impact</a></li>
-<li><a href="speaking.html">Speaking</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> Vijay&nbsp;Javvadi&nbsp;Research</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="timeline.html" class="active">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-
-
-<header>
-
-<h1>Research Timeline</h1>
-
-<div class="subtitle">
-Evolution of Research in AI-Driven Software Testing and Quality Engineering
-</div>
-
-<div class="description">
-
-This timeline highlights the development of research initiatives
-focused on intelligent automation, machine learning for software
-quality, and AI-driven testing systems.
-
-</div>
-
+<header class="site-header">
+  <div class="header-inner">
+    <span class="eyebrow">Research Timeline</span>
+    <h1>Research Timeline</h1>
+    <p class="subtitle">From first experiments to production deployment</p>
+    <p class="description">A chronological view of the program's milestones &mdash; the corrected May 2026 numbers, not the pre-bug-fix snapshots.</p>
+  </div>
 </header>
 
-
 <main id="main-content">
+  <section class="section section-narrow">
+    <div class="timeline">
 
-<section class="timeline">
+      <div class="tl-item">
+        <time>2025 · Q3</time>
+        <h3>Repository Analytics Engine v1</h3>
+        <p>Initial extraction across five OSS systems; baseline 6-classifier benchmark; first FastAPI prototype.</p>
+      </div>
 
+      <div class="tl-item">
+        <time>2025 · Q4</time>
+        <h3>First eight-paper draft series</h3>
+        <p>Paper&nbsp;1&ndash;Paper&nbsp;8 outline. Identified that Paper&nbsp;2 (dataset) and Paper&nbsp;3 (classifier comparison) were thinly sliced and needed consolidation.</p>
+      </div>
 
-<div class="timeline-item">
-<div class="year">2024</div>
-<span class="tl-badge achieved">Achieved</span>
-<p>
-<span class="tl-highlight">Research program established.</span>
-Initiated work on AI-driven defect prediction using repository analytics
-and machine learning. Built the foundational dataset by mining
-<span class="tl-highlight">284,676 file-instances</span> across five large
-open-source projects (Elasticsearch, Spring Boot, Hadoop, Kafka, Express)
-spanning 10 years of commit history &mdash; 50&ndash;330&times; larger
-than existing academic benchmarks (PROMISE, AEEEM).
-</p>
-</div>
+      <div class="tl-item">
+        <time>2026 · Q1</time>
+        <h3>Self-healing locator framework</h3>
+        <p>2,400 mutation events generated across seven refactor classes; tree-ensemble ranking models trained and calibrated. Paper&nbsp;D enters review.</p>
+      </div>
 
+      <div class="tl-item">
+        <time>2026 · Q1</time>
+        <h3>RAITG &amp; the test-generation service</h3>
+        <p>312 requirements processed across banking, healthcare, e-commerce. 94.1% requirement coverage, 96.3% first-pass verify. Paper&nbsp;E completed.</p>
+      </div>
 
-<div class="timeline-item">
-<div class="year">2025</div>
-<span class="tl-badge achieved">Achieved</span>
-<p>
-<span class="tl-highlight">Six peer-reviewed papers published</span> on
-defect prediction. Random Forest classifier achieves
-<span class="tl-highlight">AUC 0.904</span> with a
-<span class="tl-highlight">4.3&times; lift in defect-detection efficiency</span>
-&mdash; the top 10% highest-risk files contain 43% of all defects.
-The Test Prioritization Service shipped to production as a FastAPI
-microservice integrated with GitHub Actions CI/CD. Self-healing test
-automation framework (DOM similarity + ML ranking) and the RAITG
-LLM test-generation pipeline (96.3% first-pass verification, 94.1%
-requirement coverage) reach prototype maturity.
-<a class="tl-link" href="publications.html">See publications &rarr;</a>
-</p>
-</div>
+      <div class="tl-item">
+        <time>2026 · Q2</time>
+        <h3>file_age_days bug discovered &amp; fixed</h3>
+        <p>Sign bug from <code>git log</code>'s default ordering contaminated ~40% of rows. Replaced with explicit min/max accumulators. All datasets and models rebuilt; <code>commit_frequency</code> emerges as a real secondary signal.</p>
+      </div>
 
+      <div class="tl-item">
+        <time>2026 · May</time>
+        <h3>Eight papers consolidated to six</h3>
+        <p>Paper&nbsp;1&ndash;Paper&nbsp;6 of the defect series merged into <strong>Paper A (empirical study)</strong>, <strong>Paper B (cross-repo)</strong>, and <strong>Paper C (risk-based testing)</strong>. Total page count drops from ~80&ndash;100 to 20 with no loss of empirical content.</p>
+      </div>
 
-<div class="timeline-item">
-<div class="year">2026</div>
-<span class="tl-badge current">Now &mdash; Live</span>
-<p>
-<span class="tl-highlight">TestForge AI launched in public beta</span> at
-<a class="tl-link" href="https://testforge-ai.com/" target="_blank" rel="noopener">testforge-ai.com</a>
-&mdash; an integrated platform combining framework generation,
-defect-driven test prioritization, verified LLM test generation,
-and an AI governance layer. Three production microservices unified
-behind a single dashboard with role-based access, webhook integrations,
-and Docker deployment. An eighth research paper on rule-verified
-LLM test generation completes the core publication portfolio.
-<a class="tl-link" href="product.html">See the product &rarr;</a>
-</p>
-</div>
+      <div class="tl-item">
+        <time>2026 · May</time>
+        <h3>Production model gb-paper1-v4-fixed_age</h3>
+        <p>Gradient Boosting + SMOTE deployed in the FastAPI risk-prediction service. GitHub Actions integration with advisory and gating rollouts.</p>
+      </div>
 
+      <div class="tl-item">
+        <time>2026 · May (vision)</time>
+        <h3>Paper F &mdash; Post-Execution Defect Attribution</h3>
+        <p>Vision paper proposing the fusion of dynamic test-failure signals with SHAP-explained repository priors for practitioner-actionable triage. Implementation roadmap drafted.</p>
+      </div>
 
-<div class="timeline-item">
-<div class="year">2027</div>
-<span class="tl-badge planned">Planned</span>
-<p>
-<span class="tl-highlight">Visual UI testing</span> via computer-vision +
-multimodal LLM pipelines for layout, regression, and accessibility
-detection. Expanded language coverage (Go, Rust, Kotlin), deeper
-IDE integrations, and an enterprise tier for on-prem deployment.
-Research extension into <span class="tl-highlight">flaky-test prediction</span>
-and root-cause attribution using execution traces.
-</p>
-</div>
+      <div class="tl-item">
+        <time>Upcoming</time>
+        <h3>Telemetry-grounded follow-up to Paper&nbsp;C</h3>
+        <p>Production-telemetry-based validation of risk-based prioritisation, the missing piece called out explicitly in Paper&nbsp;C's threats-to-validity section.</p>
+      </div>
 
-
-<div class="timeline-item">
-<div class="year">2028</div>
-<span class="tl-badge planned">Planned</span>
-<p>
-<span class="tl-highlight">Cloud-native scale-out</span> &mdash;
-distributed test execution and risk scoring across microservice
-fleets, with cross-repository defect correlation models. Multi-tenant
-SaaS hardening, federated learning for organizations that cannot
-share repository data, and integration with major observability
-platforms.
-</p>
-</div>
-
-
-<div class="timeline-item">
-<div class="year">2030 Vision</div>
-<span class="tl-badge vision">Vision</span>
-<p>
-<span class="tl-highlight">Autonomous software quality engineering.</span>
-Self-learning systems that continuously mine repositories,
-predict risk, generate and verify tests, and tune themselves
-against production telemetry &mdash; closing the loop from
-code change to production reliability without manual
-intervention.
-</p>
-</div>
-
-
-</section>
-
+    </div>
+  </section>
 </main>
-
-
-<footer>
-
-<div class="footer-content">
-
-<div class="footer-section">
-<h4>Research</h4>
-<a href="research.html">Research Areas</a>
-<a href="publications.html">Publications</a>
-<a href="program.html">Research Program</a>
-<a href="impact.html">Impact</a>
-</div>
-
-<div class="footer-section">
-<h4>Product &amp; Projects</h4>
-<a href="product.html">TestForge AI</a>
-<a href="projects.html">Projects</a>
-<a href="timeline.html">Timeline</a>
-</div>
-
-<div class="footer-section">
-<h4>Connect</h4>
-<a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
-<a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div class="footer-section">
-<h4>About</h4>
-<p>Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-&copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
-</div>
-
-</footer>
-
-
-<script>
-document.querySelector(".nav-toggle").addEventListener("click", function() {
-  var links = document.querySelector(".nav-links");
-  links.classList.toggle("open");
-  this.setAttribute("aria-expanded", links.classList.contains("open"));
-});
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Research</h4>
+      <a href="research.html">Research Areas</a>
+      <a href="publications.html">Publications</a>
+      <a href="program.html">Research Program</a>
+      <a href="architecture.html">System Architecture</a>
+      <a href="impact.html">Impact</a>
+    </div>
+    <div class="footer-section">
+      <h4>Product &amp; Projects</h4>
+      <a href="product.html">TestForge AI</a>
+      <a href="projects.html">Projects</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="vision.html">Vision</a>
+    </div>
+    <div class="footer-section">
+      <h4>Profile</h4>
+      <a href="contributions.html">Contributions</a>
+      <a href="recognition.html">Recognition</a>
+      <a href="service.html">Service</a>
+      <a href="speaking.html">Speaking</a>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+      <a href="contact.html">Contact</a>
+      <p style="margin-top:14px">Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Vijay Prasad Javvadi &mdash; AI-Driven Software Quality Research
+  </div>
+</footer><script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var links  = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  // accordion
+  document.querySelectorAll('.paper-title').forEach(function(t){
+    t.addEventListener('click', function(){
+      var p = this.parentElement;
+      var open = p.classList.toggle('active');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    t.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+    });
+  });
+})();
 </script>
-
 </body>
 </html>
