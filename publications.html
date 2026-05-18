@@ -18,6 +18,27 @@
   <link rel="preconnect" href="https://rsms.me/" crossorigin>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="css/style.css?v=2026-05-17b">
+  <style>
+    /* "Submitted" status — added for Paper C peer review submission */
+    .status-pill.submitted {
+      background: rgba(245, 158, 11, 0.15);
+      color: #b45309;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    .paper-meta .kv code {
+      background: #f1f5f9;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      color: #334155;
+    }
+    .paper-meta .kv a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .paper-meta .kv a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -64,6 +85,7 @@
         <button class="chip active" data-filter="all" type="button">All</button>
         <button class="chip" data-filter="completed"  type="button">Completed</button>
         <button class="chip" data-filter="production" type="button">In production</button>
+        <button class="chip" data-filter="submitted"  type="button">Submitted</button>
         <button class="chip" data-filter="progress"   type="button">In progress</button>
         <button class="chip" data-filter="vision"     type="button">Vision</button>
       </div>
@@ -111,7 +133,7 @@
       </article>
 
       <!-- PAPER C -->
-      <article class="paper" id="paper-c" data-status="production" data-tags="risk-based testing prioritization CI/CD top-k coverage FastAPI">
+      <article class="paper" id="paper-c" data-status="submitted" data-tags="risk-based testing prioritization CI/CD top-k coverage FastAPI submitted under review">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
           <span class="num">PAPER C</span>
           <span>Risk-Based Software Test Prioritization via Machine-Learning Defect Prediction: An Empirical Top-k Coverage Study and CI/CD Integration Pattern</span>
@@ -119,11 +141,14 @@
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill production">Deployed in production</span></span>
+            <span class="kv"><b>Status:</b> <span class="status-pill submitted">Submitted &middot; Under review</span></span>
+            <span class="kv"><b>Manuscript ID:</b> <code>a37743ed-7589-48bf-8cf8-84bb599a9e2f</code></span>
+            <span class="kv"><b>ORCID:</b> <a href="https://orcid.org/0009-0004-1192-6906" target="_blank" rel="noopener">0009-0004-1192-6906</a></span>
             <span class="kv"><b>Length:</b> 6 pages</span>
             <span class="kv"><b>Target venue:</b> IEEE Software (industry) / QRS / ICST industry</span>
           </div>
           <p><strong>Abstract.</strong> Top-<em>k</em> coverage analysis at k &isin; {10, 20, 30, 40, 50}% with risk-vs-random lift factors. Top 10% of files capture <strong>43.82%</strong> of defects (4.37&times; lift, 81.4% of the oracle ceiling at the 18.61% base rate). Top 20% reaches 69.62%, top 30% reaches 83.64%. The production model <code>gb-paper1-v4-fixed_age</code> is integrated as a FastAPI microservice triggered by GitHub Actions with explicit advisory-vs-gating rollout criteria.</p>
+          <p><strong>Implementation status.</strong> The system described in this paper is deployed in production as a FastAPI microservice integrated with GitHub Actions CI/CD pipelines.</p>
           <p><strong>Honest disclosure.</strong> No production telemetry is yet instrumented; the paper describes the design pattern and the offline coverage substrate. A telemetry-grounded follow-up is in progress.</p>
         </div>
       </article>
