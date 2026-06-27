@@ -45,7 +45,7 @@
   <div class="header-inner">
     <span class="eyebrow">System Architecture · v2 · May 2026</span>
     <h1>System Architecture</h1>
-    <p class="subtitle">How the six papers compose one production-grade platform</p>
+    <p class="subtitle">How the research manuscripts compose one production-grade platform</p>
     <p class="description">
       A five-layer architecture &mdash; data sources, feature extraction, ML &amp; LLM core, runtime services, and CI/CD surface &mdash;
       with an AI-governance side rail across the stack. Every component is anchored to the paper or papers that produced it.
@@ -229,7 +229,7 @@
     <rect x="940" y="540" width="200" height="100" rx="10" fill="url(#svc)"/>
     <text class="ttl" x="1040" y="565" text-anchor="middle">Defect-Attribution Svc</text>
     <text class="sub" x="1040" y="585" text-anchor="middle">SHAP × test-failure fusion</text>
-    <text class="sub" x="1040" y="600" text-anchor="middle">Triage suggestions (vision)</text>
+    <text class="sub" x="1040" y="600" text-anchor="middle">Triage suggestions</text>
     <text class="tag" x="1040" y="623" text-anchor="middle">▸ PAPER F</text>
   </g>
 
@@ -348,7 +348,7 @@
           <span class="num">4</span><span>Runtime services (FastAPI)</span><span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content">
-          <p>Five microservices expose the trained models behind versioned HTTP endpoints: <strong>risk-prediction API</strong>, <strong>test-prioritisation service</strong> (top-10% capture 43.82% of defects, 4.37&times; lift; Paper&nbsp;C), <strong>self-healing runtime</strong>, <strong>test-generation service</strong> (94.1% requirement coverage, 96.3% first-pass verification; Paper&nbsp;E), and the <strong>defect-attribution service</strong> (Paper&nbsp;F, vision).</p>
+          <p>Five microservices expose the trained models behind versioned HTTP endpoints: <strong>risk-prediction API</strong>, <strong>test-prioritisation service</strong> (top-10% capture 43.82% of defects, 4.37&times; lift; Paper&nbsp;C), <strong>self-healing runtime</strong>, <strong>test-generation service</strong> (94.1% requirement coverage, 96.3% first-pass verification; Paper&nbsp;E), and the <strong>defect-attribution service</strong> (Paper&nbsp;F).</p>
           <p>The production model in service is <code>gb-paper1-v4-fixed_age</code> &mdash; Gradient Boosting with SMOTE, trained on 386,076 instances post-correction, AUC 0.8917.</p>
         </div>
       </article>
@@ -391,6 +391,7 @@
     <div class="footer-section">
       <h4>Product &amp; Projects</h4>
       <a href="product.html">TestForge AI</a>
+      <a href="paperqc.html">TestForge PaperQC</a>
       <a href="projects.html">Projects</a>
       <a href="timeline.html">Timeline</a>
       <a href="vision.html">Vision</a>
@@ -405,7 +406,8 @@
     <div class="footer-section">
       <h4>Connect</h4>
       <a href="https://github.com/javvadivijayprasad" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:research@vijayjavvadiresearch.ai">Email</a>
+      <a href="https://scholar.google.com/citations?user=afSI26UAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="mailto:vijay@vijayjavvadiresearch.ai">Email</a>
       <a href="contact.html">Contact</a>
       <p style="margin-top:14px">Independent research in AI-driven software quality engineering, defect prediction, and intelligent test automation.</p>
     </div>
