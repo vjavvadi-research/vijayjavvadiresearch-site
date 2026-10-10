@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b1020">
   <title>Publications | Vijay Prasad Javvadi</title>
-  <meta name="description" content="Nine manuscripts under peer review across IEEE, Wiley, Springer, Elsevier, and Taylor &amp; Francis — defect prediction, cross-repository transfer, risk-based testing, self-healing automation, LLM test generation, post-execution attribution, and software tooling.">
+  <meta name="description" content="Peer-reviewed publications in Elsevier SoftwareX and ICOSAAS 2026, plus eight manuscripts submitted for peer review at Wiley, Springer, Elsevier, PeerJ, and Taylor &amp; Francis — defect prediction, risk-based testing, self-healing automation, LLM test generation, and software tooling.">
   <meta name="author" content="Vijay Prasad Javvadi">
   <meta property="og:title" content="Publications | Vijay Prasad Javvadi">
-  <meta property="og:description" content="Nine manuscripts under peer review across IEEE, Wiley, Springer, Elsevier, and Taylor &amp; Francis — defect prediction, cross-repository transfer, risk-based testing, self-healing automation, LLM test generation, post-execution attribution, and software tooling.">
+  <meta property="og:description" content="Peer-reviewed publications in Elsevier SoftwareX and ICOSAAS 2026, plus eight manuscripts submitted for peer review at Wiley, Springer, Elsevier, PeerJ, and Taylor &amp; Francis.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vijayjavvadiresearch.ai/publications.html">
   <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
@@ -19,40 +19,50 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="css/style.css?v=2026-05-17b">
   <style>
-    /* Peer-review status pills */
-    .status-pill.review {
-      background: rgba(245, 158, 11, 0.15);
-      color: #b45309;
-      border: 1px solid rgba(245, 158, 11, 0.3);
-    }
-    .status-pill.ready {
-      background: rgba(99, 102, 241, 0.12);
-      color: #4338ca;
-      border: 1px solid rgba(99, 102, 241, 0.3);
-    }
-    .status-pill.preprint {
-      background: rgba(20, 184, 166, 0.12);
-      color: #0f766e;
-      border: 1px solid rgba(20, 184, 166, 0.3);
-    }
+    /* Publication pipeline status pills */
+    .status-pill.published { background: rgba(34,197,94,0.15);  color: #15803d; border: 1px solid rgba(34,197,94,0.35); }
+    .status-pill.review    { background: rgba(99,102,241,0.14); color: #4338ca; border: 1px solid rgba(99,102,241,0.3); }
+    .status-pill.preprint  { background: rgba(20,184,166,0.12); color: #0f766e; border: 1px solid rgba(20,184,166,0.3); }
+    .status-pill.progress  { background: rgba(245,158,11,0.15); color: #b45309; border: 1px solid rgba(245,158,11,0.3); }
     @media (prefers-color-scheme: dark) {
-      .status-pill.review   { background: rgba(245,158,11,.15);  color: #fbbf24; }
-      .status-pill.ready    { background: rgba(99,102,241,.18);  color: #a5b4fc; }
-      .status-pill.preprint { background: rgba(20,184,166,.18);  color: #5eead4; }
+      .status-pill.published { background: rgba(34,197,94,.18);  color: #86efac; }
+      .status-pill.review    { background: rgba(99,102,241,.18); color: #a5b4fc; }
+      .status-pill.preprint  { background: rgba(20,184,166,.18); color: #5eead4; }
+      .status-pill.progress  { background: rgba(245,158,11,.15); color: #fbbf24; }
     }
-    .paper-meta .kv code {
-      background: #f1f5f9;
-      padding: 1px 6px;
-      border-radius: 4px;
-      font-size: 0.92em;
-      color: #334155;
-    }
-    .paper-meta .kv a {
-      color: #6366f1;
-      text-decoration: none;
-      font-weight: 500;
-    }
+    .paper-meta .kv a { color: #6366f1; text-decoration: none; font-weight: 500; }
     .paper-meta .kv a:hover { text-decoration: underline; }
+
+    /* Group headings between pipeline stages */
+    .pub-group {
+      display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 14px;
+      margin: 42px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb;
+    }
+    .pub-group:first-child { margin-top: 6px; }
+    .pub-group h2 { font-size: 20px; margin: 0; }
+    .pub-group .count { font-size: 13px; color: #6b7280; font-weight: 500; }
+    .pub-group .note  { font-size: 13px; color: #6b7280; flex-basis: 100%; }
+    @media (prefers-color-scheme: dark) {
+      .pub-group { border-bottom-color: rgba(255,255,255,0.12); }
+    }
+
+    /* Accent on the left-hand label per stage */
+    .paper-title .num.pub { background: #15803d; color: #fff; }
+    .paper-title .num.rev { background: #4338ca; color: #fff; }
+    .paper-title .num.pre { background: #0f766e; color: #fff; }
+    .paper-title .num.wip { background: #b45309; color: #fff; }
+
+    /* Author identifier badges under the page title */
+    .id-badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px; }
+    .id-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 13px; border-radius: 999px; font-size: 13px; font-weight: 600;
+      background: rgba(255,255,255,0.08); color: #e2e8f0;
+      border: 1px solid rgba(255,255,255,0.18); text-decoration: none; transition: background .2s;
+    }
+    .id-badge:hover { background: rgba(255,255,255,0.16); text-decoration: none; }
+    .id-badge .lbl { opacity: .7; font-weight: 500; }
+    .coauthors { font-size: 13px; color: #6b7280; margin: -4px 0 10px; }
   </style>
 </head>
 <body>
@@ -79,19 +89,22 @@
 </nav>
 <header class="site-header">
   <div class="header-inner">
-    <span class="eyebrow">Publications · 9 manuscripts · 2026</span>
+    <span class="eyebrow">Publications · 2 published · 8 under review · 2026</span>
     <h1>Publications</h1>
     <p class="subtitle">AI-Driven Software Quality Engineering Research</p>
     <p class="description">
-      Nine manuscripts are in the peer-review pipeline across IEEE, Wiley, Springer, Elsevier, and
-      Taylor&nbsp;&amp; Francis. Every number on this page is grounded in on-disk experimental
-      artefacts &mdash; trained models, CSVs, JSONs, and figures &mdash; not retrospective summaries.
-      Statuses are reported honestly: <em>under review</em> means submitted and in peer review, not
-      accepted; preprints are clearly marked as not yet peer-reviewed. Drafting and copy-editing were
-      assisted by an AI tool (Anthropic Claude).
+      Two peer-reviewed publications (Elsevier <em>SoftwareX</em>; ICOSAAS 2026, Scopus-indexed) and
+      eight manuscripts submitted for peer review across Wiley, Springer, Elsevier, PeerJ, and Taylor&nbsp;&amp; Francis.
+      Every number on this page is grounded in on-disk experimental artefacts &mdash; trained models,
+      CSVs, JSONs, and figures &mdash; not retrospective summaries. Statuses are reported precisely:
+      <em>under review</em> means submitted and in peer review, not accepted; preprints are marked as
+      not peer-reviewed. Drafting and copy-editing were assisted by an AI tool (Anthropic Claude);
+      all experiments, data, and results are the author's own.
     </p>
-    <div class="hero-actions">
-      <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=afSI26UAAAAJ&hl=en" target="_blank" rel="noopener">View on Google Scholar &rarr;</a>
+    <div class="id-badges">
+      <a class="id-badge" href="https://orcid.org/0009-0004-1192-6906" target="_blank" rel="noopener"><span class="lbl">ORCID</span> 0009-0004-1192-6906</a>
+      <a class="id-badge" href="https://scholar.google.com/citations?user=afSI26UAAAAJ&amp;hl=en" target="_blank" rel="noopener"><span class="lbl">Google Scholar</span> Profile &rarr;</a>
+      <a class="id-badge" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=11926779" target="_blank" rel="noopener"><span class="lbl">SSRN</span> Author page &rarr;</a>
     </div>
   </div>
 </header>
@@ -104,31 +117,299 @@
       <input id="paper-search" type="search" placeholder="Search titles, abstracts, methods…" aria-label="Search publications">
       <div class="chips" role="tablist" aria-label="Filter by status">
         <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="published" type="button">Published</button>
         <button class="chip" data-filter="review" type="button">Under review</button>
-        <button class="chip" data-filter="ready"  type="button">Submission-ready</button>
-        <button class="chip" data-filter="preprint" type="button">Preprint live</button>
+        <button class="chip" data-filter="preprint" type="button">Preprints</button>
+        <button class="chip" data-filter="progress" type="button">In progress</button>
       </div>
     </div>
 
     <div class="accordion" id="papers">
 
-      <!-- PAPER A -->
-      <article class="paper" id="paper-a" data-status="review" data-tags="defect prediction empirical random forest gradient boosting xgboost machine learning ieee access under review">
+      <!-- ===================== PUBLISHED ===================== -->
+      <div class="pub-group">
+        <h2>Peer-Reviewed Publications</h2>
+        <span class="count">2 published</span>
+      </div>
+
+      <article class="paper" id="pub-bdd2pw" data-status="published" data-tags="bdd2pw gherkin playwright mcp page object softwarex elsevier published npm journal">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER A</span>
+          <span class="num pub">SoftwareX</span>
+          <span>bdd2pw: Live-DOM Page Object Scaffolding from Gherkin Specifications via the Microsoft Playwright MCP</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill published">Published</span></span>
+            <span class="kv"><b>Venue:</b> Elsevier <em>SoftwareX</em>, vol.&nbsp;35, art.&nbsp;102933 (2026)</span>
+            <span class="kv"><b>DOI:</b> <a href="https://doi.org/10.1016/j.softx.2026.102933" target="_blank" rel="noopener">10.1016/j.softx.2026.102933</a></span>
+            <span class="kv"><b>Indexed:</b> Scopus &middot; Crossref &middot; Google Scholar</span>
+          </div>
+          <p><strong>Summary.</strong> A software article describing <code>bdd2pw</code>, an open-source tool that scaffolds runnable Playwright TypeScript tests from Gherkin <code>.feature</code> files. It detects existing Page Objects, inspects the live DOM through the Microsoft Playwright MCP, and emits Page Object Models and spec files ready for execution, with an optional governed LLM fallback. Published as <code>@vijaypjavvadi/bdd2pw</code> on npm and archived on Zenodo.</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.1016/j.softx.2026.102933" target="_blank" rel="noopener">Publisher (ScienceDirect) &rarr;</a>
+            <a href="https://scholar.google.com/citations?user=afSI26UAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+            <a href="https://www.npmjs.com/package/@vijaypjavvadi/bdd2pw" target="_blank" rel="noopener">npm package &rarr;</a>
+            <a href="https://github.com/javvadivijayprasad/bdd2pw" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a href="https://doi.org/10.5281/zenodo.20452068" target="_blank" rel="noopener">Software DOI (Zenodo) &rarr;</a>
+            <a href="https://doi.org/10.2139/ssrn.6905717" target="_blank" rel="noopener">Earlier SSRN preprint &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="pub-icosaas" data-status="published" data-tags="flaky tests continuous integration CI decision catalogue quality engineering icosaas conference scopus published">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num pub">ICOSAAS</span>
+          <span>Detecting and Mitigating Flaky Tests in Continuous Integration: A Decision Catalogue for Quality Engineering Teams</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <p class="coauthors">V.&nbsp;P.&nbsp;Javvadi, R.&nbsp;S.&nbsp;Ganapathy, M.&nbsp;S.&nbsp;Sri, S.&nbsp;Pochincharla, T.&nbsp;V.&nbsp;Akula, et&nbsp;al.</p>
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill published">Published</span></span>
+            <span class="kv"><b>Venue:</b> International Conference on Intelligent and Sustainable AI Systems (ICOSAAS 2026), conference proceedings</span>
+            <span class="kv"><b>Indexed:</b> Scopus</span>
+          </div>
+          <p><strong>Summary.</strong> A practitioner-oriented decision catalogue for recognising, classifying, and mitigating flaky tests in continuous-integration pipelines, organised by root-cause family (timing, order dependence, shared state, environment, and infrastructure) with recommended detection signals and remediation strategies for quality-engineering teams.</p>
+          <div class="paper-links">
+            <a href="https://scholar.google.com/citations?user=afSI26UAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== UNDER REVIEW ===================== -->
+      <div class="pub-group">
+        <h2>Submitted &amp; Under Peer Review</h2>
+        <span class="count">8 manuscripts</span>
+        <span class="note">Submitted to the venue shown; status reflects the current editorial stage. None are accepted.</span>
+      </div>
+
+      <article class="paper" id="paper-b" data-status="review" data-tags="cross-repository transfer learning defect prediction LORO leave-one-out wiley jsep under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">JSEP</span>
+          <span>Cross-Repository Software Defect Prediction: A Leave-One-Repository-Out Empirical Study Across Five Mature Open-Source Projects</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review &middot; revision submitted</span></span>
+            <span class="kv"><b>Venue:</b> Wiley <em>Journal of Software: Evolution and Process</em></span>
+            <span class="kv"><b>In review since:</b> June 2026</span>
+          </div>
+          <p><strong>Abstract.</strong> Systematic leave-one-repository-out validation reveals an AUC&ndash;F1 asymmetry under cross-repository conditions and identifies defect-rate mismatch as the primary qualitative predictor of transfer degradation. Cross-repository AUC ranges 0.817&ndash;0.913 (mean 0.867); cross F1 ranges 0.525&ndash;0.707 (mean 0.631).</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-c" data-status="review" data-tags="risk-based testing prioritization CI/CD top-k coverage springer discover computing under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">Discover Computing</span>
+          <span>Risk Based Software Test Prioritization Using Machine Learning Defect Prediction on Five Open Source Repositories</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review</span></span>
+            <span class="kv"><b>Venue:</b> Springer <em>Discover Computing</em></span>
+            <span class="kv"><b>In review since:</b> August 2026</span>
+          </div>
+          <p><strong>Abstract.</strong> Top-<em>k</em> coverage analysis at k &isin; {10, 20, 30, 40, 50}% with risk-vs-random lift factors. The top 10% of files ranked by predicted risk capture <strong>43.82%</strong> of defects (4.37&times; lift over random). The deployed model is integrated as a FastAPI microservice triggered from GitHub Actions, with explicit advisory-vs-gating rollout criteria.</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-d" data-status="review" data-tags="self-healing selenium DOM machine learning locator wiley stvr under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">STVR</span>
+          <span>Self-Healing Test Automation via Tree-Ensemble Locator Ranking: An Empirical Evaluation on 2,400 Mutation Events Across Seven Refactoring Classes</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review</span></span>
+            <span class="kv"><b>Venue:</b> Wiley <em>Software Testing, Verification and Reliability</em></span>
+            <span class="kv"><b>In review since:</b> June 2026</span>
+          </div>
+          <p><strong>Abstract.</strong> A framework that recovers broken UI locators at runtime using DOM similarity analysis and tree-ensemble ranking over eight feature families (id-stability, role/aria, structural neighbourhood, text proximity, depth, attribute Jaccard, sibling index, and XPath edit distance). A mutation-based evaluation pipeline simulates realistic UI evolution across 2,400 mutation events in seven refactoring classes; hybrid heuristic&nbsp;+&nbsp;ML ranking yields a deterministic top-1 candidate with calibrated confidence to gate auto-heal versus flag-for-review.</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.5281/zenodo.19684439" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-e" data-status="review" data-tags="LLM test generation requirements source grounding mutation open-source wiley stvr under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">STVR</span>
+          <span>Requirements or Source? What Grounds LLM Test Generation on Community-Maintained Open-Source Services: An Executable Mutation Study Against an Independent Human Baseline</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review</span></span>
+            <span class="kv"><b>Venue:</b> Wiley <em>Software Testing, Verification and Reliability</em></span>
+            <span class="kv"><b>In review since:</b> September 2026</span>
+          </div>
+          <p><strong>Summary.</strong> An executable mutation study asking whether LLM-generated tests for community-maintained open-source services are better grounded in natural-language requirements or in source code, measured against an independent human-written baseline. Extends the earlier RAITG line of work (see Preprints below).</p>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-f" data-status="review" data-tags="cross-project defect prediction calibration defects4j bugspy real defects peerj computer science under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">PeerJ CS</span>
+          <span>Trust, Augment, or Replace? What a Cross-Project Defect Predictor Is Worth on 1,323 Real Defects from Defects4J and BugsInPy</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Submitted &middot; editorial check</span></span>
+            <span class="kv"><b>Venue:</b> <em>PeerJ Computer Science</em></span>
+            <span class="kv"><b>Submitted:</b> September 2026</span>
+          </div>
+          <p><strong>Summary.</strong> Evaluates what a cross-project defect predictor is actually worth to a practitioner on 1,323 real, reproducible defects from Defects4J and BugsInPy &mdash; framing the decision as <em>trust</em> the predictor, <em>augment</em> human judgement with it, or <em>replace</em> it, with calibration and cost-aware analysis.</p>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-g1" data-status="review" data-tags="employment fraud detection timeline engine adversarial ai-fake truthhire taylor francis information security journal under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">ISJGP</span>
+          <span>Detecting Employment-Experience Fraud at Scale: A Deterministic Timeline Engine and Adversarial AI-Fake Robustness Study</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review</span></span>
+            <span class="kv"><b>Venue:</b> Taylor&nbsp;&amp; Francis <em>Information Security Journal: A Global Perspective</em></span>
+            <span class="kv"><b>In review since:</b> June 2026</span>
+          </div>
+          <p><strong>Summary.</strong> A deterministic timeline engine for detecting employment-experience fraud at scale, paired with an adversarial robustness study against AI-generated fakes. The TruthHire reproducibility bundle provides the reference implementation, evaluation harness, and a public-corpus assessment (CC-BY-4.0).</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.5281/zenodo.20681820" target="_blank" rel="noopener">TruthHire reproducibility DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-g2" data-status="review" data-preprint="true" data-tags="privacy-preserving fraud reporting threshold PSI private set intersection incentive design elsevier computers security under review ssrn preprint">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">Computers &amp; Security</span>
+          <span>Privacy-Preserving Cross-Organization Fraud Reporting: Threshold-PSI Architecture, Outcome-Symmetric Incentive Design, and an Empirical Parameterization on Real Fraud Data</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Under review</span></span>
+            <span class="kv"><b>Venue:</b> Elsevier <em>Computers &amp; Security</em></span>
+            <span class="kv"><b>In review since:</b> August 2026</span>
+            <span class="kv"><b>Preprint:</b> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7422486" target="_blank" rel="noopener">SSRN 7422486</a> (not peer-reviewed)</span>
+          </div>
+          <p><strong>Summary.</strong> A threshold private-set-intersection architecture that lets organisations report and cross-check fraud signals without revealing their underlying records, an outcome-symmetric incentive design that aligns reporting behaviour, and an empirical parameterisation on real fraud data.</p>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7422486" target="_blank" rel="noopener">SSRN preprint (not peer-reviewed) &rarr;</a>
+            <a href="https://doi.org/10.5281/zenodo.20681820" target="_blank" rel="noopener">TruthHire reproducibility DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="paper-h" data-status="review" data-tags="synthetic test data LLM memorisation verbatim recall fixtures schemas springer empirical software engineering emse under review">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num rev">EMSE</span>
+          <span>Memorised, Not Generated: Verbatim Recall of Published Fixtures in LLM-Generated Test Data, Measured Across Five Models and Eight Public Schemas</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill review">Submitted &middot; with editor</span></span>
+            <span class="kv"><b>Venue:</b> Springer <em>Empirical Software Engineering</em></span>
+            <span class="kv"><b>Submitted:</b> October 2026</span>
+          </div>
+          <p><strong>Summary.</strong> Measures how often LLM-generated test data reproduces published fixtures verbatim rather than synthesising novel values, across five models and eight public schemas &mdash; with implications for test-data provenance, licensing, and the validity of LLM-generated fixtures in CI.</p>
+        </div>
+      </article>
+
+      <!-- ===================== PREPRINTS ===================== -->
+      <div class="pub-group">
+        <h2>Preprints</h2>
+        <span class="count">3 public</span>
+        <span class="note">Hosted on Research Square and SSRN. Preprint hosting is not peer review; later versions of these studies are listed above.</span>
+      </div>
+
+      <article class="paper" id="pre-raitg" data-status="preprint" data-preprint="true" data-tags="LLM test generation requirements RAITG natural language research square preprint">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num pre">Research Square</span>
+          <span>LLM-Based Test Case Generation from Natural-Language Requirements: A Verified Multi-Domain Empirical Study with Symbolic Mutation Indicators</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill preprint">Preprint &middot; not peer-reviewed</span></span>
+            <span class="kv"><b>DOI:</b> <a href="https://doi.org/10.21203/rs.3.rs-10060668/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-10060668/v1</a></span>
+          </div>
+          <p><strong>Abstract.</strong> The RAITG framework converts 312 requirements across three domains (banking, healthcare, e-commerce) into executable tests using an LLM plus deterministic rule-based verification: 68% effort reduction (184&nbsp;h&nbsp;&rarr;&nbsp;58.9&nbsp;h), requirement coverage 71.2%&nbsp;&rarr;&nbsp;94.1%, first-pass verification rate 96.3%. Symbolic mutation indicators serve as a domain-agnostic adequacy proxy. A reframed successor study is under review at Wiley STVR.</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.21203/rs.3.rs-10060668/v1" target="_blank" rel="noopener">Research Square &rarr;</a>
+            <a href="https://doi.org/10.5281/zenodo.20285104" target="_blank" rel="noopener">RAITG corpus DOI &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="pre-attribution" data-status="preprint" data-preprint="true" data-tags="defect attribution test failure triage synthetic failure events research square preprint">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num pre">Research Square</span>
+          <span>Post-Execution Defect Attribution: An Empirical Comparison of Four Methods on 6,000 Synthetic Failure Events</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill preprint">Preprint &middot; not peer-reviewed</span></span>
+            <span class="kv"><b>DOI:</b> <a href="https://doi.org/10.21203/rs.3.rs-10119526/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-10119526/v1</a></span>
+          </div>
+          <p><strong>Abstract.</strong> An empirical comparison of four post-execution defect-attribution methods on 6,000 synthetic failure events, fusing dynamic test-failure signals (stack traces, failure clustering, suspect-set ranking) with repository priors from the defect-prediction model to produce actionable triage advice rather than ranked file lists. A successor study on 1,323 real defects is under review at PeerJ Computer Science.</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.21203/rs.3.rs-10119526/v1" target="_blank" rel="noopener">Research Square &rarr;</a>
+            <a href="https://doi.org/10.5281/zenodo.20723929" target="_blank" rel="noopener">Archival DOI (Zenodo) &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="paper" id="pre-g2" data-status="preprint" data-preprint="true" data-tags="privacy-preserving fraud reporting threshold PSI ssrn preprint">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num pre">SSRN</span>
+          <span>Privacy-Preserving Cross-Organization Fraud Reporting: Threshold-PSI Architecture, Outcome-Symmetric Incentive Design, and an Empirical Parameterization on Real Fraud Data</span>
+          <span class="arrow" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="paper-content" role="region">
+          <div class="paper-meta">
+            <span class="kv"><b>Status:</b> <span class="status-pill preprint">Preprint &middot; not peer-reviewed</span></span>
+            <span class="kv"><b>SSRN:</b> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7422486" target="_blank" rel="noopener">abstract 7422486</a></span>
+          </div>
+          <p>Public preprint of the manuscript currently under review at Elsevier <em>Computers &amp; Security</em> (listed above).</p>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7422486" target="_blank" rel="noopener">SSRN &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== RESEARCH IN PROGRESS ===================== -->
+      <div class="pub-group">
+        <h2>Research in Progress</h2>
+        <span class="count">5 entries</span>
+        <span class="note">Manuscripts in preparation, active collaborations, and studies in design.</span>
+      </div>
+
+      <article class="paper" id="wip-a" data-status="progress" data-tags="defect prediction empirical random forest gradient boosting xgboost machine learning in progress">
+        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
+          <span class="num wip">In prep</span>
           <span>Process-Metric-Based Software Defect Prediction at Scale: An Empirical Evaluation of Six Machine Learning Classifiers Across 296,457 File Instances from Five Open-Source Systems</span>
           <span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> IEEE Access (Q2, IF 3.9)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>Access-2026-25027</code></span>
-            <span class="kv"><b>Submitted:</b> 8 Jun 2026 (resubmission)</span>
-            <span class="kv"><b>Expected decision:</b> Aug&ndash;Nov 2026</span>
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">Manuscript in preparation</span></span>
           </div>
-          <p><strong>Abstract.</strong> Uniform empirical comparison of six classifiers (LR, DT, RF, GB, XGB, MLP) on a 296,457-instance dataset assembled from five mature open-source systems (Elasticsearch, Spring Boot, Hadoop, Kafka, Express). Stratified 5-fold cross-validation with paired-<em>t</em> and Wilcoxon significance testing. Random Forest is best (AUC 0.8998, F1 binary 0.6355, F1 macro 0.7595); XGBoost is the closest competitor (AUC 0.8955).</p>
-          <p><strong>Contributions.</strong> Multi-model Gini feature importance with explicit caveat on Strobl 2007 high-cardinality bias; documentation of the deployed model <code>gb-paper1-v4-fixed_age</code>; honest threats-to-validity disclosure including the <code>file_age_days</code> sign bug that contaminated 40% of rows in the prior revision and is now eliminated.</p>
+          <p><strong>Abstract.</strong> Uniform empirical comparison of six classifiers (LR, DT, RF, GB, XGB, MLP) on a 296,457-instance dataset assembled from five mature open-source systems (Elasticsearch, Spring Boot, Hadoop, Kafka, Express). Stratified 5-fold cross-validation with paired-<em>t</em> and Wilcoxon significance testing. Random Forest is best (AUC 0.8998); XGBoost is the closest competitor (AUC 0.8955). Includes multi-model Gini feature importance with explicit caveats on high-cardinality bias.</p>
           <div class="paper-links">
             <a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
             <a href="https://github.com/javvadivijayprasad/ai-defect-prediction-repository-analytics" target="_blank" rel="noopener">GitHub repository &rarr;</a>
@@ -136,184 +417,67 @@
         </div>
       </article>
 
-      <!-- PAPER B -->
-      <article class="paper" id="paper-b" data-status="review" data-tags="cross-repository transfer learning defect prediction LORO leave-one-out wiley jsep under review">
+      <article class="paper" id="wip-j" data-status="progress" data-tags="browser automation selenium playwright cypress puppeteer adoption migration AI agents survey repository mining collaboration in progress">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER B</span>
-          <span>Cross-Repository Software Defect Prediction: A Leave-One-Repository-Out Empirical Study Across Five Mature Open-Source Projects</span>
+          <span class="num wip">Collab</span>
+          <span>Selenium, Playwright, and Beyond: Browser-Automation Framework Adoption, Migration, and AI-Agent Use</span>
           <span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> Wiley JSEP &mdash; J. Software: Evolution and Process (Q2, IF 1.8)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>3489875</code></span>
-            <span class="kv"><b>Submitted:</b> 12 Jun 2026</span>
-            <span class="kv"><b>Expected decision:</b> Aug&ndash;Sep 2026</span>
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">Active collaboration &middot; data collection</span></span>
+            <span class="kv"><b>With:</b> Boni Garc&iacute;a (Universidad Carlos III de Madrid), Filippo Ricca and Maurizio Leotta (University of Genoa)</span>
+            <span class="kv"><b>Timeline:</b> practitioner survey Q4 2026; submission targeted 2027</span>
           </div>
-          <p><strong>Abstract.</strong> Systematic leave-one-repository-out validation reveals an AUC&ndash;F1 asymmetry under cross-repository conditions and identifies defect-rate mismatch as the primary qualitative predictor of transfer degradation. Cross-repository AUC ranges 0.817&ndash;0.913 with mean 0.867; cross F1 ranges 0.525&ndash;0.707 with mean 0.631. The cross-within F1 gap shrinks to 0.027 after the <code>file_age_days</code> correction.</p>
-          <p><strong>What's explicitly out of scope.</strong> No 20-pair pairwise matrix, no MMD distance analysis, and no domain-adaptation methods (TCA / CORAL / DANN). These are signposted as future work rather than claimed.</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
-          </div>
+          <p><strong>Summary.</strong> A mixed-methods study of how teams adopt, migrate between, and augment browser-automation frameworks (Selenium, Playwright, Cypress, Puppeteer, WebdriverIO, Nightwatch, TestCafe) with AI agents &mdash; combining a practitioner survey, GitHub repository mining, and package-registry metrics across npm, PyPI, Maven, and NuGet.</p>
         </div>
       </article>
 
-      <!-- PAPER C -->
-      <article class="paper" id="paper-c" data-status="review" data-tags="risk-based testing prioritization CI/CD top-k coverage FastAPI ieee software under review">
+      <article class="paper" id="wip-i" data-status="progress" data-tags="test agents weakening quarantine controlled experiment agentic-qa in design in progress">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER C</span>
-          <span>Risk-Based Software Test Prioritization via Machine-Learning Defect Prediction: An Empirical Top-k Coverage Study and CI/CD Integration Pattern</span>
+          <span class="num wip">In design</span>
+          <span>Do Test Agents Weaken Tests? Enforced Quarantine versus Instructions &mdash; A Controlled Experiment</span>
           <span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> IEEE Software</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>SW-2026-05-0236</code></span>
-            <span class="kv"><b>Submitted:</b> 18 May 2026</span>
-            <span class="kv"><b>ORCID:</b> <a href="https://orcid.org/0009-0004-1192-6906" target="_blank" rel="noopener">0009-0004-1192-6906</a></span>
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">Study in design &middot; pilot Q4 2026</span></span>
           </div>
-          <p><strong>Abstract.</strong> Top-<em>k</em> coverage analysis at k &isin; {10, 20, 30, 40, 50}% with risk-vs-random lift factors. Top 10% of files capture <strong>43.82%</strong> of defects (4.37&times; lift, 81.4% of the oracle ceiling at the 18.61% base rate). Top 20% reaches 69.62%, top 30% reaches 83.64%. The production model <code>gb-paper1-v4-fixed_age</code> is integrated as a FastAPI microservice triggered by GitHub Actions with explicit advisory-vs-gating rollout criteria.</p>
-          <p><strong>Honest disclosure.</strong> No production telemetry is yet instrumented; the paper describes the design pattern and the offline coverage substrate. A telemetry-grounded follow-up is in progress.</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
-          </div>
+          <p><strong>Summary.</strong> A controlled factorial experiment (fault location &times; guard arm) using the <code>agentic-qa</code> runtime on three open-source web applications, with an execution-based weakening verdict, to test whether LLM test agents silently weaken test suites and whether enforced quarantine outperforms instruction-only guards. Pre-registration planned.</p>
         </div>
       </article>
 
-      <!-- PAPER D -->
-      <article class="paper" id="paper-d" data-status="review" data-tags="self-healing selenium DOM machine learning locator wiley stvr under review">
+      <article class="paper" id="wip-sel2pw" data-status="progress" data-tags="sel2pw selenium playwright migration AST typescript software paper in progress npm">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER D</span>
-          <span>Self-Healing Test Automation via Tree-Ensemble Locator Ranking: An Empirical Evaluation on 2,400 Mutation Events Across Seven Refactoring Classes</span>
+          <span class="num wip">In prep</span>
+          <span>sel2pw: A Deterministic, Rule-Based Migration Toolkit from Selenium Test Suites to Playwright TypeScript Scaffolds</span>
           <span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> Wiley STVR &mdash; Software Testing, Verification &amp; Reliability (Q2, IF 1.14)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>1820539</code></span>
-            <span class="kv"><b>Submitted:</b> 14 Jun 2026</span>
-            <span class="kv"><b>Expected decision:</b> Aug&ndash;Sep 2026</span>
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">Software paper in preparation</span></span>
           </div>
-          <p><strong>Abstract.</strong> A framework that automatically recovers broken Selenium locators at runtime using DOM similarity analysis and tree-ensemble ranking over eight feature families (id-stability, role/aria, structural neighbourhood, text proximity, depth, attribute Jaccard, sibling-index, and Xpath-edit distance). Mutation-based evaluation pipeline simulates realistic UI evolution: 2,400 mutation events spanning seven refactoring classes.</p>
-          <p>Hybrid heuristic + ML ranking produces a deterministic top-1 candidate plus calibrated confidence used to gate auto-heal vs. flag-for-review.</p>
+          <p><strong>Summary.</strong> A software article for a deterministic, AST- and rule-based migration toolkit that converts Selenium test suites (Java TestNG/JUnit/Cucumber) to Playwright TypeScript scaffolds. Published as <code>@vijaypjavvadi/sel2pw</code> on npm and archived on Zenodo.</p>
           <div class="paper-links">
-            <a href="https://doi.org/10.5281/zenodo.19684439" target="_blank" rel="noopener">Dataset DOI &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- PAPER E -->
-      <article class="paper" id="paper-e" data-status="review" data-preprint="true" data-tags="LLM test generation requirements RAITG natural language springer ase under review preprint">
-        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER E</span>
-          <span>LLM-Based Test Case Generation from Natural-Language Requirements: A Verified Multi-Domain Empirical Study with Symbolic Mutation Indicators</span>
-          <span class="arrow" aria-hidden="true">&#9654;</span>
-        </div>
-        <div class="paper-content" role="region">
-          <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review &middot; Editor assigned</span></span>
-            <span class="kv"><b>Venue:</b> Springer Automated Software Engineering (Q2, IF 3.1)</span>
-            <span class="kv"><b>Submission ID:</b> <code>3a23f22d-7d70-4d5e-8082-a6ce82c889c9</code> (manuscript ID pending)</span>
-            <span class="kv"><b>Submitted:</b> 17 Jun 2026 (editor assigned 17 Jun 2026)</span>
-          </div>
-          <p><strong>Abstract.</strong> The RAITG framework converts 312 requirements across three domains (banking, healthcare, e-commerce) into executable tests using an LLM plus deterministic rule-based verification. End-to-end results: 68% effort reduction (184h&nbsp;&rarr;&nbsp;58.9h), requirement coverage 71.2%&nbsp;&rarr;&nbsp;94.1%, and first-pass verification rate 96.3%. Symbolic mutation indicators are used as a domain-agnostic adequacy proxy.</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.21203/rs.3.rs-10060668/v1" target="_blank" rel="noopener">Preprint (Research Square &mdash; not peer-reviewed) &rarr;</a>
-            <a href="https://doi.org/10.5281/zenodo.20285103" target="_blank" rel="noopener">RAITG corpus DOI &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- PAPER F -->
-      <article class="paper" id="paper-f" data-status="review" data-preprint="true" data-tags="defect attribution test failure triage empirical emse springer under review preprint">
-        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER F</span>
-          <span>Post-Execution Defect Attribution: An Empirical Comparison of Four Methods on 6,000 Synthetic Failure Events</span>
-          <span class="arrow" aria-hidden="true">&#9654;</span>
-        </div>
-        <div class="paper-content" role="region">
-          <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review &middot; Editor assigned</span></span>
-            <span class="kv"><b>Venue:</b> Springer EMSE &mdash; Empirical Software Engineering (Q1, IF 3.6)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>EMSE-S-26-00920</code></span>
-            <span class="kv"><b>Submitted:</b> 16 Jun 2026 (editor assigned 17 Jun 2026)</span>
-            <span class="kv"><b>Expected decision:</b> Aug&ndash;Nov 2026</span>
-          </div>
-          <p><strong>Abstract.</strong> An empirical comparison of four post-execution defect-attribution methods on 6,000 synthetic failure events, fusing dynamic test-failure signals (stack traces, failure clustering, suspect-set ranking) with repository priors from the defect-prediction model to produce actionable triage advice rather than ranked file lists.</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.21203/rs.3.rs-10119526/v1" target="_blank" rel="noopener">Preprint (Research Square &mdash; not peer-reviewed) &rarr;</a>
-            <a href="https://doi.org/10.5281/zenodo.20723929" target="_blank" rel="noopener">Archival DOI &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- bdd2pw -->
-      <article class="paper" id="paper-bdd2pw" data-status="review" data-preprint="true" data-tags="bdd2pw gherkin playwright mcp page object softwarex elsevier ssrn under review preprint npm">
-        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">bdd2pw</span>
-          <span>bdd2pw: Live-DOM Page Object Scaffolding from Gherkin Specifications via the Microsoft Playwright MCP</span>
-          <span class="arrow" aria-hidden="true">&#9654;</span>
-        </div>
-        <div class="paper-content" role="region">
-          <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> Elsevier SoftwareX (Q2, IF 3.4)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>SOFTX-S-26-00858</code></span>
-            <span class="kv"><b>Submitted:</b> 31 May 2026</span>
-            <span class="kv"><b>Expected decision:</b> Aug&ndash;Sep 2026</span>
-          </div>
-          <p><strong>Summary.</strong> A tool paper for an npm package that scaffolds Playwright page objects from Gherkin specifications by driving the Microsoft Playwright MCP against the live DOM. A preprint is hosted on SSRN (preprint hosting; not peer-reviewed). The package is published as <code>@vijaypjavvadi/bdd2pw</code> (v3.8.1).</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.2139/ssrn.6905717" target="_blank" rel="noopener">SSRN preprint (not peer-reviewed) &rarr;</a>
-            <a href="https://doi.org/10.5281/zenodo.20452068" target="_blank" rel="noopener">Software DOI &rarr;</a>
-            <a href="https://www.npmjs.com/package/@vijaypjavvadi/bdd2pw" target="_blank" rel="noopener">npm package &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- sel2pw -->
-      <article class="paper" id="paper-sel2pw" data-status="review" data-tags="sel2pw selenium playwright migration AST typescript software impacts elsevier under review npm">
-        <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">sel2pw</span>
-          <span>sel2pw: A Deterministic, AST-Based Migration Toolkit from Selenium Test Suites to Playwright TypeScript</span>
-          <span class="arrow" aria-hidden="true">&#9654;</span>
-        </div>
-        <div class="paper-content" role="region">
-          <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill review">Under Review</span></span>
-            <span class="kv"><b>Venue:</b> Elsevier Software Impacts (Q3)</span>
-            <span class="kv"><b>Manuscript ID:</b> <code>SIMPAC-D-26-00122</code></span>
-            <span class="kv"><b>Submitted:</b> 31 May 2026</span>
-            <span class="kv"><b>Expected decision:</b> Jul&ndash;Aug 2026</span>
-          </div>
-          <p><strong>Summary.</strong> A tool paper for a deterministic, AST-based migration toolkit that converts Selenium test suites to Playwright TypeScript. Validated on 409 Java files with 0 conversion failures. Published as <code>@vijaypjavvadi/sel2pw</code> (v1.0.5). An SSRN preprint relay is pending.</p>
-          <div class="paper-links">
-            <a href="https://doi.org/10.5281/zenodo.20461040" target="_blank" rel="noopener">Software DOI &rarr;</a>
             <a href="https://www.npmjs.com/package/@vijaypjavvadi/sel2pw" target="_blank" rel="noopener">npm package &rarr;</a>
+            <a href="https://doi.org/10.5281/zenodo.20461040" target="_blank" rel="noopener">Software DOI (Zenodo) &rarr;</a>
           </div>
         </div>
       </article>
 
-      <!-- PAPER G1 -->
-      <article class="paper" id="paper-g1" data-status="ready" data-tags="employment fraud detection timeline engine adversarial ai-fake truthhire taylor francis uiss20 submission ready">
+      <article class="paper" id="wip-joss" data-status="progress" data-tags="JOSS journal of open source software pw-emit usagecontract synthdata agentic-qa software papers in progress npm">
         <div class="paper-title" tabindex="0" role="button" aria-expanded="false">
-          <span class="num">PAPER G1</span>
-          <span>Detecting Employment-Experience Fraud at Scale: A Deterministic Timeline Engine and Adversarial AI-Fake Robustness Study</span>
+          <span class="num wip">In prep</span>
+          <span>Software papers for pw-emit, usagecontract, synthdata, and agentic-qa (Journal of Open Source Software)</span>
           <span class="arrow" aria-hidden="true">&#9654;</span>
         </div>
         <div class="paper-content" role="region">
           <div class="paper-meta">
-            <span class="kv"><b>Status:</b> <span class="status-pill ready">Submission-ready</span></span>
-            <span class="kv"><b>Venue:</b> Taylor &amp; Francis &mdash; Information Security Journal: A Global Perspective (UISS20)</span>
-            <span class="kv"><b>Manuscript ID:</b> pending (assigned at submission)</span>
-            <span class="kv"><b>Target submission:</b> late June 2026</span>
+            <span class="kv"><b>Status:</b> <span class="status-pill progress">Software papers in preparation</span></span>
           </div>
-          <p><strong>Summary.</strong> A deterministic timeline engine for detecting employment-experience fraud at scale, paired with an adversarial robustness study against AI-generated fakes. The reproducibility bundle (TruthHire) provides the reference implementation, evaluation harness, and a public-corpus assessment (CC-BY-4.0).</p>
+          <p><strong>Summary.</strong> Short software articles for four open-source packages published under the <code>@vijaypjavvadi</code> npm scope: <code>pw-emit</code> (shared emitter for Playwright artefacts from a source-agnostic IR), <code>usagecontract</code> (usage-aware consumer-driven contract testing for HTTP APIs), <code>synthdata</code> (LLM-driven synthetic test data with referential integrity), and <code>agentic-qa</code> (an auditable agentic QA runtime with a governance gate and replayable ledger).</p>
           <div class="paper-links">
-            <a href="https://doi.org/10.5281/zenodo.20681820" target="_blank" rel="noopener">TruthHire reproducibility DOI &rarr;</a>
+            <a href="https://www.npmjs.com/~vijaypjavvadi" target="_blank" rel="noopener">All packages on npm &rarr;</a>
           </div>
         </div>
       </article>
@@ -321,7 +485,7 @@
     </div>
 
     <div class="callout" style="margin-top:36px">
-      <strong>Status note.</strong> &ldquo;Under review&rdquo; means the manuscript has been submitted and is in peer review &mdash; it does <em>not</em> mean accepted or published. Preprints (SSRN, Research Square) are hosting venues and are not peer-reviewed. Drafting and copy-editing for these manuscripts were assisted by an AI tool (Anthropic Claude); all experiments, data, and results are the author's own.
+      <strong>Status note.</strong> &ldquo;Published&rdquo; means accepted after peer review and live at the publisher. &ldquo;Under review&rdquo; means submitted and in peer review &mdash; it does <em>not</em> mean accepted. Preprints (Research Square, SSRN) are hosting venues and are not peer-reviewed. Drafting and copy-editing for these manuscripts were assisted by an AI tool (Anthropic Claude); all experiments, data, and results are the author's own.
     </div>
   </section>
 

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b1020">
   <title>Projects | Vijay Prasad Javvadi</title>
-  <meta name="description" content="Research projects, production services, and published npm packages (sel2pw, bdd2pw, pw-emit) for AI-driven software quality engineering.">
+  <meta name="description" content="Eight published npm packages (15,700+ downloads), four open research datasets on Zenodo, and the production services behind the TestForge AI platform — AI-driven software quality engineering.">
   <meta name="author" content="Vijay Prasad Javvadi">
   <meta property="og:title" content="Projects | Vijay Prasad Javvadi">
-  <meta property="og:description" content="Research projects, production services, and published npm packages (sel2pw, bdd2pw, pw-emit) for AI-driven software quality engineering.">
+  <meta property="og:description" content="Eight published npm packages (15,700+ downloads), four open research datasets on Zenodo, and the production services behind the TestForge AI platform — AI-driven software quality engineering.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vijayjavvadiresearch.ai/projects.html">
   <meta property="og:image" content="https://vijayjavvadiresearch.ai/img/Screenshot%202026-04-17%20040510.png">
@@ -18,6 +18,19 @@
   <link rel="preconnect" href="https://rsms.me/" crossorigin>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="css/style.css?v=2026-05-17b">
+  <style>
+    .stats-strip { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:14px; max-width:900px; margin:22px auto 30px; }
+    .stats-strip .stat { text-align:center; padding:16px 10px; border:1px solid #e5e7eb; border-radius:12px; background:#fff; }
+    .stats-strip .stat-num { display:block; font-size:30px; font-weight:700; line-height:1.1; color:#4338ca; }
+    .stats-strip .stat-lbl { display:block; font-size:12.5px; color:#6b7280; margin-top:6px; }
+    .tile .badges { display:flex; gap:6px; flex-wrap:wrap; margin-top:6px; }
+    .tile .badges img { height:20px; }
+    .tile .paper-links { margin-top:10px; display:flex; flex-wrap:wrap; gap:4px 14px; }
+    @media (prefers-color-scheme: dark) {
+      .stats-strip .stat { background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.12); }
+      .stats-strip .stat-num { color:#a5b4fc; }
+    }
+  </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -45,10 +58,10 @@
   <div class="header-inner">
     <span class="eyebrow">Research Projects</span>
     <h1>Projects</h1>
-    <p class="subtitle">Open-source artefacts, production services, and published npm packages</p>
+    <p class="subtitle">Published npm packages, open research datasets, and production services</p>
     <p class="description">
-      Each project below is either an open-source research artefact (the experimental code behind a paper),
-      a service running in the TestForge AI platform, or a published npm package shipped from the program.
+      Eight open-source npm packages (15,700+ cumulative downloads), four datasets and reproducibility bundles
+      archived on Zenodo with persistent DOIs, and the research services running inside the TestForge AI platform.
     </p>
   </div>
 </header>
@@ -57,51 +70,159 @@
 
   <!-- ============ PUBLISHED npm PACKAGES ============ -->
   <section class="section section-narrow" aria-label="Published npm packages">
-    <span class="kicker center" style="display:block">npm Registry</span>
+    <span class="kicker center" style="display:block">npm Registry &middot; <code>@vijaypjavvadi</code></span>
     <h2>Open-Source npm Packages</h2>
-    <p class="lead">Published utilities from the research program &mdash; live download counts and versions update automatically from npm.</p>
+    <p class="lead">Eight published packages from the research program. Version and download badges are fetched live from npm; cumulative totals below are as of October 2026.</p>
+
+    <div class="stats-strip" aria-label="Portfolio statistics">
+      <div class="stat"><span class="stat-num">8</span><span class="stat-lbl">published packages</span></div>
+      <div class="stat"><span class="stat-num">15,700+</span><span class="stat-lbl">cumulative downloads</span></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-lbl">packages above 1,000 downloads</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-lbl">Zenodo software DOIs</span></div>
+    </div>
 
     <div class="tiles">
 
       <div class="tile">
-        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
-        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/sel2pw</h3>
-        <p>Selenium &rarr; Playwright converter. Migrates Java + Selenium + TestNG suites to Playwright TypeScript via a rule-based, AST-driven engine. Also supports Selenium Java, C# NUnit, Cucumber BDD, and SpecFlow with optional LLM fallback (Anthropic, OpenAI, Gemini).</p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">
-          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fsel2pw?label=version&color=6366f1" alt="version" loading="lazy">
-          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fsel2pw?label=downloads&color=22c55e" alt="downloads" loading="lazy">
-          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fsel2pw?label=license&color=64748b" alt="license" loading="lazy">
-        </div>
-        <div class="paper-links" style="margin-top:10px"><a href="https://www.npmjs.com/package/@vijaypjavvadi/sel2pw" target="_blank" rel="noopener">View on npm &rarr;</a></div>
-      </div>
-
-      <div class="tile">
-        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <span class="badge" style="background:rgba(34,197,94,.12);color:#15803d">npm &middot; SoftwareX paper</span>
         <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/bdd2pw</h3>
-        <p>Gherkin &rarr; Playwright scaffolder. Generates runnable Playwright TypeScript tests from <code>.feature</code> files. Detects existing Page Objects, scans live pages via Microsoft Playwright MCP, and emits POMs and specs ready for execution. CLI + HTTP service with optional governed LLM fallback.</p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">
+        <p>Gherkin &rarr; Playwright scaffolder. Generates runnable Playwright TypeScript tests from <code>.feature</code> files, detects existing Page Objects, inspects live pages via the Microsoft Playwright MCP, and emits POMs and specs ready for execution. CLI + HTTP service with optional governed LLM fallback. Described in a peer-reviewed article in Elsevier <em>SoftwareX</em>.</p>
+        <div class="badges">
           <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fbdd2pw?label=version&color=6366f1" alt="version" loading="lazy">
           <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fbdd2pw?label=downloads&color=22c55e" alt="downloads" loading="lazy">
           <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fbdd2pw?label=license&color=64748b" alt="license" loading="lazy">
         </div>
-        <div class="paper-links" style="margin-top:10px"><a href="https://www.npmjs.com/package/@vijaypjavvadi/bdd2pw" target="_blank" rel="noopener">View on npm &rarr;</a></div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/bdd2pw" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/bdd2pw" target="_blank" rel="noopener">GitHub &rarr;</a><a href="https://doi.org/10.5281/zenodo.20452068" target="_blank" rel="noopener">Zenodo DOI &rarr;</a><a href="https://doi.org/10.1016/j.softx.2026.102933" target="_blank" rel="noopener">Paper &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/sel2pw</h3>
+        <p>Selenium &rarr; Playwright migration toolkit. Deterministic AST- and rule-based conversion of Java Selenium suites (TestNG, JUnit, Cucumber) to Playwright TypeScript scaffolds, with experimental C#&nbsp;NUnit and SpecFlow support and an optional LLM fallback. Publishes via GitHub Actions OIDC.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fsel2pw?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fsel2pw?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fsel2pw?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/sel2pw" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/sel2pw" target="_blank" rel="noopener">GitHub &rarr;</a><a href="https://doi.org/10.5281/zenodo.20461040" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
       </div>
 
       <div class="tile">
         <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
         <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/pw-emit</h3>
-        <p>Shared emitter library that renders Playwright TypeScript Page Objects, spec files, and project scaffolds from a generic IR. Powers both <code>sel2pw</code> and <code>bdd2pw</code>.</p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">
+        <p>Shared emitter library that renders Playwright TypeScript Page Objects, spec files, and project scaffolds from a source-agnostic intermediate representation. Powers both <code>bdd2pw</code> and <code>sel2pw</code>.</p>
+        <div class="badges">
           <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fpw-emit?label=version&color=6366f1" alt="version" loading="lazy">
           <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fpw-emit?label=downloads&color=22c55e" alt="downloads" loading="lazy">
           <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fpw-emit?label=license&color=64748b" alt="license" loading="lazy">
         </div>
-        <div class="paper-links" style="margin-top:10px"><a href="https://www.npmjs.com/package/@vijaypjavvadi/pw-emit" target="_blank" rel="noopener">View on npm &rarr;</a></div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/pw-emit" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/pw-emit" target="_blank" rel="noopener">GitHub &rarr;</a><a href="https://doi.org/10.5281/zenodo.20452098" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/usagecontract</h3>
+        <p>Usage-aware consumer-driven contract testing for HTTP APIs. Derives per-consumer contracts from observed traffic and weights verification by real usage, so breaking changes are caught where they matter most.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fusagecontract?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fusagecontract?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fusagecontract?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/usagecontract" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/usagecontract" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/pw-self-heal</h3>
+        <p>In-process self-healing locators for Playwright. A 17-feature ONNX model ranks candidate elements when a locator breaks, with heuristic, ML, and hybrid modes and confidence-gated heal-vs-flag decisions. Companion to the self-healing study under review at Wiley STVR.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fpw-self-heal?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fpw-self-heal?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fpw-self-heal?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/pw-self-heal" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/pw-self-heal" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/synthdata</h3>
+        <p>LLM-driven synthetic test-data generation with referential integrity across related tables and schemas. Companion to the test-data memorisation study under review at Springer <em>Empirical Software Engineering</em>.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fsynthdata?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fsynthdata?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fsynthdata?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/synthdata" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/synthdata" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/agentic-qa</h3>
+        <p>Standalone agentic QA runtime: an LLM selects and invokes tools over MCP inside a governance gate, with a replayable ledger so every decision is auditable and reproducible. Substrate for the test-agent weakening experiment in design.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Fagentic-qa?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Fagentic-qa?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Fagentic-qa?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/agentic-qa" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/agentic-qa" target="_blank" rel="noopener">GitHub &rarr;</a><a href="https://doi.org/10.5281/zenodo.22758876" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(99,102,241,.12);color:var(--brand-700)">npm</span>
+        <h3 style="font-family:var(--font-mono);font-size:15px;word-break:break-all">@vijaypjavvadi/testforge</h3>
+        <p>Meta-CLI that wraps <code>bdd2pw</code>, <code>sel2pw</code>, and <code>pw-self-heal</code> into a single TestForge toolchain command surface.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/npm/v/%40vijaypjavvadi%2Ftestforge?label=version&color=6366f1" alt="version" loading="lazy">
+          <img src="https://img.shields.io/npm/dt/%40vijaypjavvadi%2Ftestforge?label=downloads&color=22c55e" alt="downloads" loading="lazy">
+          <img src="https://img.shields.io/npm/l/%40vijaypjavvadi%2Ftestforge?label=license&color=64748b" alt="license" loading="lazy">
+        </div>
+        <div class="paper-links"><a href="https://www.npmjs.com/package/@vijaypjavvadi/testforge" target="_blank" rel="noopener">npm &rarr;</a><a href="https://github.com/javvadivijayprasad/testforge" target="_blank" rel="noopener">GitHub &rarr;</a></div>
       </div>
 
     </div>
 
     <p class="center" style="margin-top:24px"><a class="btn btn-primary" href="https://www.npmjs.com/~vijaypjavvadi" target="_blank" rel="noopener">View all packages on npm &rarr;</a></p>
+  </section>
+
+  <div class="divider" style="max-width:960px;margin:0 auto"></div>
+
+  <!-- ============ OPEN RESEARCH DATASETS ============ -->
+  <section class="section section-narrow" aria-label="Open research datasets">
+    <span class="kicker center" style="display:block">Zenodo &middot; Open Data</span>
+    <h2>Open Research Datasets</h2>
+    <p class="lead">Datasets and reproducibility bundles archived on Zenodo with persistent DOIs. Each one underpins at least one manuscript on the <a href="publications.html">Publications</a> page.</p>
+
+    <div class="tiles">
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(34,197,94,.12);color:#15803d">Dataset &middot; v2.0.0</span>
+        <h3>Software Defect Prediction Dataset</h3>
+        <p><strong>296,457</strong> file-level instances mined from five mature open-source systems (Elasticsearch, Spring Boot, Hadoop, Kafka, Express) with process metrics and defect labels. Anchors the defect-prediction, cross-repository transfer, and risk-based testing manuscripts.</p>
+        <div class="paper-links"><a href="https://doi.org/10.5281/zenodo.20381231" target="_blank" rel="noopener">v2.0.0 DOI &rarr;</a><a href="https://doi.org/10.5281/zenodo.19682732" target="_blank" rel="noopener">Concept DOI (all versions) &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(34,197,94,.12);color:#15803d">Dataset</span>
+        <h3>Self-Healing Automation Dataset</h3>
+        <p><strong>11,100</strong> rows covering 2,400 UI mutation events across seven refactoring classes, with the eight locator feature families used to train the <code>pw-self-heal</code> ONNX model and evaluate tree-ensemble locator ranking.</p>
+        <div class="paper-links"><a href="https://doi.org/10.5281/zenodo.19684439" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(34,197,94,.12);color:#15803d">Dataset</span>
+        <h3>RAITG Test Generator Dataset</h3>
+        <p><strong>312</strong> natural-language requirements across three application domains (banking, healthcare, e-commerce) with verified executable tests &mdash; the benchmark corpus for LLM test-case generation studies.</p>
+        <div class="paper-links"><a href="https://doi.org/10.5281/zenodo.20285104" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
+      </div>
+
+      <div class="tile">
+        <span class="badge" style="background:rgba(34,197,94,.12);color:#15803d">Reproducibility bundle</span>
+        <h3>TruthHire: Reference Implementation &amp; Evaluation Harness</h3>
+        <p>Deterministic timeline engine, adversarial AI-fake robustness harness, and public-corpus assessment (CC-BY-4.0) for the employment-fraud detection and privacy-preserving fraud-reporting manuscripts.</p>
+        <div class="paper-links"><a href="https://doi.org/10.5281/zenodo.20681820" target="_blank" rel="noopener">Zenodo DOI &rarr;</a></div>
+      </div>
+
+    </div>
   </section>
 
   <div class="divider" style="max-width:960px;margin:0 auto"></div>
